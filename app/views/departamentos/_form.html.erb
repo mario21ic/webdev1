@@ -11,87 +11,109 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :cod_departamento %>
-    <%= form.number_field :cod_departamento %>
-  </div>
 
-  <div class="field">
-    <%= form.label :cod_proyecto %>
-    <%= form.number_field :cod_proyecto %>
-  </div>
+<div class="form-row mt-3">
+      <div class="col-md-12 mb-3">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Proyecto</label>
+        <div>
+          <label for="validationCustom02" class="col-form-label col-form-label-lg h1">{{proyecto.Nombre}}</label>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3 field">
+        <%= form.label :numero, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.number_field :numero, :class=>"form-control form-control-lg" %>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-3 mb-3 field">
+        <%= form.label :piso, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.number_field :piso, :class=>"form-control form-control-lg" %>
 
-  <div class="field">
-    <%= form.label :numero %>
-    <%= form.number_field :numero %>
-  </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-3 mb-3 field">
+        <%= form.label :area_total, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.number_field :area_total, :class=>"form-control form-control-lg" %>
 
-  <div class="field">
-    <%= form.label :piso %>
-    <%= form.number_field :piso %>
-  </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-3 mb-3 field">
+        <%= form.label :area_techada, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.number_field :area_techada, :class=>"form-control form-control-lg" %>
 
-  <div class="field">
-    <%= form.label :area_total %>
-    <%= form.text_field :area_total %>
-  </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-3 mb-3 field">
+        <%= form.label :dormitorios, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.number_field :dormitorios, :class=>"form-control form-control-lg" %>
 
-  <div class="field">
-    <%= form.label :area_techada %>
-    <%= form.text_field :area_techada %>
-  </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-3 mb-3 field">
+        <%= form.label :baños, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.number_field :baños, :class=>"form-control form-control-lg" %>
 
-  <div class="field">
-    <%= form.label :dormitorios %>
-    <%= form.text_field :dormitorios %>
-  </div>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-3 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Favorito</label>
+        <select class="form-control form-control-lg mr-sm-2">
+          <option>[Seleccione]</option>
+          <option value="value1">Si es favorito</option> 
+          <option value="value3">No es favorito</option>       
+        </select>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-3 mb-3 field">
+        <%= form.label :estado, :class=>"col-form-label col-form-label-lg" %>
+        <select class="form-control form-control-lg mr-sm-2">
+          <option>[Seleccione]</option>        
+          <option value="value1">Activo</option> 
+          <option value="value3">Inactivo</option>
+          <option value="value3">Vendido</option>      
+        </select>
+        <div class="valid-feedback">
+           Looks good!
+        </div>
+      </div>  
+      <div class="col-md-4 mb-3 field">
+        <%= form.label :descripcion_corta, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.text_area :descripcion_corta, :class=>"form-control form-control-lg" %>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-8 mb-3 field">
+        <%= form.label :descripcion_larga, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.text_area :descripcion_larga, :class=>"form-control form-control-lg" %>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    
+  
+  
+</div>
 
-  <div class="field">
-    <%= form.label :baños %>
-    <%= form.text_field :baños %>
-  </div>
 
-  <div class="field">
-    <%= form.label :mca_favorito %>
-    <%= form.text_field :mca_favorito %>
-  </div>
 
-  <div class="field">
-    <%= form.label :descripcion_corta %>
-    <%= form.text_field :descripcion_corta %>
-  </div>
+<div class="actions text-right">
+  <%= link_to 'Regresar', departamentos_path, :class => "btn-warning btn btn-lg" %>
+  <%= form.submit "Guardar", :class => "btn btn-lg btn-success text-light"%>
+</div>
 
-  <div class="field">
-    <%= form.label :descripcion_larga %>
-    <%= form.text_field :descripcion_larga %>
-  </div>
 
-  <div class="field">
-    <%= form.label :estado %>
-    <%= form.text_field :estado %>
-  </div>
-
-  <div class="field">
-    <%= form.label :usu_crea %>
-    <%= form.text_field :usu_crea %>
-  </div>
-
-  <div class="field">
-    <%= form.label :fec_crea %>
-    <%= form.datetime_select :fec_crea %>
-  </div>
-
-  <div class="field">
-    <%= form.label :usu_mod %>
-    <%= form.text_field :usu_mod %>
-  </div>
-
-  <div class="field">
-    <%= form.label :fec_mod %>
-    <%= form.datetime_select :fec_mod %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
 <% end %>
