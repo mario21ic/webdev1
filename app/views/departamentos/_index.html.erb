@@ -1,0 +1,121 @@
+
+  <a name="departamento"></a>
+<p id="notice"><%= notice %></p>
+<%= content_for :head do %>
+  <br/>
+  <div class="row bd-example">
+    <div class="col-md-12 mb-4">
+      <span class="display-2">{{Proyecto.Nombre}} </span>
+    </div>
+  </div>
+<% end %>
+
+<div class="row mt-4">
+  <div class="col-md-7">
+    <h1>Departamentos</h1>
+  </div>
+  <div class="col-md-2 text-right mb-5">
+      <%= link_to 'Regresar', proyectos_path, :class => "btn-outline-warning btn" %>
+  </div>
+  <div class="col-md-3 text-right">
+      <%= link_to 'Crear Nuevo Departamento', new_departamento_path, :class => "form-control btn btn-outline-primary text-primary" %>
+  </div>
+
+  <%= render '/departamentos/filtros', departamento: @departamento %>
+  <div class="row mt-2">
+    <div class="col-md-8 text-right">
+  </div>
+  <div class="col-md-2 text-right">
+      <button class="form-control btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
+  </div>
+  <div class="col-md-2 mb-2">
+      <button class="form-control btn btn-warning my-2 my-sm-0" type="submit">Limpiar</button>
+  </div>
+
+  <% @departamentos.each do |departamento| %>
+    <div class="col-md-4">
+      <div class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-12 bg-secondary" style="overflow:hidden; background-color: ">
+              <img src="https://img10.naventcdn.com/avisos/111/00/08/03/06/86/1200x1200/160060081.jpg" class="card-img rounded-top" style="height: 100%;max-height: 300px;width: auto;" alt="...">
+          </div>
+          <div class="col-md-9 text-center col-form-label-lg">
+            <h2> $ 200 000.00 </h2>
+          </div>
+          <div class="col-3">
+            <span class="badge badge-primary badge-pill mt-4">Activo</span>
+            <span class="card-text text-warning h4">★</span>
+          </div>
+          <div class="col-md-12 text-justify col-form-label-lg">
+             <p class="card-text card-body" style="padding:0 20px 0 20px; min-height: 60px;"><%= departamento.descripcion_corta %></p>
+          </div>
+          <div class="col-md-3 text-right mt-1">
+            <p class="card-text"><small>Dormitorios :</small></p>
+          </div>
+          <div class="col-md-3">
+            <b class="ml-1"><%= departamento.dormitorios %></b>
+          </div>
+          <div class="col-md-3 text-right mt-1">
+             <p class="card-text"><small>Baños :</small></p>
+          </div>
+          <div class="col-md-3">
+            <b class="ml-1"><%= departamento.baños %></b>
+          </div>
+          <div class="col-md-3 text-right mt-1">
+            <p class="card-text"><small>Area Techada :</small></p>
+          </div>
+          <div class="col-md-3">
+            <b class="ml-1"><%= departamento.area_techada %>m²</b>
+          </div>
+          <div class="col-md-3 text-right mt-1">
+             <p class="card-text"><small>Area Total :</small></p>
+          </div>
+          <div class="col-md-3">
+            <b class="ml-1"><%= departamento.area_total %>m²</b>
+          </div>
+          <div class="col-md-3 text-right mt-1">
+            <p class="card-text"><small>Piso :</small></p>
+          </div>
+          <div class="col-md-3" >
+            <b class="ml-1"><%= departamento.piso %></b>
+          </div>
+          <div class="col-md-3 text-right mt-1">
+            <p class="card-text"><small>Número :</small></p>
+          </div>
+          <div class="col-md-3">
+            <b class="ml-1"><%= departamento.numero %></b> 
+          </div>
+          <div class="col-md-12 text-right mt-3 mb-3 mr-2">
+                  <%= link_to 'Ver más', departamento, :class => "btn-success btn-sm text-light" %>
+                  <%= link_to 'Editar', edit_departamento_path(departamento), :class => "btn-danger btn-sm text-light mr-3" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
+<br>
+
+<%= content_for :food do %>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+<% end %>

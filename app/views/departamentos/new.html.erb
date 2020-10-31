@@ -1,0 +1,13 @@
+<%= content_for :head do %>
+  <br/>
+  <div class="row bd-example">
+    <div class="col-md-12 mb-4">
+      <span class="display-2">Departamento </span>
+      <span class="display-4"> » Nuevo</span>
+    </div>
+  </div>
+<% end %>
+
+<%= render 'form', departamento: @departamento %>
+
+<%= link_to 'Back', departamentos_path %>

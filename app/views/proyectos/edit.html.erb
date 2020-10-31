@@ -1,0 +1,13 @@
+<%= content_for :head do %>
+  <br/>
+  <div class="row bd-example">
+    <div class="col-md-12 mb-4">
+      <span class="display-2">Proyecto </span>
+      <span class="display-4"> » Editar</span>
+    </div>
+  </div>
+<% end %>
+
+<%= render 'form', proyecto: @proyecto %>
+
+ <!--<%= link_to 'Regresar', proyectos_path, :class => "btn-warning btn" %>-->

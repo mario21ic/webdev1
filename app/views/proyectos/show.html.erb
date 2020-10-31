@@ -1,0 +1,188 @@
+<p id="notice"><%= notice %></p>
+<br/>
+<div class="card mb-3">
+  <div class="row no-gutters">
+    <div class="col-md-6" style="overflow:hidden;">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active w-450" style="height: 450px!important; overflow: hidden;">
+            <img src="https://vidarq.pe/wp-content/uploads/2019/04/proyecto-inmobiliario-en-surco-esen.jpg" class="card-img d-block w-100 align-middle" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </div>
+          <div class="carousel-item w-450" style="height: 450px!important; overflow: hidden;">
+            <img src="https://revistaconstruir.com/wp-content/uploads/2015/11/GT-Mariscal-uno-uno.jpg" class="card-img d-block w-100 align-middle" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item w-450" style="height: 450px!important; overflow: hidden;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLTYzTM310_JnDkpOJbAi3f9U-6-ix0uRo_w&usqp=CAU" class="card-img d-block w-100 align-middle" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <div class="row" style="height: 310px; overflow: hidden;">
+          <div class="col-md-9">
+            <h1 class="card-title"><%= @proyecto.nombre %></h1>
+          </div>
+          <div class="col-md-3 text-right">
+            <span class="badge badge-primary badge-pill">Activo</span>
+            <span class="card-text text-warning h4">★</span>
+          </div>
+          <div class="col-md-12 text-justify">
+            <p class="card-text"><%= @proyecto.descripcion_larga %></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-right">
+            <p class="card-text font-weight-bold h3">$<%= @proyecto.precio_m2 %> m²</p>
+          </div>
+          <div class="col-md-12">
+            <p class="card-text"><%= @proyecto.ubicacion %></p>
+          </div>
+        </div>
+        <div class="text-right mt-2">
+          <%= link_to 'Regresar', proyectos_path, :class => "btn-warning btn" %>
+          <a class="btn-info btn" href="#ubicacion">Ver Ubicación</a>
+          <a class="btn-success btntext-light" href="#departamento">Ver Departamentos</a>
+          <%= link_to 'Editar', edit_proyecto_path(@proyecto), :class => "btn-danger btn text-light" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .card-project-description {width: 200px;font-family: var(--secondary-font);text-align: center;padding: 25px 0 25px 0}
+  .card-project-description figure{text-align: center;}
+</style>
+<div class="row justify-content-center">
+  <div class="card-project-description">
+    <figure>
+      <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_01.svg" alt="">
+    </figure>
+    <div>
+      INICIO <br> DE OBRA <br> MEDIADOS 2021
+    </div>
+  </div> 
+  <div class="card-project-description">
+      <figure>
+          <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_02.svg" alt="">
+      </figure>
+      <div>
+          ARQUITECTURA <br> NÓMENA <br> ARQUITECTOS
+      </div>
+  </div>
+  <div class="card-project-description">
+      <figure>
+          <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_03.svg" alt="">
+      </figure>
+      <div>
+          DISEÑO INTERIOR <br> COSTA + HERRERA <br> ARQUITECTOS
+      </div>
+  </div>
+  <div class="card-project-description">
+      <figure>
+          <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_05.svg" alt="">
+      </figure>
+      <div>
+          ESTACIONAMIENTO <br> PARA <br> BICICLETAS
+      </div>
+  </div>
+  <div class="card-project-description">
+      <figure>
+          <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_06.svg" alt="">
+      </figure>
+      <div>
+          FITNESS <br> CENTER <br> EQUIPADO
+      </div>
+  </div>
+  <div class="card-project-description">
+      <figure>
+          <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_12.svg" alt="">
+      </figure>
+      <div>
+          WORK <br> SPACE <br> CON WIFI
+      </div>
+  </div>
+  <div class="card-project-description">
+      <figure>
+          <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_04.svg" alt="">
+      </figure>
+      <div>
+          A 1 CUADRA <br> DEL MALECÓN <br> CISNEROS
+      </div>
+  </div>
+  <div class="card-project-description">
+      <figure>
+          <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_07.svg" alt="">
+      </figure>
+      <div>
+          ÁREAS <br> DESDE 80m² <br> a 212m²
+      </div>
+  </div>
+  <div class="card-project-description">
+      <figure>
+          <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_10.svg" alt="">
+      </figure>
+      <div>
+          PISCINA <br> 11m PARA <br> NADO
+      </div>
+  </div>
+  <div class="card-project-description">
+      <figure>
+          <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_11.svg" alt="">
+      </figure>
+      <div>
+          2 ZONAS <br> DE BBQ EN <br> TERRAZA
+      </div>
+  </div>
+  <div class="card-project-description">
+      <figure>
+          <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_09.svg" alt="">
+      </figure>
+      <div>
+          EDIFICACIÓN <br> ECOEFICIENTE
+      </div>
+  </div>
+  <div class="card-project-description">
+      <figure>
+          <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_08.svg" alt="">
+      </figure>
+      <div>
+          1,2 y 3 <br> DORMITORIOS
+      </div>
+  </div>
+</div>
+
+<a name="ubicacion"></a>
+<div class="form-control" style="height: 460px;padding: 1px;">
+  <iframe width="100%" height="456" frameborder="0" style="border:0" src="https://google.com/maps/embed/v1/place?q=Universidad%20Peruana%20de%20Ciencias%20Aplicadas&key=AIzaSyA-mX5Z7eJL5GKASzo5gSNavXxX748a5Y4" allowfullscreen> </iframe>
+  <a name="departamento"></a>
+</div>
+
+
+<%= render partial: '/departamentos/index', departamento: @departamento %>

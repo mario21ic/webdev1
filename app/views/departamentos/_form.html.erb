@@ -1,0 +1,97 @@
+<%= form_with(model: departamento, local: true) do |form| %>
+  <% if departamento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(departamento.errors.count, "error") %> prohibited this departamento from being saved:</h2>
+
+      <ul>
+        <% departamento.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :cod_departamento %>
+    <%= form.number_field :cod_departamento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cod_proyecto %>
+    <%= form.number_field :cod_proyecto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numero %>
+    <%= form.number_field :numero %>
+  </div>
+
+  <div class="field">
+    <%= form.label :piso %>
+    <%= form.number_field :piso %>
+  </div>
+
+  <div class="field">
+    <%= form.label :area_total %>
+    <%= form.text_field :area_total %>
+  </div>
+
+  <div class="field">
+    <%= form.label :area_techada %>
+    <%= form.text_field :area_techada %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dormitorios %>
+    <%= form.text_field :dormitorios %>
+  </div>
+
+  <div class="field">
+    <%= form.label :baños %>
+    <%= form.text_field :baños %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mca_favorito %>
+    <%= form.text_field :mca_favorito %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion_corta %>
+    <%= form.text_field :descripcion_corta %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion_larga %>
+    <%= form.text_field :descripcion_larga %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estado %>
+    <%= form.text_field :estado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usu_crea %>
+    <%= form.text_field :usu_crea %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fec_crea %>
+    <%= form.datetime_select :fec_crea %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usu_mod %>
+    <%= form.text_field :usu_mod %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fec_mod %>
+    <%= form.datetime_select :fec_mod %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

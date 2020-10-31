@@ -1,0 +1,404 @@
+<%= form_with(model: proyecto, local: true) do |form| %>
+  <% if proyecto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(proyecto.errors.count, "error") %> prohibited this proyecto from being saved:</h2>
+
+      <ul>
+        <% proyecto.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="form-row mt-3">
+  <div class="col-md-6 mb-3 field">
+    <div class="form-row">
+      <div class="col-md-12 mb-3">
+        <%= form.label :nombre, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.text_field :nombre, :class=>"form-control form-control-lg", :required=>"required" %>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Departamento</label>
+        <select class="form-control form-control-lg mr-sm-2">
+          <option>[Seleccione]</option>
+          <option value="value1">Lima</option> 
+          <option value="value3">Cusco</option>
+          <option value="value3">Arequipa</option>
+          <option value="value3">Ica</option>
+        </select>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Provincia</label>
+        <select class="form-control form-control-lg mr-sm-2">
+          <option>[Seleccione]</option>
+        </select>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Distrito</label>
+        <select class="form-control form-control-lg mr-sm-2">
+          <option>[Seleccione]</option>
+        </select>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-12 mb-3">
+        <%= form.label :ubicacion, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.text_field :ubicacion, :class=>"form-control form-control-lg", :required=>"required" %>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-12 ">
+        <%= form.label :descripcion_corta, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.text_area :descripcion_corta, :class=>"form-control form-control-lg", :required=>"required" %>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom02" class="col-form-label col-form-label-lg">Ubicación</label>
+    <div class="form-control" style="height: 414px;padding: 1px;">
+      <iframe width="100%" height="410" frameborder="0" style="border:0" src="https://google.com/maps/embed/v1/place?q=Universidad%20Peruana%20de%20Ciencias%20Aplicadas&key=AIzaSyA-mX5Z7eJL5GKASzo5gSNavXxX748a5Y4" allowfullscreen> </iframe>
+    </div>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-12 mb-3 mt-0">
+      <%= form.label :descripcion_larga, :class=>"col-form-label col-form-label-lg" %>
+      <%= form.text_area :descripcion_larga, :class=>"form-control form-control-lg", :required=>"required" %>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+  </div>
+  <div class="col-md-3 mb-3 mt-0">
+    <label for="validationCustom02" class="col-form-label col-form-label-lg">Moneda</label>
+    <select class="form-control form-control-lg mr-sm-2">
+      <option>[Seleccione]</option>
+      <option value="value1">Soles</option> 
+      <option value="value3">Dolares</option>       
+    </select>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+  </div>
+  <div class="col-md-3 mb-3 mt-0">
+      <%= form.label :precio_m2, :class=>"col-form-label col-form-label-lg" %>
+      <%= form.number_field :precio_m2, :class=>"form-control form-control-lg", :required=>"required" %>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+  </div>
+  <div class="col-md-3 mb-3 field">
+    <label for="validationCustom02" class="col-form-label col-form-label-lg">Favorito</label>
+    <select class="form-control form-control-lg mr-sm-2">
+      <option>[Seleccione]</option>
+      <option value="value1">Si es favorito</option> 
+      <option value="value3">No es favorito</option>       
+    </select>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-3 mb-3 field">
+    <%= form.label :estado, :class=>"col-form-label col-form-label-lg" %>
+    <select class="form-control form-control-lg mr-sm-2">
+      <option>[Seleccione]</option>        
+      <option value="value1">Activo</option> 
+      <option value="value3">Inactivo</option>
+      <option value="value3">Pre-Venta</option>      
+    </select>
+    <div class="valid-feedback">
+       Looks good!
+    </div>
+  </div>  
+</div>
+
+<style>
+  .card-project-description {font-family: var(--secondary-font);text-align: center;margin-bottom: 0;height: 145px;}
+  .card-project-description figure{text-align: center;margin-top: 0;padding-top: 0;margin-bottom: 0;}
+  .card-project-description img{padding-top: 0;margin-top: 0;}
+  .card-project-description span{height: 130px;}
+
+  /*Para el check de diseño*/
+  .onoffswitch {
+    position: relative; 
+    display: inline-block;
+    -webkit-user-select:none; 
+        -moz-user-select:none; -ms-user-select: none;
+    padding: 0;
+  }
+  .onoffswitch-checkbox {
+    position: relative;
+    top:105px;
+    left: 70px;
+    z-index: 999;
+  }
+  .onoffswitch-label {
+    display: block; 
+    overflow: hidden; 
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    height: 128px;
+    position: relative;
+    top:-24px;
+  }
+  .onoffswitch-inner {
+    display: block; 
+    transition: margin 0.3s ease-in 0s;
+    padding: 15px 0 0 0;
+    font-size: 12px;
+  }
+  .onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; 
+        float: left; 
+    font-size: 12px; 
+        color: black; 
+        font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+  }
+  .onoffswitch-inner:before {
+    content: "";
+        color: #FFFFFF;
+  }
+  .onoffswitch-inner:after {
+    content: ""; 
+    color: #FFFFFF;
+    text-align: right;
+    border-radius: 10px;
+  }
+  .onoffswitch-switch {
+    display: block; 
+    width: 12px;
+    background: #FFFFFF;
+    position: absolute; top: 0;
+    right: 50px;
+    border: 2px solid #FFFFFF; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+  }
+  .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner,
+  .onoffswitch-checkbox:hover + .onoffswitch-label .onoffswitch-inner {
+    background-color: #17a2b8;
+    color: white;
+  }
+  .onoffswitch-checkbox:hover + .onoffswitch-label .onoffswitch-inner {
+    background-color: #037DB2;
+  }
+</style>
+
+<div class="form-row">
+  <div class="col-md-12">
+    <label class="col-form-label col-form-label-lg">
+      Caracteristicas
+    </label>
+    <div class="form-row">
+      <div class="col-md-2 card-project-description">
+        <span class="onoffswitch form-control">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c1">
+          <label class="onoffswitch-label" for="c1">
+            <span class="onoffswitch-inner">
+              <figure>
+                <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_01.svg" alt="">
+              </figure>
+              <div>
+                INICIO <br> DE OBRA <br> MEDIADOS 2021
+              </div>
+            </span>
+          </label>
+        </span>
+      </div>
+      <div class="col-md-2 card-project-description">
+        <span class="onoffswitch form-control">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c2">
+          <label class="onoffswitch-label" for="c2">
+            <span class="onoffswitch-inner">
+              <figure>
+                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_02.svg" alt="">
+              </figure>
+              <div>
+                ARQUITECTURA <br> NÓMENA <br> ARQUITECTOS
+              </div>
+            </span>
+          </label>
+        </span>
+      </div>
+      <div class="col-md-2 card-project-description">
+        <span class="onoffswitch form-control">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c3">
+          <label class="onoffswitch-label" for="c3">
+            <span class="onoffswitch-inner">
+              <figure>
+                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_03.svg" alt="">
+              </figure>
+              <div>
+                  DISEÑO INTERIOR <br> COSTA + HERRERA <br> ARQUITECTOS
+              </div>
+            </span>
+          </label>
+        </span>
+      </div>
+      <div class="col-md-2 card-project-description">
+        <span class="onoffswitch form-control">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c4">
+          <label class="onoffswitch-label" for="c4">
+            <span class="onoffswitch-inner">
+              <figure>
+                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_05.svg" alt="">
+              </figure>
+              <div>
+                  ESTACIONAMIENTO <br> PARA <br> BICICLETAS
+              </div>
+            </span>
+          </label>
+        </span>
+      </div>
+      <div class="col-md-2 card-project-description">
+        <span class="onoffswitch form-control">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c5">
+          <label class="onoffswitch-label" for="c5">
+            <span class="onoffswitch-inner">
+              <figure>
+                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_06.svg" alt="">
+              </figure>
+              <div>
+                  FITNESS <br> CENTER <br> EQUIPADO
+              </div>
+            </span>
+          </label>
+        </span>
+      </div>
+      <div class="col-md-2 card-project-description">
+        <span class="onoffswitch form-control">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c6">
+          <label class="onoffswitch-label" for="c6">
+            <span class="onoffswitch-inner">
+              <figure>
+                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_12.svg" alt="">
+              </figure>
+              <div>
+                  WORK <br> SPACE <br> CON WIFI
+              </div>
+            </span>
+          </label>
+        </span>
+      </div>
+      <div class="col-md-2 card-project-description">
+        <span class="onoffswitch form-control">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c7">
+          <label class="onoffswitch-label" for="c7">
+            <span class="onoffswitch-inner">
+              <figure>
+                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_04.svg" alt="">
+              </figure>
+              <div>
+                  A 1 CUADRA <br> DEL MALECÓN <br> CISNEROS
+              </div>
+            </span>
+          </label>
+        </span>
+      </div>
+       <div class="col-md-2 card-project-description">
+        <span class="onoffswitch form-control">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c8">
+          <label class="onoffswitch-label" for="c8">
+            <span class="onoffswitch-inner">
+              <figure>
+                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_07.svg" alt="">
+              </figure>
+              <div>
+                  ÁREAS <br> DESDE 80m² <br> a 212m²
+              </div>
+            </span>
+          </label>
+        </span>
+      </div>
+      <div class="col-md-2 card-project-description">
+        <span class="onoffswitch form-control">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c9">
+          <label class="onoffswitch-label" for="c9">
+            <span class="onoffswitch-inner">
+              <figure>
+                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_10.svg" alt="">
+              </figure>
+              <div>
+                  PISCINA <br> 11m PARA <br> NADO
+              </div>
+            </span>
+          </label>
+        </span>
+      </div>
+      <div class="col-md-2 card-project-description">
+        <span class="onoffswitch form-control">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c10">
+          <label class="onoffswitch-label" for="c10">
+            <span class="onoffswitch-inner">
+              <figure>
+                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_11.svg" alt="">
+              </figure>
+              <div>
+                  2 ZONAS <br> DE BBQ EN <br> TERRAZA
+              </div>
+            </span>
+          </label>
+        </span>
+      </div>
+      <div class="col-md-2 card-project-description">
+        <span class="onoffswitch form-control">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c11">
+          <label class="onoffswitch-label" for="c11">
+            <span class="onoffswitch-inner">
+              <figure>
+                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_09.svg" alt="">
+              </figure>
+              <div>
+                  EDIFICACIÓN <br> ECOEFICIENTE
+              </div>
+            </span>
+          </label>
+        </span>
+      </div>
+      <div class="col-md-2 card-project-description">
+        <span class="onoffswitch form-control">
+          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c12">
+          <label class="onoffswitch-label" for="c12">
+            <span class="onoffswitch-inner">
+              <figure>
+                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_08.svg" alt="">
+              </figure>
+              <div>
+                  1,2 y 3 <br> DORMITORIOS
+              </div>
+            </span>
+          </label>
+        </span>
+      </div>      
+    </div>
+  </div>
+</div>     
+<div class="actions text-right">
+  <%= link_to 'Regresar', proyectos_path, :class => "btn-warning btn btn-lg" %>
+  <a class="btn btn-primary btn-lg text-light" href="/departamentos">Ver Departamentos</a>
+  <%= form.submit "Guardar", :class => "btn btn-lg btn-success text-light"%>
+</div>
+    
+    
+  <% end %>
