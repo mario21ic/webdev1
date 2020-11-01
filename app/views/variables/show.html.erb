@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tipo variable:</strong>
+  <%= @variable.tipo_variable %>
+</p>
+
+<p>
+  <strong>Codigo variable:</strong>
+  <%= @variable.codigo_variable %>
+</p>
+
+<p>
+  <strong>Descricion variable:</strong>
+  <%= @variable.descricion_variable %>
+</p>
+
+<p>
+  <strong>Dato extra:</strong>
+  <%= @variable.dato_extra %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @variable.estado %>
+</p>
+
+<p>
+  <strong>Usu crea:</strong>
+  <%= @variable.usu_crea %>
+</p>
+
+<p>
+  <strong>Fec crea:</strong>
+  <%= @variable.fec_crea %>
+</p>
+
+<p>
+  <strong>Usu mod:</strong>
+  <%= @variable.usu_mod %>
+</p>
+
+<p>
+  <strong>Fec mod:</strong>
+  <%= @variable.fec_mod %>
+</p>
+
+<%= link_to 'Edit', edit_variable_path(@variable) %> |
+<%= link_to 'Back', variables_path %>

@@ -1,0 +1,72 @@
+<%= form_with(model: usuario, local: true) do |form| %>
+  <% if usuario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
+
+      <ul>
+        <% usuario.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :tipo_documento %>
+    <%= form.text_field :tipo_documento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numero_documento %>
+    <%= form.text_field :numero_documento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :codigo_usuario %>
+    <%= form.text_field :codigo_usuario %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contraseña %>
+    <%= form.text_field :contraseña %>
+  </div>
+
+  <div class="field">
+    <%= form.label :correo_corporativo %>
+    <%= form.text_field :correo_corporativo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :perfil %>
+    <%= form.text_field :perfil %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estado %>
+    <%= form.text_field :estado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usu_crea %>
+    <%= form.text_field :usu_crea %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fec_crea %>
+    <%= form.datetime_select :fec_crea %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usu_mod %>
+    <%= form.text_field :usu_mod %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fec_mod %>
+    <%= form.datetime_select :fec_mod %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

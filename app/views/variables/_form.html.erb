@@ -1,0 +1,62 @@
+<%= form_with(model: variable, local: true) do |form| %>
+  <% if variable.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(variable.errors.count, "error") %> prohibited this variable from being saved:</h2>
+
+      <ul>
+        <% variable.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :tipo_variable %>
+    <%= form.text_field :tipo_variable %>
+  </div>
+
+  <div class="field">
+    <%= form.label :codigo_variable %>
+    <%= form.text_field :codigo_variable %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricion_variable %>
+    <%= form.text_field :descricion_variable %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dato_extra %>
+    <%= form.text_field :dato_extra %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estado %>
+    <%= form.text_field :estado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usu_crea %>
+    <%= form.text_field :usu_crea %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fec_crea %>
+    <%= form.datetime_select :fec_crea %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usu_mod %>
+    <%= form.text_field :usu_mod %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fec_mod %>
+    <%= form.datetime_select :fec_mod %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

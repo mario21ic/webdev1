@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cod venta:</strong>
+  <%= @ventum.cod_venta %>
+</p>
+
+<p>
+  <strong>Tipo documento:</strong>
+  <%= @ventum.tipo_documento %>
+</p>
+
+<p>
+  <strong>Numero documento:</strong>
+  <%= @ventum.numero_documento %>
+</p>
+
+<p>
+  <strong>Cod departamento:</strong>
+  <%= @ventum.cod_departamento %>
+</p>
+
+<p>
+  <strong>Cod solicitud:</strong>
+  <%= @ventum.cod_solicitud %>
+</p>
+
+<p>
+  <strong>Tipo compra:</strong>
+  <%= @ventum.tipo_compra %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @ventum.total %>
+</p>
+
+<p>
+  <strong>Saldo:</strong>
+  <%= @ventum.saldo %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @ventum.estado %>
+</p>
+
+<p>
+  <strong>Usu crea:</strong>
+  <%= @ventum.usu_crea %>
+</p>
+
+<p>
+  <strong>Fec crea:</strong>
+  <%= @ventum.fec_crea %>
+</p>
+
+<p>
+  <strong>Usu mod:</strong>
+  <%= @ventum.usu_mod %>
+</p>
+
+<p>
+  <strong>Fec mod:</strong>
+  <%= @ventum.fec_mod %>
+</p>
+
+<%= link_to 'Edit', edit_ventum_path(@ventum) %> |
+<%= link_to 'Back', venta_path %>

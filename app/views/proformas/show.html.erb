@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cod proforma:</strong>
+  <%= @proforma.cod_proforma %>
+</p>
+
+<p>
+  <strong>Cod solictud:</strong>
+  <%= @proforma.cod_solictud %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @proforma.estado %>
+</p>
+
+<p>
+  <strong>Usu crea:</strong>
+  <%= @proforma.usu_crea %>
+</p>
+
+<p>
+  <strong>Fec crea:</strong>
+  <%= @proforma.fec_crea %>
+</p>
+
+<p>
+  <strong>Usu mod:</strong>
+  <%= @proforma.usu_mod %>
+</p>
+
+<p>
+  <strong>Fec mod:</strong>
+  <%= @proforma.fec_mod %>
+</p>
+
+<%= link_to 'Edit', edit_proforma_path(@proforma) %> |
+<%= link_to 'Back', proformas_path %>

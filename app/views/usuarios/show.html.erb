@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tipo documento:</strong>
+  <%= @usuario.tipo_documento %>
+</p>
+
+<p>
+  <strong>Numero documento:</strong>
+  <%= @usuario.numero_documento %>
+</p>
+
+<p>
+  <strong>Codigo usuario:</strong>
+  <%= @usuario.codigo_usuario %>
+</p>
+
+<p>
+  <strong>Contraseña:</strong>
+  <%= @usuario.contraseña %>
+</p>
+
+<p>
+  <strong>Correo corporativo:</strong>
+  <%= @usuario.correo_corporativo %>
+</p>
+
+<p>
+  <strong>Perfil:</strong>
+  <%= @usuario.perfil %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @usuario.estado %>
+</p>
+
+<p>
+  <strong>Usu crea:</strong>
+  <%= @usuario.usu_crea %>
+</p>
+
+<p>
+  <strong>Fec crea:</strong>
+  <%= @usuario.fec_crea %>
+</p>
+
+<p>
+  <strong>Usu mod:</strong>
+  <%= @usuario.usu_mod %>
+</p>
+
+<p>
+  <strong>Fec mod:</strong>
+  <%= @usuario.fec_mod %>
+</p>
+
+<%= link_to 'Edit', edit_usuario_path(@usuario) %> |
+<%= link_to 'Back', usuarios_path %>

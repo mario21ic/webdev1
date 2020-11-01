@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Solicituds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cod solictud</th>
+      <th>Cod departamento</th>
+      <th>Tipo documento</th>
+      <th>Numero documento</th>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>Correo</th>
+      <th>Telefono</th>
+      <th>Mensaje</th>
+      <th>Estado</th>
+      <th>Usu crea</th>
+      <th>Fec crea</th>
+      <th>Usu mod</th>
+      <th>Fec mod</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @solicituds.each do |solicitud| %>
+      <tr>
+        <td><%= solicitud.cod_solictud %></td>
+        <td><%= solicitud.cod_departamento %></td>
+        <td><%= solicitud.tipo_documento %></td>
+        <td><%= solicitud.numero_documento %></td>
+        <td><%= solicitud.nombres %></td>
+        <td><%= solicitud.apellidos %></td>
+        <td><%= solicitud.correo %></td>
+        <td><%= solicitud.telefono %></td>
+        <td><%= solicitud.mensaje %></td>
+        <td><%= solicitud.estado %></td>
+        <td><%= solicitud.usu_crea %></td>
+        <td><%= solicitud.fec_crea %></td>
+        <td><%= solicitud.usu_mod %></td>
+        <td><%= solicitud.fec_mod %></td>
+        <td><%= link_to 'Show', solicitud %></td>
+        <td><%= link_to 'Edit', edit_solicitud_path(solicitud) %></td>
+        <td><%= link_to 'Destroy', solicitud, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Solicitud', new_solicitud_path %>

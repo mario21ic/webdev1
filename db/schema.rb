@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_31_210659) do
+ActiveRecord::Schema.define(version: 2020_11_01_064516) do
 
   create_table "archivos", force: :cascade do |t|
     t.integer "cod_archivo"
@@ -21,6 +21,43 @@ ActiveRecord::Schema.define(version: 2020_10_31_210659) do
     t.string "descripcion_corta"
     t.string "descripcion_larga"
     t.integer "orden"
+    t.string "estado"
+    t.string "usu_crea"
+    t.datetime "fec_crea"
+    t.string "usu_mod"
+    t.datetime "fec_mod"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "caracteristicas_proyectos", force: :cascade do |t|
+    t.integer "cod_proyecto"
+    t.string "cod_caracteristica"
+    t.string "estado"
+    t.string "usu_crea"
+    t.datetime "fec_crea"
+    t.string "usu_mod"
+    t.datetime "fec_mod"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "cita", force: :cascade do |t|
+    t.integer "cod_cita"
+    t.integer "cod_solicitud"
+    t.datetime "fecha"
+    t.string "estado"
+    t.string "usu_crea"
+    t.datetime "fec_crea"
+    t.string "usu_mod"
+    t.datetime "fec_mod"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "clientes", force: :cascade do |t|
+    t.string "tipo_documento"
+    t.string "numero_documento"
     t.string "estado"
     t.string "usu_crea"
     t.datetime "fec_crea"
@@ -51,6 +88,53 @@ ActiveRecord::Schema.define(version: 2020_10_31_210659) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "movimimiento_venta", force: :cascade do |t|
+    t.integer "numero_movimiento"
+    t.integer "cod_venta"
+    t.string "tipo_movimiento"
+    t.string "numero_operacion"
+    t.decimal "monto"
+    t.string "estado"
+    t.string "usu_crea"
+    t.datetime "fec_crea"
+    t.string "usu_mod"
+    t.datetime "fec_mod"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "personas", force: :cascade do |t|
+    t.string "tipo_documento"
+    t.string "numero_documento"
+    t.string "nombres"
+    t.string "apellidos"
+    t.string "correo"
+    t.string "telefono"
+    t.string "mca_juridico"
+    t.string "sexo"
+    t.string "fecha_aniversario"
+    t.string "date"
+    t.string "estado"
+    t.string "usu_crea"
+    t.datetime "fec_crea"
+    t.string "usu_mod"
+    t.datetime "fec_mod"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "proformas", force: :cascade do |t|
+    t.integer "cod_proforma"
+    t.integer "cod_solictud"
+    t.string "estado"
+    t.string "usu_crea"
+    t.datetime "fec_crea"
+    t.string "usu_mod"
+    t.datetime "fec_mod"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "proyectos", force: :cascade do |t|
     t.integer "cod_proyecto"
     t.string "nombre"
@@ -59,6 +143,73 @@ ActiveRecord::Schema.define(version: 2020_10_31_210659) do
     t.string "descripcion_larga"
     t.decimal "precio_m2"
     t.string "mca_favorito"
+    t.string "estado"
+    t.string "usu_crea"
+    t.datetime "fec_crea"
+    t.string "usu_mod"
+    t.datetime "fec_mod"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "solicituds", force: :cascade do |t|
+    t.integer "cod_solictud"
+    t.integer "cod_departamento"
+    t.string "tipo_documento"
+    t.string "numero_documento"
+    t.string "nombres"
+    t.string "apellidos"
+    t.string "correo"
+    t.string "telefono"
+    t.string "mensaje"
+    t.string "estado"
+    t.string "usu_crea"
+    t.datetime "fec_crea"
+    t.string "usu_mod"
+    t.datetime "fec_mod"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "usuarios", force: :cascade do |t|
+    t.string "tipo_documento"
+    t.string "numero_documento"
+    t.string "codigo_usuario"
+    t.string "contraseña"
+    t.string "correo_corporativo"
+    t.string "perfil"
+    t.string "estado"
+    t.string "usu_crea"
+    t.datetime "fec_crea"
+    t.string "usu_mod"
+    t.datetime "fec_mod"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "variables", force: :cascade do |t|
+    t.string "tipo_variable"
+    t.string "codigo_variable"
+    t.string "descricion_variable"
+    t.string "dato_extra"
+    t.string "estado"
+    t.string "usu_crea"
+    t.datetime "fec_crea"
+    t.string "usu_mod"
+    t.datetime "fec_mod"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "venta", force: :cascade do |t|
+    t.integer "cod_venta"
+    t.string "tipo_documento"
+    t.string "numero_documento"
+    t.integer "cod_departamento"
+    t.integer "cod_solicitud"
+    t.string "tipo_compra"
+    t.decimal "total"
+    t.decimal "saldo"
     t.string "estado"
     t.string "usu_crea"
     t.datetime "fec_crea"

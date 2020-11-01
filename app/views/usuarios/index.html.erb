@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Usuarios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo documento</th>
+      <th>Numero documento</th>
+      <th>Codigo usuario</th>
+      <th>Contraseña</th>
+      <th>Correo corporativo</th>
+      <th>Perfil</th>
+      <th>Estado</th>
+      <th>Usu crea</th>
+      <th>Fec crea</th>
+      <th>Usu mod</th>
+      <th>Fec mod</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @usuarios.each do |usuario| %>
+      <tr>
+        <td><%= usuario.tipo_documento %></td>
+        <td><%= usuario.numero_documento %></td>
+        <td><%= usuario.codigo_usuario %></td>
+        <td><%= usuario.contraseña %></td>
+        <td><%= usuario.correo_corporativo %></td>
+        <td><%= usuario.perfil %></td>
+        <td><%= usuario.estado %></td>
+        <td><%= usuario.usu_crea %></td>
+        <td><%= usuario.fec_crea %></td>
+        <td><%= usuario.usu_mod %></td>
+        <td><%= usuario.fec_mod %></td>
+        <td><%= link_to 'Show', usuario %></td>
+        <td><%= link_to 'Edit', edit_usuario_path(usuario) %></td>
+        <td><%= link_to 'Destroy', usuario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Usuario', new_usuario_path %>

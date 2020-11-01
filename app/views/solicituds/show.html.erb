@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cod solictud:</strong>
+  <%= @solicitud.cod_solictud %>
+</p>
+
+<p>
+  <strong>Cod departamento:</strong>
+  <%= @solicitud.cod_departamento %>
+</p>
+
+<p>
+  <strong>Tipo documento:</strong>
+  <%= @solicitud.tipo_documento %>
+</p>
+
+<p>
+  <strong>Numero documento:</strong>
+  <%= @solicitud.numero_documento %>
+</p>
+
+<p>
+  <strong>Nombres:</strong>
+  <%= @solicitud.nombres %>
+</p>
+
+<p>
+  <strong>Apellidos:</strong>
+  <%= @solicitud.apellidos %>
+</p>
+
+<p>
+  <strong>Correo:</strong>
+  <%= @solicitud.correo %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @solicitud.telefono %>
+</p>
+
+<p>
+  <strong>Mensaje:</strong>
+  <%= @solicitud.mensaje %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @solicitud.estado %>
+</p>
+
+<p>
+  <strong>Usu crea:</strong>
+  <%= @solicitud.usu_crea %>
+</p>
+
+<p>
+  <strong>Fec crea:</strong>
+  <%= @solicitud.fec_crea %>
+</p>
+
+<p>
+  <strong>Usu mod:</strong>
+  <%= @solicitud.usu_mod %>
+</p>
+
+<p>
+  <strong>Fec mod:</strong>
+  <%= @solicitud.fec_mod %>
+</p>
+
+<%= link_to 'Edit', edit_solicitud_path(@solicitud) %> |
+<%= link_to 'Back', solicituds_path %>
