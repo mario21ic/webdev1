@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cod archivo:</strong>
+  <%= @archivo.cod_archivo %>
+</p>
+
+<p>
+  <strong>Cod tip archivo:</strong>
+  <%= @archivo.cod_tip_archivo %>
+</p>
+
+<p>
+  <strong>Cod proyecto:</strong>
+  <%= @archivo.cod_proyecto %>
+</p>
+
+<p>
+  <strong>Cod departamento:</strong>
+  <%= @archivo.cod_departamento %>
+</p>
+
+<p>
+  <strong>Nombre archivo:</strong>
+  <%= @archivo.nombre_archivo %>
+</p>
+
+<p>
+  <strong>Descripcion corta:</strong>
+  <%= @archivo.descripcion_corta %>
+</p>
+
+<p>
+  <strong>Descripcion larga:</strong>
+  <%= @archivo.descripcion_larga %>
+</p>
+
+<p>
+  <strong>Orden:</strong>
+  <%= @archivo.orden %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @archivo.estado %>
+</p>
+
+<p>
+  <strong>Usu crea:</strong>
+  <%= @archivo.usu_crea %>
+</p>
+
+<p>
+  <strong>Fec crea:</strong>
+  <%= @archivo.fec_crea %>
+</p>
+
+<p>
+  <strong>Usu mod:</strong>
+  <%= @archivo.usu_mod %>
+</p>
+
+<p>
+  <strong>Fec mod:</strong>
+  <%= @archivo.fec_mod %>
+</p>
+
+<%= link_to 'Edit', edit_archivo_path(@archivo) %> |
+<%= link_to 'Back', archivos_path %>

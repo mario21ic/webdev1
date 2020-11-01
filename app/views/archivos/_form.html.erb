@@ -1,0 +1,87 @@
+<%= form_with(model: archivo, local: true) do |form| %>
+  <% if archivo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(archivo.errors.count, "error") %> prohibited this archivo from being saved:</h2>
+
+      <ul>
+        <% archivo.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+<div class="form-row mt-3">
+      <div class="col-md-9 mb-3">
+        <label class="col-form-label col-form-label-lg">Archivo</label>
+        <input type="file" class="custom-file-input" style="display: none;" id="inputGroupFile01" accept=".jpeg,.png,.gif, .video">
+        <label class="form-control form-control-lg text-center align-middle" style="height: 526px;" for="inputGroupFile01">
+          <span style="border: 1px dashed grey; width: 100%; display: inline-block;height: 508px;border-radius: 4px;padding-top: 250px;">
+            Seleccione un archivo
+          </span>
+        </label>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-3"> 
+        <div class="row">
+          <div class="col-md-12 mb-3 field">
+            <label class="col-form-label col-form-label-lg">Titulo</label>
+            <%= form.text_field :descripcion_corta, :class=>"form-control form-control-lg" %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-12 mb-3 field">
+            <label class="col-form-label col-form-label-lg">Descripción</label>
+            <%= form.text_area :descripcion_larga, :class=>"form-control form-control-lg" %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-12 mb-3 field">
+            <label for="validationCustom02" class="col-form-label col-form-label-lg">Favorito</label>
+            <select class="form-control form-control-lg mr-sm-2">
+              <option>[Seleccione]</option>
+              <option value="value1">Si es favorito</option> 
+              <option value="value3">No es favorito</option>       
+            </select>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-5 mb-3 field">
+            <%= form.label :orden, :class=>"col-form-label col-form-label-lg" %>
+            <%= form.number_field :orden, :class=>"form-control form-control-lg" %>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-12 mb-3 field">
+            <%= form.label :estado, :class=>"col-form-label col-form-label-lg" %>
+            <select class="form-control form-control-lg mr-sm-2">
+              <option>[Seleccione]</option>        
+              <option value="value1">Activo</option> 
+              <option value="value3">Inactivo</option>
+            </select>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+        </div>
+      </div>
+  
+</div>
+
+
+
+
+<div class="actions text-right">
+  <%= link_to 'Regresar', proyectos_path, :class => "btn-warning btn btn-lg" %>
+  <%= form.submit "Guardar", :class => "btn btn-lg btn-success text-light"%>
+</div>
+<% end %>
