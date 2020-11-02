@@ -8,6 +8,10 @@ class HomeController < ApplicationController
   def nosotros
   end
 
+  def proyectos
+    @proyectos = Proyecto.all
+  end
+
   def acceder
   end
 

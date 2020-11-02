@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get 'nosotros', controller: :home, action: :nosotros, alias: 'nosotros'
   get 'contactenos', controller: :home, action: :contactenos, alias: 'contactenos'
-  get 'proyectos', controller: :home, action: :index, alias: 'proyectos'
+  get 'ultimos_proyectos', controller: :home, action: :proyectos, alias: 'proyectos'
   get 'acceder', controller: :home, action: :acceder, alias: 'acceder'
   
   resources :caracteristicas_proyectos
