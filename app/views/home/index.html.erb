@@ -8,39 +8,31 @@
     </div>
   </div>
 <% end %>
-  <div class="row mt-4">
-    <div class="col-md-8">
-      <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Ingrese nombre del proyecto / Dirección" aria-label="Search">
-    </div>
-    <div class="col-md-4">
-      <select class="form-control form-control-lg mr-sm-2">
-        <option>Todos los estados</option>
-        <option value="value1">Activo</option> 
-        <option value="value3">Inactivo</option>
-        <option value="value3">Pre-Venta</option>
-      </select>
-    </div>
-  </div>
+  <h1 class="display-5">Departamentos por</h1>
   <div class="row mt-2">
     <div class="col-md-4">
       <select class="form-control mr-sm-2">
-        <option>Todos los departamentos</option>
+        <option>Ubicacion</option>
         <option value="value1">Lima</option> 
         <option value="value3">Arequipa</option>
         <option value="value3">Cusco</option>
       </select>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-2">
       <select class="form-control mr-sm-2">
-        <option>Todos las provincias</option>
+        <option>Precio</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <select class="form-control mr-sm-2">
+        <option>Area</option>
       </select>
     </div>
     <div class="col-md-4">
       <select class="form-control mr-sm-2">
-        <option>Todos los distritos</option>
+        <option>Nro Habitaciones</option>
       </select>
     </div>
-    <%= render '/departamentos/filtros', departamento: @departamento %>
   </div>
   <div class="row mt-2">
     <div class="col-md-8 text-right">
@@ -55,7 +47,7 @@
 
 <div class="row mt-4">
   <div class="col-md-8">
-    <h1 class="display-3">Ultimos</h1>
+    <h1 class="display-5">Ultimos</h1>
   </div>
   <% @proyectos.each do |proyecto| %>
     <div class="col-md-6">
