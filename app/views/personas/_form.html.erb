@@ -1,92 +1,85 @@
-<%= form_with(model: persona, local: true) do |form| %>
-  <% if persona.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(persona.errors.count, "error") %> prohibited this persona from being saved:</h2>
 
-      <ul>
-        <% persona.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :tipo_documento %>
-    <%= form.text_field :tipo_documento %>
-  </div>
-
-  <div class="field">
-    <%= form.label :numero_documento %>
-    <%= form.text_field :numero_documento %>
-  </div>
-
-  <div class="field">
-    <%= form.label :nombres %>
-    <%= form.text_field :nombres %>
-  </div>
-
-  <div class="field">
-    <%= form.label :apellidos %>
-    <%= form.text_field :apellidos %>
-  </div>
-
-  <div class="field">
-    <%= form.label :correo %>
-    <%= form.text_field :correo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :telefono %>
-    <%= form.text_field :telefono %>
-  </div>
-
-  <div class="field">
-    <%= form.label :mca_juridico %>
-    <%= form.text_field :mca_juridico %>
-  </div>
-
-  <div class="field">
-    <%= form.label :sexo %>
-    <%= form.text_field :sexo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :fecha_aniversario %>
-    <%= form.text_field :fecha_aniversario %>
-  </div>
-
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.text_field :date %>
-  </div>
-
-  <div class="field">
-    <%= form.label :estado %>
-    <%= form.text_field :estado %>
-  </div>
-
-  <div class="field">
-    <%= form.label :usu_crea %>
-    <%= form.text_field :usu_crea %>
-  </div>
-
-  <div class="field">
-    <%= form.label :fec_crea %>
-    <%= form.datetime_select :fec_crea %>
-  </div>
-
-  <div class="field">
-    <%= form.label :usu_mod %>
-    <%= form.text_field :usu_mod %>
-  </div>
-
-  <div class="field">
-    <%= form.label :fec_mod %>
-    <%= form.datetime_select :fec_mod %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Tipo de Documento</label>
+        <select class="form-control form-control-lg mr-sm-2">
+          <option>[Seleccione]</option>
+          <option value="value1">DNI</option> 
+          <option value="value3">C. Extranjeria</option>
+          <option value="value3">Pasaporte</option>
+          <option value="value3">RUC</option>
+        </select>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Número de Documento</label>
+        <input type="text" name="" class="form-control form-control-lg">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Nombres</label>
+        <input type="text" name="" class="form-control form-control-lg">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Apellido Paterno</label>
+        <input type="text" name="" class="form-control form-control-lg">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Apellido Materno</label>
+        <input type="text" name="" class="form-control form-control-lg">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Correo Personal</label>
+        <input type="email" name="" class="form-control form-control-lg">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Teléfono</label>
+        <input type="number" name="" class="form-control form-control-lg">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Tipo de Persona</label>
+        <select class="form-control form-control-lg mr-sm-2">
+          <option>[Seleccione]</option>
+          <option value="value1">Juridico</option> 
+          <option value="value3">Natural</option>
+        </select>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Género</label>
+        <select class="form-control form-control-lg mr-sm-2">
+          <option>[Seleccione]</option>
+          <option value="value1">Masculino</option> 
+          <option value="value3">Femenino</option>
+        </select>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Fecha de Nacimiento</label>
+        <input type="date" name="" class="form-control form-control-lg">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>

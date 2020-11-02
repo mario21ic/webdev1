@@ -21,6 +21,7 @@ class UsuariosController < ApplicationController
 
   # GET /usuarios/1/edit
   def edit
+    @persona = Persona.new
   end
 
   # POST /usuarios
