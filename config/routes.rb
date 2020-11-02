@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'separar/index'
+  get 'separar/new'
   get 'reportes/index'
   get 'home/index'
   get 'home/nosotros'
