@@ -24984,3 +24984,81 @@ Migrating to CreateCaracteristicasProyectos (20201101064516)
   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-11-01 22:56:16 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/mario21ic/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/mario21ic/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.0ms | Allocations: 480)
+Completed 200 OK in 11ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 5565)
+
+
+Started GET "/personas" for ::1 at 2020-11-01 22:56:22 -0500
+Processing by PersonasController#index as HTML
+  Rendering personas/index.html.erb within layouts/application
+  [1m[36mPersona Load (0.2ms)[0m  [1m[34mSELECT "personas".* FROM "personas"[0m
+  ↳ app/views/personas/index.html.erb:28
+  Rendered personas/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2180)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /repo/upc-webdev/webdev1/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.2
+Time: 1358ms
+Built at: 11/01/2020 10:56:26 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3465ms (Views: 3461.4ms | ActiveRecord: 0.6ms | Allocations: 64114)
+
+
+Started GET "/personas/new" for ::1 at 2020-11-01 22:56:32 -0500
+Processing by PersonasController#new as HTML
+  Rendering personas/new.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 278.6ms | Allocations: 13418)
+  Rendered personas/new.html.erb within layouts/application (Duration: 280.0ms | Allocations: 13778)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 307ms (Views: 287.4ms | ActiveRecord: 0.4ms | Allocations: 30081)
+
+
+Started POST "/personas" for ::1 at 2020-11-01 22:56:59 -0500
+Processing by PersonasController#create as HTML
+  Parameters: {"authenticity_token"=>"HMn1QxxUg6QCshpXV7ixsRweNkhQ1LMKB7Xuro4Lw9L6ijDU/BAZX4Q/UKz61VgTWKk53f32kbxOXFTmafj4+A==", "persona"=>{"tipo_documento"=>"", "numero_documento"=>"44489121", "nombres"=>"Mario", "apellidos"=>"Inga Cahuana", "correo"=>"mario21ic@gmail.com", "telefono"=>"966296636", "mca_juridico"=>"", "sexo"=>"", "fecha_aniversario"=>"", "date"=>"", "estado"=>"", "usu_crea"=>"", "fec_crea(1i)"=>"2020", "fec_crea(2i)"=>"11", "fec_crea(3i)"=>"2", "fec_crea(4i)"=>"03", "fec_crea(5i)"=>"56", "usu_mod"=>"", "fec_mod(1i)"=>"2020", "fec_mod(2i)"=>"11", "fec_mod(3i)"=>"2", "fec_mod(4i)"=>"03", "fec_mod(5i)"=>"56"}, "commit"=>"Create Persona"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/personas_controller.rb:30:in `block in create'
+  [1m[36mPersona Create (0.7ms)[0m  [1m[32mINSERT INTO "personas" ("tipo_documento", "numero_documento", "nombres", "apellidos", "correo", "telefono", "mca_juridico", "sexo", "fecha_aniversario", "date", "estado", "usu_crea", "fec_crea", "usu_mod", "fec_mod", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tipo_documento", ""], ["numero_documento", "44489121"], ["nombres", "Mario"], ["apellidos", "Inga Cahuana"], ["correo", "mario21ic@gmail.com"], ["telefono", "966296636"], ["mca_juridico", ""], ["sexo", ""], ["fecha_aniversario", ""], ["date", ""], ["estado", ""], ["usu_crea", ""], ["fec_crea", "2020-11-02 03:56:00"], ["usu_mod", ""], ["fec_mod", "2020-11-02 03:56:00"], ["created_at", "2020-11-02 03:56:59.272499"], ["updated_at", "2020-11-02 03:56:59.272499"]]
+  ↳ app/controllers/personas_controller.rb:30:in `block in create'
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/personas_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/personas/1
+Completed 302 Found in 16ms (ActiveRecord: 6.8ms | Allocations: 4305)
+
+
+Started GET "/personas/1" for ::1 at 2020-11-01 22:56:59 -0500
+Processing by PersonasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPersona Load (0.2ms)[0m  [1m[34mSELECT "personas".* FROM "personas" WHERE "personas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/personas_controller.rb:67:in `set_persona'
+  Rendering personas/show.html.erb within layouts/application
+  Rendered personas/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 608)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 6466)
+
+
+Started GET "/personas" for ::1 at 2020-11-01 22:57:06 -0500
+Processing by PersonasController#index as HTML
+  Rendering personas/index.html.erb within layouts/application
+  [1m[36mPersona Load (0.3ms)[0m  [1m[34mSELECT "personas".* FROM "personas"[0m
+  ↳ app/views/personas/index.html.erb:28
+  Rendered personas/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 872)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.3ms | Allocations: 5190)
+
+
