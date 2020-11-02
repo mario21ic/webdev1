@@ -1,6 +1,8 @@
 class ProformasController < ApplicationController
   before_action :set_proforma, only: [:show, :edit, :update, :destroy]
 
+  layout "panel"
+
   # GET /proformas
   # GET /proformas.json
   def index
