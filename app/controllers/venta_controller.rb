@@ -1,6 +1,8 @@
 class VentaController < ApplicationController
   before_action :set_ventum, only: [:show, :edit, :update, :destroy]
 
+  layout "panel"
+
   # GET /venta
   # GET /venta.json
   def index
