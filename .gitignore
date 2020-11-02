@@ -58,3 +58,4 @@ build-iPhoneSimulator/
 node_modules
 log/*.log
 .*.swp
+public/packs/
