@@ -25062,3 +25062,3467 @@ Processing by PersonasController#index as HTML
 Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.3ms | Allocations: 5190)
 
 
+Started GET "/proyectos" for ::1 at 2020-11-01 23:12:16 -0500
+  [1m[35m (27.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProyectosController#index as HTML
+  Rendering proyectos/index.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 0.7ms | Allocations: 130)
+  [1m[36mProyecto Load (0.7ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos"[0m
+  ↳ app/views/proyectos/index.html.erb:61
+  Rendered proyectos/index.html.erb within layouts/application (Duration: 65.7ms | Allocations: 10926)
+[Webpacker] Compiling...
+Started GET "/usuarios" for ::1 at 2020-11-01 23:12:20 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:24
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 1816)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/Heovyh/Documents/Carpeta/UPC/III/Desarrollo para Entorno Web/Sites/Proyecto Final/ProyectoFinaII/webdev1/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.2
+Time: 5916ms
+Built at: 2020-11-01 23:12:30
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 13756ms (Views: 13645.8ms | ActiveRecord: 2.3ms | Allocations: 125941)
+
+
+[Webpacker] Compiled all packs in C:/Users/Heovyh/Documents/Carpeta/UPC/III/Desarrollo para Entorno Web/Sites/Proyecto Final/ProyectoFinaII/webdev1/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.2
+Time: 3072ms
+Built at: 2020-11-01 23:12:30
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 9947ms (Views: 9911.9ms | ActiveRecord: 1.6ms | Allocations: 19124)
+
+
+Started GET "/personas" for ::1 at 2020-11-01 23:26:12 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PersonasController#index as HTML
+  Rendering personas/index.html.erb within layouts/application
+  [1m[36mPersona Load (0.7ms)[0m  [1m[34mSELECT "personas".* FROM "personas"[0m
+  ↳ app/views/personas/index.html.erb:28
+  Rendered personas/index.html.erb within layouts/application (Duration: 52.8ms | Allocations: 11043)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 150ms (Views: 123.8ms | ActiveRecord: 2.4ms | Allocations: 21141)
+
+
+Started GET "/proyectos" for ::1 at 2020-11-01 23:33:21 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProyectosController#index as HTML
+  Rendering proyectos/index.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mProyecto Load (0.3ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos"[0m
+  ↳ app/views/proyectos/index.html.erb:61
+  Rendered proyectos/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1412)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.3ms | Allocations: 10711)
+
+
+Started GET "/proyectos/4" for ::1 at 2020-11-01 23:33:24 -0500
+Processing by ProyectosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProyecto Load (0.5ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos" WHERE "proyectos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/proyectos_controller.rb:68:in `set_proyecto'
+  Rendering proyectos/show.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mDepartamento Load (0.4ms)[0m  [1m[34mSELECT "departamentos".* FROM "departamentos"[0m
+  ↳ app/views/departamentos/_index.html.erb:35
+  Rendered departamentos/_index.html.erb (Duration: 37.6ms | Allocations: 12166)
+  Rendered proyectos/show.html.erb within layouts/application (Duration: 43.3ms | Allocations: 12866)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 199ms (Views: 103.8ms | ActiveRecord: 2.0ms | Allocations: 26000)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-01 23:37:51 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:31
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1128)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 74.9ms | ActiveRecord: 0.4ms | Allocations: 11470)
+
+
+Started GET "/usuarios/new" for ::1 at 2020-11-01 23:38:02 -0500
+Processing by UsuariosController#new as HTML
+  Rendering usuarios/new.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 205.8ms | Allocations: 14645)
+  Rendered usuarios/new.html.erb within layouts/application (Duration: 210.3ms | Allocations: 14981)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 290ms (Views: 258.0ms | ActiveRecord: 0.5ms | Allocations: 31146)
+
+
+Started POST "/usuarios" for ::1 at 2020-11-02 00:01:26 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsuariosController#create as HTML
+  Parameters: {"authenticity_token"=>"mEwOsFldh6m7bpQu3yri4hSpgNVL4nhRPE7/xt10t9fjPWXQKPrq2gfXpsjblTAMy8IeP5H8vqzVhSW5x7Jovw==", "usuario"=>{"tipo_documento"=>"DNI", "numero_documento"=>"12312312", "codigo_usuario"=>"HBORJA", "contraseña"=>"123.", "correo_corporativo"=>"hborja@grupo1.com", "perfil"=>"adm", "estado"=>"ok", "usu_crea"=>"", "fec_crea(1i)"=>"2020", "fec_crea(2i)"=>"11", "fec_crea(3i)"=>"2", "fec_crea(4i)"=>"04", "fec_crea(5i)"=>"38", "usu_mod"=>"", "fec_mod(1i)"=>"2020", "fec_mod(2i)"=>"11", "fec_mod(3i)"=>"2", "fec_mod(4i)"=>"04", "fec_mod(5i)"=>"38"}, "commit"=>"Create Usuario"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/usuarios_controller.rb:30:in `block in create'
+  [1m[36mUsuario Create (2.7ms)[0m  [1m[32mINSERT INTO "usuarios" ("tipo_documento", "numero_documento", "codigo_usuario", "contraseña", "correo_corporativo", "perfil", "estado", "usu_crea", "fec_crea", "usu_mod", "fec_mod", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tipo_documento", "DNI"], ["numero_documento", "12312312"], ["codigo_usuario", "HBORJA"], ["contraseña", "123."], ["correo_corporativo", "hborja@grupo1.com"], ["perfil", "adm"], ["estado", "ok"], ["usu_crea", ""], ["fec_crea", "2020-11-02 04:38:00"], ["usu_mod", ""], ["fec_mod", "2020-11-02 04:38:00"], ["created_at", "2020-11-02 05:01:26.084817"], ["updated_at", "2020-11-02 05:01:26.084817"]]
+  ↳ app/controllers/usuarios_controller.rb:30:in `block in create'
+  [1m[35m (15.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/usuarios_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/usuarios/1
+Completed 302 Found in 65ms (ActiveRecord: 18.1ms | Allocations: 3789)
+
+
+Started GET "/usuarios/1" for ::1 at 2020-11-02 00:01:26 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (Duration: 6.8ms | Allocations: 547)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 64.3ms | ActiveRecord: 0.5ms | Allocations: 10653)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 00:01:29 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:31
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 881)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.5ms | Allocations: 10145)
+
+
+Started GET "/usuarios/new" for ::1 at 2020-11-02 00:01:32 -0500
+Processing by UsuariosController#new as HTML
+  Rendering usuarios/new.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 6.2ms | Allocations: 6842)
+  Rendered usuarios/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 6924)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 57.3ms | ActiveRecord: 0.0ms | Allocations: 16207)
+
+
+Started POST "/usuarios" for ::1 at 2020-11-02 00:04:09 -0500
+Processing by UsuariosController#create as HTML
+  Parameters: {"authenticity_token"=>"Saz6qkAGiL4AH7Ytk+AEYuzIi+0sBjQ7bLQ13MGC/6cy3ZHKMaHlzbymhMuXX9aMM6MVB/YY8saFf++j20Qgzw==", "usuario"=>{"tipo_documento"=>"CEX", "numero_documento"=>"123456789", "codigo_usuario"=>"JBOLIVAR", "contraseña"=>"123.", "correo_corporativo"=>"hborja@grupo1.com", "perfil"=>"adm", "estado"=>"ok", "usu_crea"=>"", "fec_crea(1i)"=>"2020", "fec_crea(2i)"=>"11", "fec_crea(3i)"=>"2", "fec_crea(4i)"=>"05", "fec_crea(5i)"=>"01", "usu_mod"=>"", "fec_mod(1i)"=>"2020", "fec_mod(2i)"=>"11", "fec_mod(3i)"=>"2", "fec_mod(4i)"=>"05", "fec_mod(5i)"=>"01"}, "commit"=>"Create Usuario"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/usuarios_controller.rb:30:in `block in create'
+  [1m[36mUsuario Create (1.5ms)[0m  [1m[32mINSERT INTO "usuarios" ("tipo_documento", "numero_documento", "codigo_usuario", "contraseña", "correo_corporativo", "perfil", "estado", "usu_crea", "fec_crea", "usu_mod", "fec_mod", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tipo_documento", "CEX"], ["numero_documento", "123456789"], ["codigo_usuario", "JBOLIVAR"], ["contraseña", "123."], ["correo_corporativo", "hborja@grupo1.com"], ["perfil", "adm"], ["estado", "ok"], ["usu_crea", ""], ["fec_crea", "2020-11-02 05:01:00"], ["usu_mod", ""], ["fec_mod", "2020-11-02 05:01:00"], ["created_at", "2020-11-02 05:04:09.486838"], ["updated_at", "2020-11-02 05:04:09.486838"]]
+  ↳ app/controllers/usuarios_controller.rb:30:in `block in create'
+  [1m[35m (17.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/usuarios_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/usuarios/2
+Completed 302 Found in 63ms (ActiveRecord: 19.1ms | Allocations: 3522)
+
+
+Started GET "/usuarios/2" for ::1 at 2020-11-02 00:04:09 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 51.9ms | ActiveRecord: 0.3ms | Allocations: 9957)
+
+
+Started GET "/usuarios/2" for ::1 at 2020-11-02 00:48:53 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (1.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (Duration: 14.3ms | Allocations: 530)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 207ms (Views: 176.7ms | ActiveRecord: 1.7ms | Allocations: 11427)
+
+
+Started GET "/usuarios/2" for ::1 at 2020-11-02 00:48:56 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 150)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 83.1ms | ActiveRecord: 0.6ms | Allocations: 9950)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 00:48:59 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:40
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 20.2ms | Allocations: 1522)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 102ms (Views: 95.2ms | ActiveRecord: 0.9ms | Allocations: 10926)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 00:49:10 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:40
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 18.3ms | Allocations: 1484)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 126ms (Views: 118.4ms | ActiveRecord: 0.6ms | Allocations: 11800)
+
+
+Started GET "/usuarios/2/edit" for ::1 at 2020-11-02 00:49:23 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 41.0ms | Allocations: 7620)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 48.4ms | Allocations: 7999)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 155ms (Views: 144.2ms | ActiveRecord: 0.5ms | Allocations: 17916)
+
+
+Started PATCH "/usuarios/2" for ::1 at 2020-11-02 00:49:44 -0500
+Processing by UsuariosController#update as HTML
+  Parameters: {"authenticity_token"=>"7qEtP0Eq+qDVbMYuIEEz/ONYx1Byu3w5fGOrBUXoYiVKYntRcyC1xbNXkeWTXIGysLJie1XN3WoI1VSrw6158Q==", "usuario"=>{"tipo_documento"=>"CEX", "numero_documento"=>"123456789", "codigo_usuario"=>"JBOLIVAR", "contraseña"=>"123.", "correo_corporativo"=>"jbolivar@grupo1.com", "perfil"=>"adm", "estado"=>"ok", "usu_crea"=>"", "fec_crea(1i)"=>"2020", "fec_crea(2i)"=>"11", "fec_crea(3i)"=>"2", "fec_crea(4i)"=>"05", "fec_crea(5i)"=>"01", "usu_mod"=>"", "fec_mod(1i)"=>"2020", "fec_mod(2i)"=>"11", "fec_mod(3i)"=>"2", "fec_mod(4i)"=>"05", "fec_mod(5i)"=>"01"}, "commit"=>"Update Usuario", "id"=>"2"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/usuarios_controller.rb:44:in `block in update'
+  [1m[36mUsuario Update (33.6ms)[0m  [1m[33mUPDATE "usuarios" SET "correo_corporativo" = ?, "updated_at" = ? WHERE "usuarios"."id" = ?[0m  [["correo_corporativo", "jbolivar@grupo1.com"], ["updated_at", "2020-11-02 05:49:44.237671"], ["id", 2]]
+  ↳ app/controllers/usuarios_controller.rb:44:in `block in update'
+  [1m[35m (17.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/usuarios_controller.rb:44:in `block in update'
+Redirected to http://localhost:3000/usuarios/2
+Completed 302 Found in 116ms (ActiveRecord: 52.0ms | Allocations: 4147)
+
+
+Started GET "/usuarios/2" for ::1 at 2020-11-02 00:49:44 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 533)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 140ms (Views: 126.0ms | ActiveRecord: 0.7ms | Allocations: 10512)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 00:49:46 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:40
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1045)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 85ms (Views: 83.0ms | ActiveRecord: 0.3ms | Allocations: 10306)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 01:50:30 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:35
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 18.7ms | Allocations: 1518)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 212ms (Views: 193.4ms | ActiveRecord: 1.4ms | Allocations: 11844)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 01:58:18 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:40
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 1520)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 129ms (Views: 121.6ms | ActiveRecord: 0.7ms | Allocations: 11852)
+
+
+Started GET "/proyectos" for ::1 at 2020-11-02 02:00:09 -0500
+Processing by ProyectosController#index as HTML
+  Rendering proyectos/index.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 1.0ms | Allocations: 128)
+  [1m[36mProyecto Load (0.6ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos"[0m
+  ↳ app/views/proyectos/index.html.erb:61
+  Rendered proyectos/index.html.erb within layouts/application (Duration: 20.7ms | Allocations: 2133)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 108ms (Views: 101.6ms | ActiveRecord: 0.6ms | Allocations: 11975)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:01:14 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 111ms (Views: 102.8ms | ActiveRecord: 0.7ms | Allocations: 11803)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:01:33 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 132ms (Views: 124.8ms | ActiveRecord: 0.4ms | Allocations: 11795)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:01:37 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1051)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 92ms (Views: 89.2ms | ActiveRecord: 0.8ms | Allocations: 10313)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:01:42 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 98.3ms | ActiveRecord: 0.5ms | Allocations: 11816)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:01:54 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 159ms (Views: 148.0ms | ActiveRecord: 0.8ms | Allocations: 11807)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:03:07 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Usuario Load (0.1ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Usuario Load (0.1ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Usuario Load (0.1ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 1270.9ms | Allocations: 143803)
+Completed 500 Internal Server Error in 1396ms (ActiveRecord: 1.6ms | Allocations: 144982)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `usuario' for #<#<Class:0x0000000006f5ce80>:0x00000000029ef370>
+Did you mean?  @usuarios):
+    15:     </div>
+    16:     <div class="col-md-3">
+    17:       <div class="col-md-13 card-body">
+    18:         <b><%= usuario.tipo_documento %>:</b> <%= usuario.numero_documento %>
+    19:       </div>
+    20:     </div>
+    21:     <div class="col-md-3 card-body">
+  
+app/views/usuarios/index.html.erb:18
+Started GET "/usuarios" for ::1 at 2020-11-02 02:03:36 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1519)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 96.7ms | ActiveRecord: 0.4ms | Allocations: 11908)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:04:24 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 1497)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 116ms (Views: 108.8ms | ActiveRecord: 0.4ms | Allocations: 11806)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:04:38 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 1498)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 179ms (Views: 170.0ms | ActiveRecord: 0.9ms | Allocations: 11830)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:04:53 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 1499)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 99.7ms | ActiveRecord: 0.4ms | Allocations: 11817)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:05:11 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1496)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 98ms (Views: 90.9ms | ActiveRecord: 0.4ms | Allocations: 11813)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:05:16 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1496)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 97ms (Views: 91.0ms | ActiveRecord: 0.6ms | Allocations: 11821)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:05:29 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 17.2ms | Allocations: 1496)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 173ms (Views: 161.4ms | ActiveRecord: 1.3ms | Allocations: 11813)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:05:59 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 1496)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 116ms (Views: 107.8ms | ActiveRecord: 0.4ms | Allocations: 11811)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:06:27 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 1496)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 120ms (Views: 110.8ms | ActiveRecord: 0.7ms | Allocations: 11802)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:06:30 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1051)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 79.6ms | ActiveRecord: 0.4ms | Allocations: 10321)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:06:42 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 14.5ms | Allocations: 1496)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 117ms (Views: 111.4ms | ActiveRecord: 0.8ms | Allocations: 11811)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:06:44 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1051)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 87ms (Views: 84.1ms | ActiveRecord: 0.7ms | Allocations: 10325)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:07:30 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 30.7ms | Allocations: 1500)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 179ms (Views: 166.2ms | ActiveRecord: 1.0ms | Allocations: 11816)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:07:32 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1051)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 77.6ms | ActiveRecord: 0.4ms | Allocations: 10302)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:07:39 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1497)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 126ms (Views: 120.0ms | ActiveRecord: 0.4ms | Allocations: 11804)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:07:47 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 14.6ms | Allocations: 1495)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 163ms (Views: 151.4ms | ActiveRecord: 0.8ms | Allocations: 11810)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:07:58 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 1494)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 155ms (Views: 145.2ms | ActiveRecord: 0.8ms | Allocations: 11802)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:08:04 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 34.1ms | Allocations: 1494)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 177ms (Views: 163.8ms | ActiveRecord: 0.9ms | Allocations: 11797)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:08:13 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 18.4ms | Allocations: 1494)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 181ms (Views: 168.8ms | ActiveRecord: 0.9ms | Allocations: 11835)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:09:16 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1552)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 98ms (Views: 92.8ms | ActiveRecord: 0.4ms | Allocations: 11873)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:09:31 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 1547)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 110ms (Views: 102.3ms | ActiveRecord: 0.5ms | Allocations: 11859)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:10:08 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 17.6ms | Allocations: 1548)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 133ms (Views: 122.1ms | ActiveRecord: 0.7ms | Allocations: 11870)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:10:28 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 21.3ms | Allocations: 1547)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 185ms (Views: 174.4ms | ActiveRecord: 0.8ms | Allocations: 11865)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:11:41 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 1552)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 102ms (Views: 97.7ms | ActiveRecord: 0.4ms | Allocations: 11878)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:12:39 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 1550)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 101ms (Views: 94.6ms | ActiveRecord: 0.6ms | Allocations: 11870)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:13:08 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 1549)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 108ms (Views: 102.4ms | ActiveRecord: 0.6ms | Allocations: 11868)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:13:41 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 1552)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 109ms (Views: 102.8ms | ActiveRecord: 0.5ms | Allocations: 11889)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:13:54 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 1552)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 109ms (Views: 102.4ms | ActiveRecord: 0.5ms | Allocations: 11891)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:14:08 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 1554)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 176ms (Views: 164.6ms | ActiveRecord: 1.0ms | Allocations: 11869)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:15:03 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 1556)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 136ms (Views: 128.4ms | ActiveRecord: 0.8ms | Allocations: 11872)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:16:12 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (2.1ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 1554)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 178ms (Views: 164.5ms | ActiveRecord: 2.1ms | Allocations: 11861)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:16:46 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 1553)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 113ms (Views: 101.4ms | ActiveRecord: 0.4ms | Allocations: 11869)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:17:07 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 1553)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 135ms (Views: 121.0ms | ActiveRecord: 0.8ms | Allocations: 11871)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:17:17 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1553)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 109ms (Views: 100.7ms | ActiveRecord: 0.4ms | Allocations: 11876)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:17:23 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 19.5ms | Allocations: 1558)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 150ms (Views: 137.7ms | ActiveRecord: 0.8ms | Allocations: 11889)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:17:28 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 1553)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 97.7ms | ActiveRecord: 0.5ms | Allocations: 11888)
+
+
+Started GET "/proyectos" for ::1 at 2020-11-02 02:20:38 -0500
+Processing by ProyectosController#index as HTML
+  Rendering proyectos/index.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 0.9ms | Allocations: 128)
+  [1m[36mProyecto Load (0.5ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos"[0m
+  ↳ app/views/proyectos/index.html.erb:61
+  Rendered proyectos/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 2101)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 118ms (Views: 109.6ms | ActiveRecord: 0.5ms | Allocations: 12432)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:33:39 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1590)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 101ms (Views: 95.2ms | ActiveRecord: 0.7ms | Allocations: 11415)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:34:05 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1333)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 98.1ms | ActiveRecord: 0.7ms | Allocations: 11645)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:34:30 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 18.6ms | Allocations: 1351)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 178ms (Views: 164.3ms | ActiveRecord: 0.8ms | Allocations: 11674)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:34:44 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.1ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 17.6ms | Allocations: 1350)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 184ms (Views: 171.8ms | ActiveRecord: 1.1ms | Allocations: 11672)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:35:23 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 1356)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 133ms (Views: 125.8ms | ActiveRecord: 0.7ms | Allocations: 11678)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:35:45 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1339)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 96ms (Views: 89.0ms | ActiveRecord: 0.5ms | Allocations: 11664)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:36:01 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 17.0ms | Allocations: 1356)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 145ms (Views: 131.7ms | ActiveRecord: 1.0ms | Allocations: 11681)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:36:11 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 1354)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 147ms (Views: 133.4ms | ActiveRecord: 1.2ms | Allocations: 11673)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:37:18 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1357)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 107ms (Views: 94.6ms | ActiveRecord: 0.3ms | Allocations: 11672)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:38:38 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 1339)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 110ms (Views: 104.2ms | ActiveRecord: 0.4ms | Allocations: 11649)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:39:26 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 17.7ms | Allocations: 1340)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 178ms (Views: 164.0ms | ActiveRecord: 1.2ms | Allocations: 11659)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:39:31 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:33
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 1339)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 170ms (Views: 157.7ms | ActiveRecord: 1.0ms | Allocations: 11657)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:40:58 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1333)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 102ms (Views: 94.6ms | ActiveRecord: 0.4ms | Allocations: 11644)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:41:15 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 1337)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 157ms (Views: 143.1ms | ActiveRecord: 1.5ms | Allocations: 11664)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:41:56 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 1331)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 111ms (Views: 105.0ms | ActiveRecord: 0.8ms | Allocations: 11649)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:42:20 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 628.4ms | Allocations: 127758)
+Completed 500 Internal Server Error in 661ms (ActiveRecord: 0.5ms | Allocations: 128936)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `proyecto' for #<#<Class:0x000000000d521ec8>:0x000000000d520460>
+Did you mean?  proyecto_url):
+    40:             </div>
+    41:             <div class="col-md-12 text-right">
+    42:                   <%= link_to 'Ver más', usuario, :class => "btn-success btn-sm text-light" %>
+    43:                   <%= link_to 'Editar', edit_usuario_path(proyecto), :class => "btn-danger btn-sm text-light" %>
+    44:             </div>
+    45:         </div>
+    46:       </div>
+  
+app/views/usuarios/index.html.erb:43
+app/views/usuarios/index.html.erb:13
+Started GET "/usuarios" for ::1 at 2020-11-02 02:42:31 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 1235)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 142ms (Views: 132.2ms | ActiveRecord: 0.7ms | Allocations: 11577)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:42:57 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 1237)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 159ms (Views: 147.4ms | ActiveRecord: 1.2ms | Allocations: 11569)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:43:02 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1237)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 117ms (Views: 110.4ms | ActiveRecord: 0.4ms | Allocations: 11546)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:43:18 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 14.5ms | Allocations: 1237)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 167ms (Views: 154.9ms | ActiveRecord: 0.8ms | Allocations: 11558)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:43:30 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 1236)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 168ms (Views: 159.8ms | ActiveRecord: 0.8ms | Allocations: 11558)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:43:43 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1206)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 118ms (Views: 102.5ms | ActiveRecord: 0.5ms | Allocations: 11523)
+
+
+Started GET "/usuarios/2" for ::1 at 2020-11-02 02:44:28 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (Duration: 9.8ms | Allocations: 545)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 94ms (Views: 85.2ms | ActiveRecord: 0.6ms | Allocations: 10518)
+
+
+Started GET "/usuarios/2/edit" for ::1 at 2020-11-02 02:44:31 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 18.5ms | Allocations: 7626)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 24.9ms | Allocations: 8005)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 117ms (Views: 108.9ms | ActiveRecord: 0.5ms | Allocations: 17941)
+
+
+Started PATCH "/usuarios/2" for ::1 at 2020-11-02 02:45:31 -0500
+Processing by UsuariosController#update as HTML
+  Parameters: {"authenticity_token"=>"vkF2gUeokmmA/nP+LswbdYXrsrFZDILsy21nQtRNQbsagiDvdaLdDObFJDWd0ak71gEXmn56I7+/25jsUghabw==", "usuario"=>{"tipo_documento"=>"Carnet de Extranjería", "numero_documento"=>"123456789", "codigo_usuario"=>"JBOLIVAR", "contraseña"=>"123.", "correo_corporativo"=>"jbolivar@grupo1.com", "perfil"=>"adm", "estado"=>"ok", "usu_crea"=>"", "fec_crea(1i)"=>"2020", "fec_crea(2i)"=>"11", "fec_crea(3i)"=>"2", "fec_crea(4i)"=>"05", "fec_crea(5i)"=>"01", "usu_mod"=>"", "fec_mod(1i)"=>"2020", "fec_mod(2i)"=>"11", "fec_mod(3i)"=>"2", "fec_mod(4i)"=>"05", "fec_mod(5i)"=>"01"}, "commit"=>"Update Usuario", "id"=>"2"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/usuarios_controller.rb:44:in `block in update'
+  [1m[36mUsuario Update (33.5ms)[0m  [1m[33mUPDATE "usuarios" SET "tipo_documento" = ?, "updated_at" = ? WHERE "usuarios"."id" = ?[0m  [["tipo_documento", "Carnet de Extranjería"], ["updated_at", "2020-11-02 07:45:31.795449"], ["id", 2]]
+  ↳ app/controllers/usuarios_controller.rb:44:in `block in update'
+  [1m[35m (24.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/usuarios_controller.rb:44:in `block in update'
+Redirected to http://localhost:3000/usuarios/2
+Completed 302 Found in 102ms (ActiveRecord: 58.6ms | Allocations: 4123)
+
+
+Started GET "/usuarios/2" for ::1 at 2020-11-02 02:45:31 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 103ms (Views: 96.7ms | ActiveRecord: 0.7ms | Allocations: 9963)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:45:33 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 853)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 77.1ms | ActiveRecord: 0.4ms | Allocations: 10120)
+
+
+Started GET "/usuarios/2/edit" for ::1 at 2020-11-02 02:45:52 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 12.0ms | Allocations: 6894)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 15.0ms | Allocations: 7006)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 82ms (Views: 78.4ms | ActiveRecord: 0.4ms | Allocations: 16803)
+
+
+Started PATCH "/usuarios/2" for ::1 at 2020-11-02 02:46:03 -0500
+Processing by UsuariosController#update as HTML
+  Parameters: {"authenticity_token"=>"SSKVSy0uC/R3GkvcawKHy4Gfrbe+4xZ7msFeN0O1AQft4cMlHyREkREhHBfYHzWF0nUInJmVtyjud6GZxfAa0w==", "usuario"=>{"tipo_documento"=>"C. Extranjería", "numero_documento"=>"123456789", "codigo_usuario"=>"JBOLIVAR", "contraseña"=>"123.", "correo_corporativo"=>"jbolivar@grupo1.com", "perfil"=>"adm", "estado"=>"ok", "usu_crea"=>"", "fec_crea(1i)"=>"2020", "fec_crea(2i)"=>"11", "fec_crea(3i)"=>"2", "fec_crea(4i)"=>"05", "fec_crea(5i)"=>"01", "usu_mod"=>"", "fec_mod(1i)"=>"2020", "fec_mod(2i)"=>"11", "fec_mod(3i)"=>"2", "fec_mod(4i)"=>"05", "fec_mod(5i)"=>"01"}, "commit"=>"Update Usuario", "id"=>"2"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/usuarios_controller.rb:44:in `block in update'
+  [1m[36mUsuario Update (33.7ms)[0m  [1m[33mUPDATE "usuarios" SET "tipo_documento" = ?, "updated_at" = ? WHERE "usuarios"."id" = ?[0m  [["tipo_documento", "C. Extranjería"], ["updated_at", "2020-11-02 07:46:03.792930"], ["id", 2]]
+  ↳ app/controllers/usuarios_controller.rb:44:in `block in update'
+  [1m[35m (21.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/usuarios_controller.rb:44:in `block in update'
+Redirected to http://localhost:3000/usuarios/2
+Completed 302 Found in 91ms (ActiveRecord: 55.2ms | Allocations: 4084)
+
+
+Started GET "/usuarios/2" for ::1 at 2020-11-02 02:46:03 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 87ms (Views: 81.8ms | ActiveRecord: 0.6ms | Allocations: 9954)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:46:06 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 852)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 72.3ms | ActiveRecord: 0.5ms | Allocations: 10100)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:46:19 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.1ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 1210)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 176ms (Views: 163.6ms | ActiveRecord: 1.1ms | Allocations: 11532)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:46:25 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1207)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 93ms (Views: 86.0ms | ActiveRecord: 0.4ms | Allocations: 11538)
+
+
+Started GET "/proyectos" for ::1 at 2020-11-02 02:46:53 -0500
+Processing by ProyectosController#index as HTML
+  Rendering proyectos/index.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 0.9ms | Allocations: 131)
+  [1m[36mProyecto Load (0.7ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos"[0m
+  ↳ app/views/proyectos/index.html.erb:61
+  Rendered proyectos/index.html.erb within layouts/application (Duration: 17.3ms | Allocations: 2136)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 112ms (Views: 106.4ms | ActiveRecord: 0.7ms | Allocations: 11976)
+
+
+Started GET "/proyectos/4" for ::1 at 2020-11-02 02:46:57 -0500
+Processing by ProyectosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProyecto Load (0.7ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos" WHERE "proyectos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/proyectos_controller.rb:68:in `set_proyecto'
+  Rendering proyectos/show.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mDepartamento Load (0.7ms)[0m  [1m[34mSELECT "departamentos".* FROM "departamentos"[0m
+  ↳ app/views/departamentos/_index.html.erb:35
+  Rendered departamentos/_index.html.erb (Duration: 8.1ms | Allocations: 1810)
+  Rendered proyectos/show.html.erb within layouts/application (Duration: 16.7ms | Allocations: 2492)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 97ms (Views: 87.8ms | ActiveRecord: 1.4ms | Allocations: 12488)
+
+
+Started GET "/proyectos/4/edit" for ::1 at 2020-11-02 02:46:59 -0500
+Processing by ProyectosController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProyecto Load (0.6ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos" WHERE "proyectos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/proyectos_controller.rb:68:in `set_proyecto'
+  Rendering proyectos/edit.html.erb within layouts/application
+  Rendered proyectos/_form.html.erb (Duration: 171.9ms | Allocations: 5984)
+  Rendered proyectos/edit.html.erb within layouts/application (Duration: 181.1ms | Allocations: 6376)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 275ms (Views: 262.9ms | ActiveRecord: 0.6ms | Allocations: 16210)
+
+
+Started GET "/proyectos" for ::1 at 2020-11-02 02:52:28 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ProyectosController#index as HTML
+  Rendering proyectos/index.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 0.2ms | Allocations: 6)
+  [1m[36mProyecto Load (1.6ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos"[0m
+  ↳ app/views/proyectos/index.html.erb:61
+  Rendered proyectos/index.html.erb within layouts/application (Duration: 23.4ms | Allocations: 1404)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 141ms (Views: 136.2ms | ActiveRecord: 1.6ms | Allocations: 10651)
+
+
+Started GET "/proyectos/4" for ::1 at 2020-11-02 02:52:33 -0500
+Processing by ProyectosController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProyecto Load (0.6ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos" WHERE "proyectos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/proyectos_controller.rb:68:in `set_proyecto'
+  Rendering proyectos/show.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mDepartamento Load (0.7ms)[0m  [1m[34mSELECT "departamentos".* FROM "departamentos"[0m
+  ↳ app/views/departamentos/_index.html.erb:35
+  Rendered departamentos/_index.html.erb (Duration: 5.5ms | Allocations: 1285)
+  Rendered proyectos/show.html.erb within layouts/application (Duration: 16.4ms | Allocations: 1453)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 92ms (Views: 87.7ms | ActiveRecord: 1.2ms | Allocations: 11300)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:55:50 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:13
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1239)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 122ms (Views: 115.4ms | ActiveRecord: 0.7ms | Allocations: 11561)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 02:59:01 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:38
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 1234)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 165ms (Views: 150.6ms | ActiveRecord: 0.8ms | Allocations: 11551)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:01:05 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:44
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 19.4ms | Allocations: 1291)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 220ms (Views: 201.6ms | ActiveRecord: 1.2ms | Allocations: 11612)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:01:17 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:44
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 19.3ms | Allocations: 1295)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 194ms (Views: 181.1ms | ActiveRecord: 0.8ms | Allocations: 11639)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:01:30 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:44
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 1290)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 189ms (Views: 178.3ms | ActiveRecord: 1.2ms | Allocations: 11613)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:01:38 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 1289)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 181ms (Views: 167.0ms | ActiveRecord: 0.9ms | Allocations: 11608)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:01:54 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 1289)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 111ms (Views: 104.4ms | ActiveRecord: 0.7ms | Allocations: 11600)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:02:03 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 16.4ms | Allocations: 1289)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 177ms (Views: 165.4ms | ActiveRecord: 1.2ms | Allocations: 11604)
+
+
+Started GET "/proyectos" for ::1 at 2020-11-02 03:02:07 -0500
+Processing by ProyectosController#index as HTML
+  Rendering proyectos/index.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 1.3ms | Allocations: 128)
+  [1m[36mProyecto Load (0.6ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos"[0m
+  ↳ app/views/proyectos/index.html.erb:61
+  Rendered proyectos/index.html.erb within layouts/application (Duration: 22.6ms | Allocations: 2094)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 111ms (Views: 104.8ms | ActiveRecord: 0.6ms | Allocations: 11926)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:02:09 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 890)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 79.6ms | ActiveRecord: 0.4ms | Allocations: 10154)
+
+
+Started GET "/proyectos" for ::1 at 2020-11-02 03:02:11 -0500
+Processing by ProyectosController#index as HTML
+  Rendering proyectos/index.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mProyecto Load (0.5ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos"[0m
+  ↳ app/views/proyectos/index.html.erb:61
+  Rendered proyectos/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1364)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 87.4ms | ActiveRecord: 0.5ms | Allocations: 10617)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:02:12 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 881)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 86.0ms | ActiveRecord: 0.4ms | Allocations: 10166)
+
+
+Started GET "/proyectos" for ::1 at 2020-11-02 03:02:13 -0500
+Processing by ProyectosController#index as HTML
+  Rendering proyectos/index.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mProyecto Load (0.4ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos"[0m
+  ↳ app/views/proyectos/index.html.erb:61
+  Rendered proyectos/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1362)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 87ms (Views: 85.3ms | ActiveRecord: 0.4ms | Allocations: 10642)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:02:14 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 881)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 80ms (Views: 78.5ms | ActiveRecord: 0.4ms | Allocations: 10145)
+
+
+Started GET "/proyectos" for ::1 at 2020-11-02 03:02:15 -0500
+Processing by ProyectosController#index as HTML
+  Rendering proyectos/index.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mProyecto Load (0.8ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos"[0m
+  ↳ app/views/proyectos/index.html.erb:61
+  Rendered proyectos/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 1362)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 156ms (Views: 152.0ms | ActiveRecord: 0.8ms | Allocations: 10625)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:02:15 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 9.0ms | Allocations: 881)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 120ms (Views: 115.6ms | ActiveRecord: 1.3ms | Allocations: 10135)
+
+
+Started GET "/proyectos" for ::1 at 2020-11-02 03:02:17 -0500
+Processing by ProyectosController#index as HTML
+  Rendering proyectos/index.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mProyecto Load (0.4ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos"[0m
+  ↳ app/views/proyectos/index.html.erb:61
+  Rendered proyectos/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1362)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 85ms (Views: 83.7ms | ActiveRecord: 0.4ms | Allocations: 10618)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:02:21 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 881)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 68.6ms | ActiveRecord: 0.4ms | Allocations: 10152)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:02:40 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1294)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 109ms (Views: 101.5ms | ActiveRecord: 0.6ms | Allocations: 11608)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:02:48 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1288)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 113ms (Views: 99.9ms | ActiveRecord: 0.5ms | Allocations: 11601)
+
+
+Started GET "/usuarios/new" for ::1 at 2020-11-02 03:02:58 -0500
+Processing by UsuariosController#new as HTML
+  Rendering usuarios/new.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 19.5ms | Allocations: 7545)
+  Rendered usuarios/new.html.erb within layouts/application (Duration: 25.3ms | Allocations: 7880)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 109ms (Views: 102.9ms | ActiveRecord: 0.0ms | Allocations: 17310)
+
+
+Started POST "/usuarios" for ::1 at 2020-11-02 03:03:16 -0500
+Processing by UsuariosController#create as HTML
+  Parameters: {"authenticity_token"=>"63vXbsaeQ0ch4e1ludBLhq+UkGzodpcTRAylRQVx+qqQCrwOtzkuNJ1Y34O9b5locP8OhjJoUe6tx386H7clwg==", "usuario"=>{"tipo_documento"=>"", "numero_documento"=>"12312312", "codigo_usuario"=>"prueba", "contraseña"=>"123.", "correo_corporativo"=>"prueba@grupo1.com", "perfil"=>"adm", "estado"=>"ok", "usu_crea"=>"", "fec_crea(1i)"=>"2020", "fec_crea(2i)"=>"11", "fec_crea(3i)"=>"2", "fec_crea(4i)"=>"08", "fec_crea(5i)"=>"02", "usu_mod"=>"", "fec_mod(1i)"=>"2020", "fec_mod(2i)"=>"11", "fec_mod(3i)"=>"2", "fec_mod(4i)"=>"08", "fec_mod(5i)"=>"02"}, "commit"=>"Create Usuario"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/usuarios_controller.rb:30:in `block in create'
+  [1m[36mUsuario Create (33.9ms)[0m  [1m[32mINSERT INTO "usuarios" ("tipo_documento", "numero_documento", "codigo_usuario", "contraseña", "correo_corporativo", "perfil", "estado", "usu_crea", "fec_crea", "usu_mod", "fec_mod", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tipo_documento", ""], ["numero_documento", "12312312"], ["codigo_usuario", "prueba"], ["contraseña", "123."], ["correo_corporativo", "prueba@grupo1.com"], ["perfil", "adm"], ["estado", "ok"], ["usu_crea", ""], ["fec_crea", "2020-11-02 08:02:00"], ["usu_mod", ""], ["fec_mod", "2020-11-02 08:02:00"], ["created_at", "2020-11-02 08:03:16.907611"], ["updated_at", "2020-11-02 08:03:16.907611"]]
+  ↳ app/controllers/usuarios_controller.rb:30:in `block in create'
+  [1m[35m (19.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/usuarios_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/usuarios/3
+Completed 302 Found in 86ms (ActiveRecord: 53.3ms | Allocations: 3509)
+
+
+Started GET "/usuarios/3" for ::1 at 2020-11-02 03:03:17 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 532)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 115ms (Views: 106.0ms | ActiveRecord: 0.6ms | Allocations: 10534)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:03:19 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.4ms | Allocations: 10240)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:03:48 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (1.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 1425)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 165ms (Views: 152.2ms | ActiveRecord: 1.4ms | Allocations: 11753)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:04:05 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1382)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 131ms (Views: 116.8ms | ActiveRecord: 0.4ms | Allocations: 11701)
+
+
+Started GET "/usuarios/3" for ::1 at 2020-11-02 03:04:12 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 530)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 74.0ms | ActiveRecord: 0.6ms | Allocations: 10459)
+
+
+Started GET "/usuarios/3/edit" for ::1 at 2020-11-02 03:04:14 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 19.2ms | Allocations: 7594)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 25.6ms | Allocations: 7971)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 120ms (Views: 112.8ms | ActiveRecord: 0.4ms | Allocations: 17902)
+
+
+Started PATCH "/usuarios/3" for ::1 at 2020-11-02 03:04:22 -0500
+Processing by UsuariosController#update as HTML
+  Parameters: {"authenticity_token"=>"qyDsrpNvy0YI5uRbQSlL55ceud8qoFHhco0nUukGIj5fC88zXg7I8eYvRqQur6WqhknGkI9hyQZdi74FxtKWYA==", "usuario"=>{"tipo_documento"=>"Pasaporte", "numero_documento"=>"12312312", "codigo_usuario"=>"prueba", "contraseña"=>"123.", "correo_corporativo"=>"prueba@grupo1.com", "perfil"=>"adm", "estado"=>"ok", "usu_crea"=>"", "fec_crea(1i)"=>"2020", "fec_crea(2i)"=>"11", "fec_crea(3i)"=>"2", "fec_crea(4i)"=>"08", "fec_crea(5i)"=>"02", "usu_mod"=>"", "fec_mod(1i)"=>"2020", "fec_mod(2i)"=>"11", "fec_mod(3i)"=>"2", "fec_mod(4i)"=>"08", "fec_mod(5i)"=>"02"}, "commit"=>"Update Usuario", "id"=>"3"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/usuarios_controller.rb:44:in `block in update'
+  [1m[36mUsuario Update (1.9ms)[0m  [1m[33mUPDATE "usuarios" SET "tipo_documento" = ?, "updated_at" = ? WHERE "usuarios"."id" = ?[0m  [["tipo_documento", "Pasaporte"], ["updated_at", "2020-11-02 08:04:23.007356"], ["id", 3]]
+  ↳ app/controllers/usuarios_controller.rb:44:in `block in update'
+  [1m[35m (17.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/usuarios_controller.rb:44:in `block in update'
+Redirected to http://localhost:3000/usuarios/3
+Completed 302 Found in 49ms (ActiveRecord: 20.2ms | Allocations: 4105)
+
+
+Started GET "/usuarios/3" for ::1 at 2020-11-02 03:04:23 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 100ms (Views: 95.1ms | ActiveRecord: 0.4ms | Allocations: 9984)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:04:25 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 973)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 81.4ms | ActiveRecord: 0.4ms | Allocations: 10248)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:04:58 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1448)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 98ms (Views: 90.4ms | ActiveRecord: 0.4ms | Allocations: 11762)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:06:53 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 1.1ms | Allocations: 132)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 24.1ms | Allocations: 1730)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 123ms (Views: 115.2ms | ActiveRecord: 0.5ms | Allocations: 12035)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:06:57 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1056)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 86.7ms | ActiveRecord: 0.4ms | Allocations: 10309)
+
+
+Started GET "/usuarios/3/edit" for ::1 at 2020-11-02 03:07:30 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 14.4ms | Allocations: 7595)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 28.6ms | Allocations: 7972)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 115ms (Views: 107.0ms | ActiveRecord: 0.4ms | Allocations: 18827)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:08:54 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 1.1ms | Allocations: 131)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 1724)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 110ms (Views: 104.2ms | ActiveRecord: 0.5ms | Allocations: 11128)
+
+
+Started GET "/usuarios/2" for ::1 at 2020-11-02 03:08:56 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 533)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 77.1ms | ActiveRecord: 0.6ms | Allocations: 10467)
+
+
+Started GET "/proyectos/new" for ::1 at 2020-11-02 03:10:01 -0500
+Processing by ProyectosController#new as HTML
+  Rendering proyectos/new.html.erb within layouts/application
+  Rendered proyectos/_form.html.erb (Duration: 6.7ms | Allocations: 2321)
+  Rendered proyectos/new.html.erb within layouts/application (Duration: 15.3ms | Allocations: 2751)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 97ms (Views: 91.9ms | ActiveRecord: 0.0ms | Allocations: 13093)
+
+
+Started GET "/usuarios/2" for ::1 at 2020-11-02 03:11:50 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (Duration: 10.1ms | Allocations: 530)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 106ms (Views: 96.4ms | ActiveRecord: 0.5ms | Allocations: 11397)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:11:52 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 1.2ms | Allocations: 131)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 18.6ms | Allocations: 1586)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 96ms (Views: 90.1ms | ActiveRecord: 0.5ms | Allocations: 10989)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:11:56 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 14.6ms | Allocations: 7595)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 20.3ms | Allocations: 7932)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 102ms (Views: 94.0ms | ActiveRecord: 0.6ms | Allocations: 17867)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:14:18 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 26.0ms | Allocations: 9805)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 34.2ms | Allocations: 10141)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 143ms (Views: 133.9ms | ActiveRecord: 0.6ms | Allocations: 20994)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:17:53 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 39.8ms | Allocations: 8809)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 53.6ms | Allocations: 9148)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 226ms (Views: 196.6ms | ActiveRecord: 0.9ms | Allocations: 20035)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:18:53 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 18.7ms | Allocations: 8832)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 30.7ms | Allocations: 9167)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 145ms (Views: 128.2ms | ActiveRecord: 0.9ms | Allocations: 20036)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:19:30 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 21.1ms | Allocations: 8832)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 27.3ms | Allocations: 9167)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 143ms (Views: 133.3ms | ActiveRecord: 0.4ms | Allocations: 20037)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:21:04 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 35.7ms | Allocations: 1992)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 41.5ms | Allocations: 2330)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.6ms | Allocations: 4026)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: usuario, local: true) do |form| %>
+  <% if usuario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
+
+      <ul>
+        <% usuario.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+    
+
+        
+
+        <%= form.label :codigo_usuario %>
+        <%= form.text_field :codigo_usuario %>
+
+        <%= form.label :contraseña %>
+        <%= form.text_field :contraseña %>
+
+        <%= form.label :correo_corporativo %>
+        <%= form.text_field :correo_corporativo %>
+
+        <%= form.label :perfil %>
+        <%= form.text_field :perfil %>
+
+        <%= form.label :estado %>
+        <%= form.text_field :estado %>
+
+        <%= form.label :usu_crea %>
+        <%= form.text_field :usu_crea %>
+
+        <%= form.label :fec_crea %>
+        <%= form.datetime_select :fec_crea %>
+
+        <%= form.label :usu_mod %>
+        <%= form.text_field :usu_mod %>
+
+        <%= form.label :fec_mod %>
+        <%= form.datetime_select :fec_mod %>
+
+<div class="form-row mt-3">
+  <div class="col-md-6 mb-3 field">
+    <div class="form-row">
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Tipo de Documento</label>
+        <select class="form-control form-control-lg mr-sm-2">
+          <option>[Seleccione]</option>
+          <option value="value1">DNI</option> 
+          <option value="value3">C. Extranjeria</option>
+          <option value="value3">Pasaporte</option>
+        </select>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <%= form.label :numero_documento "Número de Documento", :class=>"col-form-label col-form-label-lg" %>
+        <%= form.text_field :numero_documento, :class=>"form-control form-control-lg" %>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Provincia</label>
+        <select class="form-control form-control-lg mr-sm-2">
+          <option>[Seleccione]</option>
+        </select>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Distrito</label>
+        <select class="form-control form-control-lg mr-sm-2">
+          <option>[Seleccione]</option>
+        </select>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-12 mb-3">
+        <%= form.label :ubicacion, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.text_field :ubicacion, :class=>"form-control form-control-lg", :required=>"required" %>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-12 ">
+        <%= form.label :descripcion_corta, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.text_area :descripcion_corta, :class=>"form-control form-control-lg", :required=>"required" %>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom02" class="col-form-label col-form-label-lg">Ubicación</label>
+    <div class="form-control" style="height: 414px;padding: 1px;">
+      <iframe width="100%" height="410" frameborder="0" style="border:0" src="https://google.com/maps/embed/v1/place?q=Universidad%20Peruana%20de%20Ciencias%20Aplicadas&key=AIzaSyA-mX5Z7eJL5GKASzo5gSNavXxX748a5Y4" allowfullscreen> </iframe>
+    </div>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-12 mb-3 mt-0">
+      <%= form.label :descripcion_larga, :class=>"col-form-label col-form-label-lg" %>
+      <%= form.text_area :descripcion_larga, :class=>"form-control form-control-lg", :required=>"required" %>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+  </div>
+  <div class="col-md-3 mb-3 mt-0">
+    <label for="validationCustom02" class="col-form-label col-form-label-lg">Moneda</label>
+    <select class="form-control form-control-lg mr-sm-2">
+      <option>[Seleccione]</option>
+      <option value="value1">Soles</option> 
+      <option value="value3">Dolares</option>       
+    </select>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+  </div>
+  <div class="col-md-3 mb-3 mt-0">
+      <%= form.label :precio_m2, :class=>"col-form-label col-form-label-lg" %>
+      <%= form.number_field :precio_m2, :class=>"form-control form-control-lg", :required=>"required" %>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+  </div>
+  <div class="col-md-3 mb-3 field">
+    <label for="validationCustom02" class="col-form-label col-form-label-lg">Favorito</label>
+    <select class="form-control form-control-lg mr-sm-2">
+      <option>[Seleccione]</option>
+      <option value="value1">Si es favorito</option> 
+      <option value="value3">No es favorito</option>       
+    </select>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-3 mb-3 field">
+    <%= form.label :estado, :class=>"col-form-label col-form-label-lg" %>
+    <select class="form-control form-control-lg mr-sm-2">
+      <option>[Seleccione]</option>        
+      <option value="value1">Activo</option> 
+      <option value="value3">Inactivo</option>
+      <option value="value3">Pre-Venta</option>      
+    </select>
+    <div class="valid-feedback">
+       Looks good!
+    </div>
+  </div>  
+</div>
+
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+):
+1:    <%= form_with(model: usuario, local: true) do |form| %>
+2:      <% if usuario.errors.any? %>
+3:        <div id="error_explanation">
+4:          <h2><%= pluralize(usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
+5:    
+6:          <ul>
+7:            <% usuario.errors.full_messages.each do |message| %>
+8:              <li><%= message %></li>
+9:            <% end %>
+10:          </ul>
+11:        </div>
+12:      <% end %>
+13:    
+14:    
+15:        
+16:    
+17:            
+18:    
+19:            <%= form.label :codigo_usuario %>
+20:            <%= form.text_field :codigo_usuario %>
+21:    
+22:            <%= form.label :contraseña %>
+23:            <%= form.text_field :contraseña %>
+24:    
+25:            <%= form.label :correo_corporativo %>
+26:            <%= form.text_field :correo_corporativo %>
+27:    
+28:            <%= form.label :perfil %>
+29:            <%= form.text_field :perfil %>
+30:    
+31:            <%= form.label :estado %>
+32:            <%= form.text_field :estado %>
+33:    
+34:            <%= form.label :usu_crea %>
+35:            <%= form.text_field :usu_crea %>
+36:    
+37:            <%= form.label :fec_crea %>
+38:            <%= form.datetime_select :fec_crea %>
+39:    
+40:            <%= form.label :usu_mod %>
+41:            <%= form.text_field :usu_mod %>
+42:    
+43:            <%= form.label :fec_mod %>
+44:            <%= form.datetime_select :fec_mod %>
+45:    
+46:    <div class="form-row mt-3">
+47:      <div class="col-md-6 mb-3 field">
+48:        <div class="form-row">
+49:          <div class="col-md-4 mb-3 field">
+50:            <label for="validationCustom02" class="col-form-label col-form-label-lg">Tipo de Documento</label>
+51:            <select class="form-control form-control-lg mr-sm-2">
+52:              <option>[Seleccione]</option>
+53:              <option value="value1">DNI</option> 
+54:              <option value="value3">C. Extranjeria</option>
+55:              <option value="value3">Pasaporte</option>
+56:            </select>
+57:            <div class="valid-feedback">
+58:              Looks good!
+59:            </div>
+60:          </div>
+61:          <div class="col-md-4 mb-3 field">
+62:            <%= form.label :numero_documento "Número de Documento", :class=>"col-form-label col-form-label-lg" %>
+63:            <%= form.text_field :numero_documento, :class=>"form-control form-control-lg" %>
+64:            <div class="valid-feedback">
+65:              Looks good!
+66:            </div>
+67:          </div>
+68:          <div class="col-md-4 mb-3 field">
+69:            <label for="validationCustom02" class="col-form-label col-form-label-lg">Provincia</label>
+70:            <select class="form-control form-control-lg mr-sm-2">
+71:              <option>[Seleccione]</option>
+72:            </select>
+73:            <div class="valid-feedback">
+74:              Looks good!
+75:            </div>
+76:          </div>
+77:          <div class="col-md-4 mb-3 field">
+78:            <label for="validationCustom02" class="col-form-label col-form-label-lg">Distrito</label>
+79:            <select class="form-control form-control-lg mr-sm-2">
+80:              <option>[Seleccione]</option>
+81:            </select>
+82:            <div class="valid-feedback">
+83:              Looks good!
+84:            </div>
+85:          </div>
+86:        </div>
+87:        <div class="form-row">
+88:          <div class="col-md-12 mb-3">
+89:            <%= form.label :ubicacion, :class=>"col-form-label col-form-label-lg" %>
+90:            <%= form.text_field :ubicacion, :class=>"form-control form-control-lg", :required=>"required" %>
+91:            <div class="valid-feedback">
+92:              Looks good!
+93:            </div>
+94:          </div>
+95:        </div>
+96:        <div class="form-row">
+97:          <div class="col-md-12 ">
+98:            <%= form.label :descripcion_corta, :class=>"col-form-label col-form-label-lg" %>
+99:            <%= form.text_area :descripcion_corta, :class=>"form-control form-control-lg", :required=>"required" %>
+100:            <div class="valid-feedback">
+101:              Looks good!
+102:            </div>
+103:          </div>
+104:        </div>
+105:      </div>
+106:      <div class="col-md-6">
+107:        <label for="validationCustom02" class="col-form-label col-form-label-lg">Ubicación</label>
+108:        <div class="form-control" style="height: 414px;padding: 1px;">
+109:          <iframe width="100%" height="410" frameborder="0" style="border:0" src="https://google.com/maps/embed/v1/place?q=Universidad%20Peruana%20de%20Ciencias%20Aplicadas&key=AIzaSyA-mX5Z7eJL5GKASzo5gSNavXxX748a5Y4" allowfullscreen> </iframe>
+110:        </div>
+111:        <div class="valid-feedback">
+112:          Looks good!
+113:        </div>
+114:      </div>
+115:      <div class="col-md-12 mb-3 mt-0">
+116:          <%= form.label :descripcion_larga, :class=>"col-form-label col-form-label-lg" %>
+117:          <%= form.text_area :descripcion_larga, :class=>"form-control form-control-lg", :required=>"required" %>
+118:          <div class="valid-feedback">
+119:            Looks good!
+120:          </div>
+121:      </div>
+122:      <div class="col-md-3 mb-3 mt-0">
+123:        <label for="validationCustom02" class="col-form-label col-form-label-lg">Moneda</label>
+124:        <select class="form-control form-control-lg mr-sm-2">
+125:          <option>[Seleccione]</option>
+126:          <option value="value1">Soles</option> 
+127:          <option value="value3">Dolares</option>       
+128:        </select>
+129:          <div class="valid-feedback">
+130:            Looks good!
+131:          </div>
+132:      </div>
+133:      <div class="col-md-3 mb-3 mt-0">
+134:          <%= form.label :precio_m2, :class=>"col-form-label col-form-label-lg" %>
+135:          <%= form.number_field :precio_m2, :class=>"form-control form-control-lg", :required=>"required" %>
+136:          <div class="valid-feedback">
+137:            Looks good!
+138:          </div>
+139:      </div>
+140:      <div class="col-md-3 mb-3 field">
+141:        <label for="validationCustom02" class="col-form-label col-form-label-lg">Favorito</label>
+142:        <select class="form-control form-control-lg mr-sm-2">
+143:          <option>[Seleccione]</option>
+144:          <option value="value1">Si es favorito</option> 
+145:          <option value="value3">No es favorito</option>       
+146:        </select>
+147:        <div class="valid-feedback">
+148:          Looks good!
+149:        </div>
+150:      </div>
+151:      <div class="col-md-3 mb-3 field">
+152:        <%= form.label :estado, :class=>"col-form-label col-form-label-lg" %>
+153:        <select class="form-control form-control-lg mr-sm-2">
+154:          <option>[Seleccione]</option>        
+155:          <option value="value1">Activo</option> 
+156:          <option value="value3">Inactivo</option>
+157:          <option value="value3">Pre-Venta</option>      
+158:        </select>
+159:        <div class="valid-feedback">
+160:           Looks good!
+161:        </div>
+162:      </div>  
+163:    </div>
+164:    
+165:    
+166:    
+167:      <div class="actions">
+168:        <%= form.submit %>
+169:      </div>
+170:    <% end %>
+  
+app/views/usuarios/_form.html.erb:62: syntax error, unexpected string literal, expecting ')'
+app/views/usuarios/_form.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/usuarios/_form.html.erb:62: syntax error, unexpected string literal, expecting ')'
+app/views/usuarios/_form.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/usuarios/_form.html.erb:62: syntax error, unexpected string literal, expecting ')'
+app/views/usuarios/_form.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/usuarios/_form.html.erb:62: syntax error, unexpected string literal, expecting ')'
+app/views/usuarios/_form.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/usuarios/_form.html.erb:62: syntax error, unexpected string literal, expecting ')'
+app/views/usuarios/_form.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/usuarios/_form.html.erb:62: syntax error, unexpected string literal, expecting ')'
+app/views/usuarios/_form.html.erb:62: syntax error, unexpected ',', expecting ')'
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:21:26 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 26.6ms | Allocations: 8479)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 34.8ms | Allocations: 8815)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 140ms (Views: 131.8ms | ActiveRecord: 0.4ms | Allocations: 19677)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:21:48 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 19.8ms | Allocations: 8475)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 28.6ms | Allocations: 8810)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 137ms (Views: 129.4ms | ActiveRecord: 0.4ms | Allocations: 19667)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:22:38 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 26.8ms | Allocations: 8474)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 32.5ms | Allocations: 8809)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 139ms (Views: 130.4ms | ActiveRecord: 0.4ms | Allocations: 19672)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:22:51 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 25.8ms | Allocations: 8473)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 34.1ms | Allocations: 8812)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 161ms (Views: 152.3ms | ActiveRecord: 0.5ms | Allocations: 19681)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:22:59 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 24.9ms | Allocations: 8473)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 35.9ms | Allocations: 8809)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 176ms (Views: 143.9ms | ActiveRecord: 0.9ms | Allocations: 19659)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:28:29 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 18.2ms | Allocations: 8495)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 24.9ms | Allocations: 8831)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 121ms (Views: 112.0ms | ActiveRecord: 0.6ms | Allocations: 19737)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:28:46 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 20.7ms | Allocations: 8489)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 26.8ms | Allocations: 8824)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 127ms (Views: 118.3ms | ActiveRecord: 0.4ms | Allocations: 19674)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:31:01 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 272.9ms | Allocations: 69470)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 278.9ms | Allocations: 69811)
+Completed 500 Internal Server Error in 308ms (ActiveRecord: 0.5ms | Allocations: 71540)
+
+
+  
+ActionView::Template::Error (undefined method `mail_field' for #<ActionView::Helpers::FormBuilder:0x000000000d8ba940>
+Did you mean?  email_field):
+    68:       </div>
+    69:       <div class="col-md-3 mb-3 field">
+    70:         <%= form.label :correo_corporativo, :class=>"col-form-label col-form-label-lg" %>
+    71:         <%= form.mail_field :correo_corporativo, :class=>"form-control form-control-lg mr-sm-2"%>
+    72:         <div class="valid-feedback">
+    73:           Looks good!
+    74:         </div>
+  
+app/views/usuarios/_form.html.erb:71
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:31:12 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 152.0ms | Allocations: 11272)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 158.6ms | Allocations: 11609)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 262ms (Views: 253.0ms | ActiveRecord: 0.6ms | Allocations: 22397)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:31:40 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 25.6ms | Allocations: 8086)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 37.2ms | Allocations: 8421)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 184ms (Views: 162.9ms | ActiveRecord: 0.7ms | Allocations: 19268)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:34:01 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 18.7ms | Allocations: 8511)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 24.3ms | Allocations: 8850)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 146ms (Views: 135.1ms | ActiveRecord: 0.6ms | Allocations: 19713)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:34:44 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 37.0ms | Allocations: 8439)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 51.8ms | Allocations: 8774)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 220ms (Views: 204.8ms | ActiveRecord: 0.7ms | Allocations: 19626)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:35:54 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 7.7ms | Allocations: 2423)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 14.5ms | Allocations: 2758)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 108ms (Views: 99.3ms | ActiveRecord: 0.5ms | Allocations: 13618)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:36:04 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 16.4ms | Allocations: 2159)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 29.7ms | Allocations: 2495)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 164ms (Views: 148.3ms | ActiveRecord: 0.9ms | Allocations: 13355)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:36:28 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 5.5ms | Allocations: 1417)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 32.8ms | Allocations: 1753)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 139ms (Views: 128.8ms | ActiveRecord: 0.4ms | Allocations: 12613)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:37:14 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 5.7ms | Allocations: 1363)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 12.8ms | Allocations: 1698)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 117ms (Views: 108.4ms | ActiveRecord: 0.6ms | Allocations: 12556)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:37:46 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 4.9ms | Allocations: 910)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 17.9ms | Allocations: 978)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 121ms (Views: 113.5ms | ActiveRecord: 0.7ms | Allocations: 10797)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:38:38 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 4.9ms | Allocations: 1361)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 11.5ms | Allocations: 1702)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 114ms (Views: 106.5ms | ActiveRecord: 0.4ms | Allocations: 12553)
+
+
+Started GET "/proyectos" for ::1 at 2020-11-02 03:38:48 -0500
+Processing by ProyectosController#index as HTML
+  Rendering proyectos/index.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 1.2ms | Allocations: 128)
+  [1m[36mProyecto Load (0.7ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos"[0m
+  ↳ app/views/proyectos/index.html.erb:61
+  Rendered proyectos/index.html.erb within layouts/application (Duration: 39.6ms | Allocations: 2140)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 116ms (Views: 107.6ms | ActiveRecord: 0.7ms | Allocations: 11986)
+
+
+Started GET "/proyectos" for ::1 at 2020-11-02 03:39:05 -0500
+Processing by ProyectosController#index as HTML
+  Rendering proyectos/index.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 1.4ms | Allocations: 128)
+  [1m[36mProyecto Load (0.7ms)[0m  [1m[34mSELECT "proyectos".* FROM "proyectos"[0m
+  ↳ app/views/proyectos/index.html.erb:61
+  Rendered proyectos/index.html.erb within layouts/application (Duration: 26.8ms | Allocations: 2099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 189ms (Views: 173.3ms | ActiveRecord: 0.7ms | Allocations: 12421)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:39:09 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 1.7ms | Allocations: 132)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 16.3ms | Allocations: 1635)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 111ms (Views: 103.3ms | ActiveRecord: 0.6ms | Allocations: 11466)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:39:12 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 6.2ms | Allocations: 1360)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 12.4ms | Allocations: 1696)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 80.7ms | ActiveRecord: 0.4ms | Allocations: 11619)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:39:16 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 942)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 74.4ms | ActiveRecord: 0.5ms | Allocations: 10221)
+
+
+Started GET "/usuarios/3/edit" for ::1 at 2020-11-02 03:39:19 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 3.5ms | Allocations: 902)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 10.0ms | Allocations: 970)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 90ms (Views: 84.4ms | ActiveRecord: 0.6ms | Allocations: 10773)
+
+
+Started PATCH "/usuarios/3" for ::1 at 2020-11-02 03:39:23 -0500
+Processing by UsuariosController#update as HTML
+  Parameters: {"authenticity_token"=>"eSjyd2OFAd3UjTe951lJDalmSZJkSKSJGMdk80on/g+NA9HqruQCajpElUKI36dAuDE23cGJPG43wf2kZfNKUQ==", "usuario"=>{"numero_documento"=>"12312312", "codigo_usuario"=>"prueba", "correo_corporativo"=>"prueba@grupo1.com"}, "commit"=>"Guardar", "id"=>"3"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+Redirected to http://localhost:3000/usuarios/3
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms | Allocations: 1299)
+
+
+Started GET "/usuarios/3" for ::1 at 2020-11-02 03:39:23 -0500
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (Duration: 9.9ms | Allocations: 548)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 77.9ms | ActiveRecord: 0.4ms | Allocations: 10515)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:39:26 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 940)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 0.4ms | Allocations: 10201)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:40:19 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 1.4ms | Allocations: 131)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 20.5ms | Allocations: 1592)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 130ms (Views: 121.9ms | ActiveRecord: 0.4ms | Allocations: 11916)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:40:22 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 7.2ms | Allocations: 1360)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 14.0ms | Allocations: 1696)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 101ms (Views: 92.3ms | ActiveRecord: 0.4ms | Allocations: 11644)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:40:26 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 942)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.6ms | Allocations: 10195)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:40:28 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 3.0ms | Allocations: 902)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 3.9ms | Allocations: 970)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 93ms (Views: 87.1ms | ActiveRecord: 0.6ms | Allocations: 10769)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:41:30 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered departamentos/_filtros.html.erb (Duration: 0.9ms | Allocations: 128)
+  Rendered departamentos/_index.html.erb (Duration: 10.6ms | Allocations: 2657)
+  Rendered usuarios/_form.html.erb (Duration: 19.3ms | Allocations: 3412)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 25.4ms | Allocations: 3749)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.8ms | Allocations: 5463)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    32:       <button class="form-control btn btn-warning my-2 my-sm-0" type="submit">Limpiar</button>
+    33:   </div>
+    34: 
+    35:   <% @departamentos.each do |departamento| %>
+    36:     <div class="col-md-4">
+    37:       <div class="card mb-3">
+    38:         <div class="row no-gutters">
+  
+app/views/departamentos/_index.html.erb:35
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:45:31 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (1.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 11.4ms | Allocations: 2003)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 18.9ms | Allocations: 2345)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 4.6ms | Allocations: 12178)
+
+
+  
+ActionView::Template::Error (Missing partial personas/_index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/Heovyh/Documents/Carpeta/UPC/III/Desarrollo para Entorno Web/Sites/Proyecto Final/ProyectoFinaII/webdev1/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actiontext-6.0.3.4/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.3.4/app/views"
+):
+    11:     </div>
+    12:   <% end %>
+    13:     <div class="form-row">
+    14:       <%= render partial: '/personas/index', persona: @persona %>
+    15:       <div class="col-md-4 mb-3 field">
+    16:         <label for="validationCustom02" class="col-form-label col-form-label-lg">Tipo de Documento</label>
+    17:         <select class="form-control form-control-lg mr-sm-2">
+  
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:46:59 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 12.3ms | Allocations: 1999)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 19.8ms | Allocations: 2341)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.6ms | Allocations: 4055)
+
+
+  
+ActionView::Template::Error (Missing partial personas/_New with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/Heovyh/Documents/Carpeta/UPC/III/Desarrollo para Entorno Web/Sites/Proyecto Final/ProyectoFinaII/webdev1/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actiontext-6.0.3.4/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.3.4/app/views"
+):
+    11:     </div>
+    12:   <% end %>
+    13:     <div class="form-row">
+    14:       <%= render partial: '/personas/New', persona: @persona %>
+    15:       <div class="col-md-4 mb-3 field">
+    16:         <label for="validationCustom02" class="col-form-label col-form-label-lg">Tipo de Documento</label>
+    17:         <select class="form-control form-control-lg mr-sm-2">
+  
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/personas/New" for ::1 at 2020-11-02 03:47:14 -0500
+Processing by PersonasController#show as HTML
+  Parameters: {"id"=>"New"}
+  [1m[36mPersona Load (1.6ms)[0m  [1m[34mSELECT "personas".* FROM "personas" WHERE "personas"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/personas_controller.rb:67:in `set_persona'
+Completed 404 Not Found in 26ms (ActiveRecord: 6.4ms | Allocations: 2276)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Persona with 'id'=New):
+  
+app/controllers/personas_controller.rb:67:in `set_persona'
+Started GET "/personas" for ::1 at 2020-11-02 03:47:24 -0500
+Processing by PersonasController#index as HTML
+  Rendering personas/index.html.erb within layouts/application
+  [1m[36mPersona Load (0.6ms)[0m  [1m[34mSELECT "personas".* FROM "personas"[0m
+  ↳ app/views/personas/index.html.erb:28
+  Rendered personas/index.html.erb within layouts/application (Duration: 39.5ms | Allocations: 9626)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 136ms (Views: 128.1ms | ActiveRecord: 0.6ms | Allocations: 19800)
+
+
+Started GET "/personas/new" for ::1 at 2020-11-02 03:47:26 -0500
+Processing by PersonasController#new as HTML
+  Rendering personas/new.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 18.9ms | Allocations: 8868)
+  Rendered personas/new.html.erb within layouts/application (Duration: 25.1ms | Allocations: 9198)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 98.9ms | ActiveRecord: 0.0ms | Allocations: 18601)
+
+
+Started GET "/personas/new" for ::1 at 2020-11-02 03:47:43 -0500
+Processing by PersonasController#new as HTML
+  Rendering personas/new.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 19.8ms | Allocations: 8424)
+  Rendered personas/new.html.erb within layouts/application (Duration: 29.4ms | Allocations: 8753)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 127ms (Views: 118.3ms | ActiveRecord: 0.0ms | Allocations: 19095)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 03:47:46 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 1.1ms | Allocations: 131)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 1631)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 109ms (Views: 98.7ms | ActiveRecord: 0.6ms | Allocations: 11466)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:47:47 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 16.8ms | Allocations: 1986)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 26.6ms | Allocations: 2320)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.5ms | Allocations: 3423)
+
+
+  
+ActionView::Template::Error (Missing partial personas/_new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/Heovyh/Documents/Carpeta/UPC/III/Desarrollo para Entorno Web/Sites/Proyecto Final/ProyectoFinaII/webdev1/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actiontext-6.0.3.4/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.3.4/app/views"
+):
+    11:     </div>
+    12:   <% end %>
+    13:     <div class="form-row">
+    14:       <%= render partial: '/personas/new', persona: @persona %>
+    15:       <div class="col-md-4 mb-3 field">
+    16:         <label for="validationCustom02" class="col-form-label col-form-label-lg">Tipo de Documento</label>
+    17:         <select class="form-control form-control-lg mr-sm-2">
+  
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:48:22 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 11.3ms | Allocations: 1999)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 17.7ms | Allocations: 2338)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.5ms | Allocations: 4042)
+
+
+  
+ActionView::Template::Error (Missing partial personas/__form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "C:/Users/Heovyh/Documents/Carpeta/UPC/III/Desarrollo para Entorno Web/Sites/Proyecto Final/ProyectoFinaII/webdev1/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actiontext-6.0.3.4/app/views"
+  * "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.3.4/app/views"
+):
+    11:     </div>
+    12:   <% end %>
+    13:     <div class="form-row">
+    14:       <%= render partial: '/personas/_form', persona: @persona %>
+    15:       <div class="col-md-4 mb-3 field">
+    16:         <label for="validationCustom02" class="col-form-label col-form-label-lg">Tipo de Documento</label>
+    17:         <select class="form-control form-control-lg mr-sm-2">
+  
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:48:32 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 692.3ms | Allocations: 127290)
+  Rendered usuarios/_form.html.erb (Duration: 703.9ms | Allocations: 128038)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 722.6ms | Allocations: 128376)
+Completed 500 Internal Server Error in 766ms (ActiveRecord: 0.7ms | Allocations: 130080)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `persona' for #<#<Class:0x000000000d1b5f50>:0x000000000d1af3a8>
+Did you mean?  persona_url):
+    1: <%= form_with(model: persona, local: true) do |form| %>
+    2:   <% if persona.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(persona.errors.count, "error") %> prohibited this persona from being saved:</h2>
+  
+app/views/personas/_form.html.erb:1
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:51:58 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 618.7ms | Allocations: 126832)
+  Rendered usuarios/_form.html.erb (Duration: 627.5ms | Allocations: 127546)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 641.3ms | Allocations: 127884)
+Completed 500 Internal Server Error in 673ms (ActiveRecord: 0.6ms | Allocations: 129588)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `usuario' for #<#<Class:0x000000000d445e50>:0x000000000d4443e8>
+Did you mean?  @usuario):
+    1: <%= form_with(model: usuario, local: true) do |form| %>
+    2:   <% if usuario.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
+  
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:53:22 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (1.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:67:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 956.8ms | Allocations: 126322)
+  Rendered usuarios/_form.html.erb (Duration: 962.4ms | Allocations: 126516)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 974.4ms | Allocations: 126586)
+Completed 500 Internal Server Error in 1055ms (ActiveRecord: 7.9ms | Allocations: 135792)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `usuario' for #<#<Class:0x00000000087e4ef8>:0x0000000008633c58>
+Did you mean?  @usuario):
+    1: <%= form_with(model: usuario, local: true) do |form| %>
+    2:   <% if usuario.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
+  
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:54:32 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 854.7ms | Allocations: 126662)
+  Rendered usuarios/_form.html.erb (Duration: 857.5ms | Allocations: 126856)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 867.4ms | Allocations: 126927)
+Completed 500 Internal Server Error in 964ms (ActiveRecord: 5.7ms | Allocations: 145344)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `usuario' for #<#<Class:0x000000000d5a3d60>:0x000000000d5a22a8>
+Did you mean?  @usuario):
+    1: <%= form_with(model: usuario, local: true) do |form| %>
+    2:   <% if usuario.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
+  
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:55:01 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 7.5ms | Allocations: 1365)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 14.5ms | Allocations: 1702)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 117ms (Views: 108.4ms | ActiveRecord: 0.4ms | Allocations: 12597)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:55:27 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered usuarios/_form.html.erb (Duration: 506.9ms | Allocations: 127181)
+  Rendered usuarios/_form.html.erb (Duration: 515.1ms | Allocations: 127894)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 528.1ms | Allocations: 128231)
+Completed 500 Internal Server Error in 553ms (ActiveRecord: 0.5ms | Allocations: 129972)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `usuario' for #<#<Class:0x000000000d3b4ab8>:0x000000000d3aeb40>
+Did you mean?  @usuario):
+    1: <%= form_with(model: usuario, local: true) do |form| %>
+    2:   <% if usuario.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
+  
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:56:50 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered departamentos/_form.html.erb (Duration: 508.5ms | Allocations: 127488)
+  Rendered usuarios/_form.html.erb (Duration: 516.3ms | Allocations: 128236)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 528.2ms | Allocations: 128574)
+Completed 500 Internal Server Error in 555ms (ActiveRecord: 0.5ms | Allocations: 130315)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `departamento' for #<#<Class:0x000000000d858268>:0x000000000d8520c0>
+Did you mean?  departamento_url):
+    1: <%= form_with(model: departamento, local: true) do |form| %>
+    2:   <% if departamento.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(departamento.errors.count, "error") %> prohibited this departamento from being saved:</h2>
+  
+app/views/departamentos/_form.html.erb:1
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:57:17 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered departamentos/_form.html.erb (Duration: 503.0ms | Allocations: 127483)
+  Rendered usuarios/_form.html.erb (Duration: 511.2ms | Allocations: 128230)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 522.8ms | Allocations: 128568)
+Completed 500 Internal Server Error in 548ms (ActiveRecord: 0.4ms | Allocations: 130309)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `departamento' for #<#<Class:0x000000000d487d78>:0x000000000d4851b8>
+Did you mean?  departamento_url):
+    1: <%= form_with(model: departamento, local: true) do |form| %>
+    2:   <% if departamento.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(departamento.errors.count, "error") %> prohibited this departamento from being saved:</h2>
+  
+app/views/departamentos/_form.html.erb:1
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:58:03 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered departamentos/_form.html.erb (Duration: 714.2ms | Allocations: 126768)
+  Rendered usuarios/_form.html.erb (Duration: 715.5ms | Allocations: 126917)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 720.5ms | Allocations: 126987)
+Completed 500 Internal Server Error in 741ms (ActiveRecord: 0.8ms | Allocations: 127988)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `departamento' for #<#<Class:0x000000000d487d78>:0x000000000ae432c0>
+Did you mean?  departamento_url):
+    1: <%= form_with(model: departamento, local: true) do |form| %>
+    2:   <% if departamento.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(departamento.errors.count, "error") %> prohibited this departamento from being saved:</h2>
+  
+app/views/departamentos/_form.html.erb:1
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:58:22 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 509.2ms | Allocations: 127609)
+  Rendered usuarios/_form.html.erb (Duration: 518.3ms | Allocations: 128356)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 528.9ms | Allocations: 128694)
+Completed 500 Internal Server Error in 556ms (ActiveRecord: 0.5ms | Allocations: 130438)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `persona' for #<#<Class:0x000000000d59ba98>:0x000000000d593f28>
+Did you mean?  @persona):
+    1: <%= form_with(model: persona, local: true) do |form| %>
+    2:   <% if persona.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(persona.errors.count, "error") %> prohibited this persona from being saved:</h2>
+  
+app/views/personas/_form.html.erb:1
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 03:59:14 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 3.0ms | Allocations: 2002)
+  Rendered usuarios/_form.html.erb (Duration: 11.8ms | Allocations: 2749)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 18.6ms | Allocations: 3088)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.5ms | Allocations: 4830)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check 
+
+  <div class="field">
+    <%= form.label :tipo_documento %>
+    <%= form.text_field :tipo_documento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numero_documento %>
+    <%= form.text_field :numero_documento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nombres %>
+    <%= form.text_field :nombres %>
+  </div>
+
+  <div class="field">
+    <%= form.label :apellidos %>
+    <%= form.text_field :apellidos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :correo %>
+    <%= form.text_field :correo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :telefono %>
+    <%= form.text_field :telefono %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mca_juridico %>
+    <%= form.text_field :mca_juridico %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sexo %>
+    <%= form.text_field :sexo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha_aniversario %>
+    <%= form.text_field :fecha_aniversario %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.text_field :date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :estado %>
+    <%= form.text_field :estado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usu_crea %>
+    <%= form.text_field :usu_crea %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fec_crea %>
+    <%= form.datetime_select :fec_crea %>
+  </div>
+
+  <div class="field">
+    <%= form.label :usu_mod %>
+    <%= form.text_field :usu_mod %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fec_mod %>
+    <%= form.datetime_select :fec_mod %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+):
+1:    
+2:    
+3:      <div class="field">
+4:        <%= form.label :tipo_documento %>
+5:        <%= form.text_field :tipo_documento %>
+6:      </div>
+7:    
+8:      <div class="field">
+9:        <%= form.label :numero_documento %>
+10:        <%= form.text_field :numero_documento %>
+11:      </div>
+12:    
+13:      <div class="field">
+14:        <%= form.label :nombres %>
+15:        <%= form.text_field :nombres %>
+16:      </div>
+17:    
+18:      <div class="field">
+19:        <%= form.label :apellidos %>
+20:        <%= form.text_field :apellidos %>
+21:      </div>
+22:    
+23:      <div class="field">
+24:        <%= form.label :correo %>
+25:        <%= form.text_field :correo %>
+26:      </div>
+27:    
+28:      <div class="field">
+29:        <%= form.label :telefono %>
+30:        <%= form.text_field :telefono %>
+31:      </div>
+32:    
+33:      <div class="field">
+34:        <%= form.label :mca_juridico %>
+35:        <%= form.text_field :mca_juridico %>
+36:      </div>
+37:    
+38:      <div class="field">
+39:        <%= form.label :sexo %>
+40:        <%= form.text_field :sexo %>
+41:      </div>
+42:    
+43:      <div class="field">
+44:        <%= form.label :fecha_aniversario %>
+45:        <%= form.text_field :fecha_aniversario %>
+46:      </div>
+47:    
+48:      <div class="field">
+49:        <%= form.label :date %>
+50:        <%= form.text_field :date %>
+51:      </div>
+52:    
+53:      <div class="field">
+54:        <%= form.label :estado %>
+55:        <%= form.text_field :estado %>
+56:      </div>
+57:    
+58:      <div class="field">
+59:        <%= form.label :usu_crea %>
+60:        <%= form.text_field :usu_crea %>
+61:      </div>
+62:    
+63:      <div class="field">
+64:        <%= form.label :fec_crea %>
+65:        <%= form.datetime_select :fec_crea %>
+66:      </div>
+67:    
+68:      <div class="field">
+69:        <%= form.label :usu_mod %>
+70:        <%= form.text_field :usu_mod %>
+71:      </div>
+72:    
+73:      <div class="field">
+74:        <%= form.label :fec_mod %>
+75:        <%= form.datetime_select :fec_mod %>
+76:      </div>
+77:    
+78:      <div class="actions">
+79:        <%= form.submit %>
+80:      </div>
+81:    <% end %>
+  
+app/views/personas/_form.html.erb:83: syntax error, unexpected `end', expecting end-of-input
+app/views/personas/_form.html.erb:83: syntax error, unexpected `end', expecting end-of-input
+app/views/personas/_form.html.erb:83: syntax error, unexpected `end', expecting end-of-input
+app/views/personas/_form.html.erb:83: syntax error, unexpected `end', expecting end-of-input
+app/views/personas/_form.html.erb:83: syntax error, unexpected `end', expecting end-of-input
+app/views/personas/_form.html.erb:83: syntax error, unexpected `end', expecting end-of-input
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 04:00:03 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 553.1ms | Allocations: 127603)
+  Rendered usuarios/_form.html.erb (Duration: 562.7ms | Allocations: 128350)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 577.3ms | Allocations: 128688)
+Completed 500 Internal Server Error in 607ms (ActiveRecord: 0.6ms | Allocations: 130429)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x000000000ce0b300>:0x000000000ce08290>
+Did you mean?  for
+               fork):
+    1: 
+    2: 
+    3:   <div class="field">
+    4:     <%= form.label :tipo_documento %>
+    5:     <%= form.text_field :tipo_documento %>
+    6:   </div>
+    7: 
+  
+app/views/personas/_form.html.erb:4
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 04:00:39 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 0.8ms | Allocations: 66)
+  Rendered usuarios/_form.html.erb (Duration: 13.9ms | Allocations: 1639)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 23.5ms | Allocations: 1976)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 137ms (Views: 126.2ms | ActiveRecord: 0.4ms | Allocations: 12878)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 04:02:38 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 498.3ms | Allocations: 127053)
+  Rendered usuarios/_form.html.erb (Duration: 509.3ms | Allocations: 127760)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 520.2ms | Allocations: 128100)
+Completed 500 Internal Server Error in 548ms (ActiveRecord: 0.5ms | Allocations: 129842)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x000000000d8912e8>:0x000000000d88ad30>
+Did you mean?  for
+               fork):
+    13:       </div>
+    14:       <div class="col-md-4 mb-3 field">
+    15:         <label for="validationCustom02" class="col-form-label col-form-label-lg">Número de Documento</label>
+    16:         <%= form.text_field :numero_documento, :class=>"form-control form-control-lg" %>
+    17:         <div class="valid-feedback">
+    18:           Looks good!
+    19:         </div>
+  
+app/views/personas/_form.html.erb:16
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 04:09:58 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.4ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 277.0ms | Allocations: 127058)
+  Rendered usuarios/_form.html.erb (Duration: 281.1ms | Allocations: 127764)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 287.9ms | Allocations: 128102)
+Completed 500 Internal Server Error in 337ms (ActiveRecord: 0.4ms | Allocations: 129874)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `form' for #<#<Class:0x000000000d6fda80>:0x000000000d6e7190>
+Did you mean?  for
+               fork):
+    14:       </div>
+    15:       <div class="col-md-4 mb-3 field">
+    16:         <label for="validationCustom02" class="col-form-label col-form-label-lg">Número de Documento</label>
+    17:         <%= form.text_field :numero_documento, :class=>"form-control form-control-lg" %>
+    18:         <div class="valid-feedback">
+    19:           Looks good!
+    20:         </div>
+  
+app/views/personas/_form.html.erb:17
+app/views/usuarios/_form.html.erb:14
+app/views/usuarios/_form.html.erb:1
+app/views/usuarios/edit.html.erb:11
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 04:10:25 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.5ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 0.4ms | Allocations: 160)
+  Rendered usuarios/_form.html.erb (Duration: 6.0ms | Allocations: 1634)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 55.4ms | Allocations: 1971)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 115ms (Views: 110.2ms | ActiveRecord: 0.5ms | Allocations: 12869)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 04:11:21 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 0.6ms | Allocations: 131)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1634)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 57.1ms | ActiveRecord: 0.3ms | Allocations: 11024)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 04:12:34 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 946)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.2ms | Allocations: 10200)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 04:12:36 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered usuarios/_form.html.erb (Duration: 1.7ms | Allocations: 915)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 2.4ms | Allocations: 983)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 49.0ms | ActiveRecord: 0.3ms | Allocations: 10811)
+
+
+Started GET "/usuarios/1/edit" for ::1 at 2020-11-02 04:14:35 -0500
+Processing by UsuariosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios" WHERE "usuarios"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/usuarios_controller.rb:68:in `set_usuario'
+  Rendering usuarios/edit.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 0.8ms | Allocations: 159)
+  Rendered usuarios/_form.html.erb (Duration: 7.4ms | Allocations: 1633)
+  Rendered usuarios/edit.html.erb within layouts/application (Duration: 13.6ms | Allocations: 1975)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 70.4ms | ActiveRecord: 0.3ms | Allocations: 12851)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 04:14:44 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 0.6ms | Allocations: 131)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1641)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 62.9ms | ActiveRecord: 0.2ms | Allocations: 11966)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 04:18:18 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.2ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:42
+  Rendered layouts/_paginacion.html.erb (Duration: 0.5ms | Allocations: 131)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1627)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 71.1ms | ActiveRecord: 0.2ms | Allocations: 11959)
+
+
+Started GET "/cliente" for ::1 at 2020-11-02 04:18:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/cliente"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/clientes" for ::1 at 2020-11-02 04:18:29 -0500
+Processing by ClientesController#index as HTML
+  Rendering clientes/index.html.erb within layouts/application
+  Rendered clientes/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2057)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 3331)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    40:     </div>
+    41:   </div>
+    42: 
+    43:     <% @usuarios.each do |usuario| %>
+    44:       <div class="card mt-2">
+    45:         <div class="col-md-12">
+    46:             <div class="card-header row">
+  
+app/views/clientes/index.html.erb:43
+Started GET "/clientes" for ::1 at 2020-11-02 04:19:23 -0500
+Processing by ClientesController#index as HTML
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (0.4ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes"[0m
+  ↳ app/views/clientes/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 9.8ms | Allocations: 131)
+  Rendered clientes/index.html.erb within layouts/application (Duration: 60.4ms | Allocations: 2317)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 228ms (Views: 221.5ms | ActiveRecord: 1.7ms | Allocations: 12647)
+
+
+Started GET "/clientes/new" for ::1 at 2020-11-02 04:19:26 -0500
+Processing by ClientesController#new as HTML
+  Rendering clientes/new.html.erb within layouts/application
+  Rendered clientes/_form.html.erb (Duration: 36.1ms | Allocations: 6837)
+  Rendered clientes/new.html.erb within layouts/application (Duration: 55.7ms | Allocations: 7169)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 133ms (Views: 114.5ms | ActiveRecord: 0.8ms | Allocations: 21299)
+
+
+Started POST "/clientes" for ::1 at 2020-11-02 04:19:40 -0500
+Processing by ClientesController#create as HTML
+  Parameters: {"authenticity_token"=>"gkEXfjUdFk1tuMwTx2d+BMm6zUxDqlg0LuRoXRfSnr1qD1onD4n1WxbBTzqlfC8x5/SXWI4yndWyjrnbZTnoLw==", "cliente"=>{"tipo_documento"=>"dni", "numero_documento"=>"123", "estado"=>"", "usu_crea"=>"", "fec_crea(1i)"=>"2020", "fec_crea(2i)"=>"11", "fec_crea(3i)"=>"2", "fec_crea(4i)"=>"09", "fec_crea(5i)"=>"19", "usu_mod"=>"", "fec_mod(1i)"=>"2020", "fec_mod(2i)"=>"11", "fec_mod(3i)"=>"2", "fec_mod(4i)"=>"09", "fec_mod(5i)"=>"19"}, "commit"=>"Create Cliente"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/clientes_controller.rb:32:in `block in create'
+  [1m[36mCliente Create (1.3ms)[0m  [1m[32mINSERT INTO "clientes" ("tipo_documento", "numero_documento", "estado", "usu_crea", "fec_crea", "usu_mod", "fec_mod", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tipo_documento", "dni"], ["numero_documento", "123"], ["estado", ""], ["usu_crea", ""], ["fec_crea", "2020-11-02 09:19:00"], ["usu_mod", ""], ["fec_mod", "2020-11-02 09:19:00"], ["created_at", "2020-11-02 09:19:40.085470"], ["updated_at", "2020-11-02 09:19:40.085470"]]
+  ↳ app/controllers/clientes_controller.rb:32:in `block in create'
+  [1m[35m (11.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/clientes_controller.rb:32:in `block in create'
+Redirected to http://localhost:3000/clientes/1
+Completed 302 Found in 31ms (ActiveRecord: 13.3ms | Allocations: 3376)
+
+
+Started GET "/clientes/1" for ::1 at 2020-11-02 04:19:40 -0500
+Processing by ClientesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCliente Load (0.3ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clientes_controller.rb:69:in `set_cliente'
+  Rendering clientes/show.html.erb within layouts/application
+  Rendered clientes/show.html.erb within layouts/application (Duration: 14.7ms | Allocations: 435)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 64.1ms | ActiveRecord: 0.3ms | Allocations: 10520)
+
+
+Started GET "/clientes" for ::1 at 2020-11-02 04:19:41 -0500
+Processing by ClientesController#index as HTML
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (0.3ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes"[0m
+  ↳ app/views/clientes/index.html.erb:43
+  Rendered clientes/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 3843)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.3ms | Allocations: 4276)
+
+
+  
+ActionView::Template::Error (undefined method `codigo_usuario' for #<Cliente:0x000000000d2e33c8>):
+    45:         <div class="col-md-12">
+    46:             <div class="card-header row">
+    47:               <div class="col-md-11">
+    48:                 <b>Usuario:</b> <%= cliente.codigo_usuario %> (Heovyh Borja Lopez)
+    49:               </div>
+    50:               <div class="col-md-1 text-right">
+    51:                 <span class="badge badge-primary badge-pill">Activo</span>
+  
+app/views/clientes/index.html.erb:48
+app/views/clientes/index.html.erb:43
+Started GET "/clientes" for ::1 at 2020-11-02 04:21:27 -0500
+Processing by ClientesController#index as HTML
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (0.2ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes"[0m
+  ↳ app/views/clientes/index.html.erb:43
+  Rendered clientes/index.html.erb within layouts/application (Duration: 19.5ms | Allocations: 4526)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.2ms | Allocations: 5701)
+
+
+  
+ActionView::Template::Error (undefined method `correo_corporativo' for #<Cliente:0x000000000a8d7520>):
+    60:             </div>
+    61:             <div class="col-md-3">
+    62:               <div class="card-body">
+    63:                 <b>Email:</b> <%= cliente.correo_corporativo %>
+    64:               </div>
+    65:             </div>
+    66:             <div class="col-md-3">
+  
+app/views/clientes/index.html.erb:63
+app/views/clientes/index.html.erb:43
+Started GET "/clientes" for ::1 at 2020-11-02 04:21:58 -0500
+Processing by ClientesController#index as HTML
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (0.3ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes"[0m
+  ↳ app/views/clientes/index.html.erb:43
+  Rendered layouts/_paginacion.html.erb (Duration: 0.6ms | Allocations: 131)
+  Rendered clientes/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 1812)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 68.3ms | ActiveRecord: 0.3ms | Allocations: 12149)
+
+
+Started GET "/clientes" for ::1 at 2020-11-02 04:22:37 -0500
+Processing by ClientesController#index as HTML
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (0.3ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes"[0m
+  ↳ app/views/clientes/index.html.erb:42
+  Rendered layouts/_paginacion.html.erb (Duration: 0.6ms | Allocations: 131)
+  Rendered clientes/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1814)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 94ms (Views: 91.1ms | ActiveRecord: 0.3ms | Allocations: 12136)
+
+
+Started GET "/clientes" for ::1 at 2020-11-02 04:23:01 -0500
+Processing by ClientesController#index as HTML
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (0.2ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes"[0m
+  ↳ app/views/clientes/index.html.erb:42
+  Rendered clientes/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1051)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 58.2ms | ActiveRecord: 0.2ms | Allocations: 11371)
+
+
+Started GET "/clientes" for ::1 at 2020-11-02 04:24:10 -0500
+Processing by ClientesController#index as HTML
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (0.2ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes"[0m
+  ↳ app/views/clientes/index.html.erb:42
+  Rendered clientes/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1052)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 49.7ms | ActiveRecord: 0.2ms | Allocations: 11372)
+
+
+Started GET "/clientes" for ::1 at 2020-11-02 04:24:57 -0500
+Processing by ClientesController#index as HTML
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (0.2ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes"[0m
+  ↳ app/views/clientes/index.html.erb:42
+  Rendered clientes/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1051)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 58.1ms | ActiveRecord: 0.2ms | Allocations: 11364)
+
+
+Started GET "/clientes" for ::1 at 2020-11-02 04:25:00 -0500
+Processing by ClientesController#index as HTML
+  Rendering clientes/index.html.erb within layouts/application
+  [1m[36mCliente Load (0.2ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes"[0m
+  ↳ app/views/clientes/index.html.erb:42
+  Rendered clientes/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 718)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.2ms | Allocations: 9978)
+
+
+Started GET "/clientes/1/edit" for ::1 at 2020-11-02 04:25:03 -0500
+Processing by ClientesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCliente Load (0.2ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clientes_controller.rb:69:in `set_cliente'
+  Rendering clientes/edit.html.erb within layouts/application
+  Rendered clientes/_form.html.erb (Duration: 4.5ms | Allocations: 6631)
+  Rendered clientes/edit.html.erb within layouts/application (Duration: 16.0ms | Allocations: 7015)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 58.4ms | ActiveRecord: 0.2ms | Allocations: 16983)
+
+
+Started GET "/clientes/1/edit" for ::1 at 2020-11-02 04:25:17 -0500
+Processing by ClientesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCliente Load (0.2ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clientes_controller.rb:69:in `set_cliente'
+  Rendering clientes/edit.html.erb within layouts/application
+  Rendered clientes/_form.html.erb (Duration: 5.1ms | Allocations: 6620)
+  Rendered clientes/edit.html.erb within layouts/application (Duration: 7.7ms | Allocations: 6996)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 98ms (Views: 94.2ms | ActiveRecord: 0.2ms | Allocations: 17876)
+
+
+Started GET "/clientes/1/edit" for ::1 at 2020-11-02 04:25:40 -0500
+Processing by ClientesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCliente Load (0.2ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clientes_controller.rb:69:in `set_cliente'
+  Rendering clientes/edit.html.erb within layouts/application
+  Rendered clientes/_form.html.erb (Duration: 6.0ms | Allocations: 6621)
+  Rendered clientes/edit.html.erb within layouts/application (Duration: 12.3ms | Allocations: 6965)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 74.4ms | ActiveRecord: 0.2ms | Allocations: 17847)
+
+
+Started GET "/clientes/1/edit" for ::1 at 2020-11-02 04:27:15 -0500
+Processing by ClientesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCliente Load (0.2ms)[0m  [1m[34mSELECT "clientes".* FROM "clientes" WHERE "clientes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/clientes_controller.rb:69:in `set_cliente'
+  Rendering clientes/edit.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 7.9ms | Allocations: 160)
+  Rendered clientes/_form.html.erb (Duration: 11.7ms | Allocations: 1105)
+  Rendered clientes/edit.html.erb within layouts/application (Duration: 14.6ms | Allocations: 1451)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 66.8ms | ActiveRecord: 0.2ms | Allocations: 12342)
+
+
+Started GET "/usuarios" for ::1 at 2020-11-02 04:27:21 -0500
+Processing by UsuariosController#index as HTML
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[36mUsuario Load (0.3ms)[0m  [1m[34mSELECT "usuarios".* FROM "usuarios"[0m
+  ↳ app/views/usuarios/index.html.erb:42
+  Rendered layouts/_paginacion.html.erb (Duration: 1.3ms | Allocations: 131)
+  Rendered usuarios/index.html.erb within layouts/application (Duration: 24.3ms | Allocations: 1621)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 67.9ms | ActiveRecord: 0.3ms | Allocations: 11462)
+
+
+Started GET "/usuarios/new" for ::1 at 2020-11-02 04:27:22 -0500
+Processing by UsuariosController#new as HTML
+  Rendering usuarios/new.html.erb within layouts/application
+  Rendered personas/_form.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered usuarios/_form.html.erb (Duration: 3.1ms | Allocations: 1298)
+  Rendered usuarios/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1631)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 46.8ms | ActiveRecord: 0.0ms | Allocations: 11042)
+
+
