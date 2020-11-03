@@ -1,4 +1,94 @@
 <p id="notice"><%= notice %></p>
+<%= content_for :head do %>
+  <br/>
+  <div class="row bd-example">
+    <div class="col-md-9 mb-2">
+      <h1 class="display-1">Solicitudes</h1>
+    </div>
+    <div class="col-md-3 text-right mb-2">
+      <br/>
+      <br/>
+      <%= link_to 'Nueva Solicitud', new_solicitud_path, :class => "form-control btn btn-lg btn-outline-primary text-primary" %>
+    </div>
+  </div>
+<% end %>
+
+
+  <div class="row mt-4">
+    <div class="col-md-8">
+      <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Ingrese datos del cliente" aria-label="Search">
+    </div>
+    <div class="col-md-4">
+      <select class="form-control form-control-lg mr-sm-2">
+        <option>Todos los estados</option>
+        <option value="value1">Sin Atender</option> 
+        <option value="value3">Atendido</option>
+        <option value="value3">Anulado</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row mt-2">
+    <div class="col-md-8 text-right">
+    </div>
+    <div class="col-md-2 text-right">
+      <button class="form-control btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
+    </div>
+    <div class="col-md-2 text-right">
+      <button class="form-control btn btn-warning my-2 my-sm-0" type="submit">Limpiar</button>
+    </div>
+  </div>
+
+    <% @solicituds.each do |solicitud| %>
+      <div class="card mt-2">
+        <div class="col-md-12">
+            <div class="card-header row  bg-secondary text-light">
+              <div class="col-md-11">
+                 Paso 28 Julio 2 (<b>Departamento: <%= solicitud.cod_departamento %></b>)
+              </div>
+              <div class="col-md-1 text-right">
+                <span class="badge badge-primary badge-pill">Atendido</span>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+              <div class="card-body pb-0">
+                <b><%= solicitud.tipo_documento %>:</b> <%= solicitud.numero_documento %>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body pb-0">
+                <b>Cliente:</b> <%= solicitud.apellidos %>; <%= solicitud.nombres %>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body pb-0">
+                <b>Telefono:</b> <%= solicitud.telefono %>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body pb-0">
+                <b>Email Cliente:</b> <%= solicitud.correo %>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body pb-0 text-justify">
+                <b>Mensaje:</b> <%= solicitud.mensaje %>
+              </div>
+            </div>
+            <div class="col-md-12 text-right mb-3">
+                  <%= link_to 'Editar', edit_solicitud_path(solicitud), :class => "btn-danger btn-sm text-light mr-3" %>
+            </div>
+        </div>
+      </div>
+
+    <% end %>
+
+
+<%= render partial: '/layouts/paginacion'%>
+
+<p id="notice"><%= notice %></p>
 
 <h1>Solicituds</h1>
 
