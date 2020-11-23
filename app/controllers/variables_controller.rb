@@ -10,15 +10,25 @@ class VariablesController < ApplicationController
   # GET /variables/1
   # GET /variables/1.json
   def show
+    @variables = Variable.all
   end
 
   # GET /variables/new
   def new
+    @variables = Variable.all
     @variable = Variable.new
   end
 
   # GET /variables/1/edit
   def edit
+    @variables = Variable.all
+  end
+
+  skip_before_action :verify_authenticity_token
+  def provincias
+    @provincias = Variable.all.where(tipo_variable: 'UbigeoProvincias',dato_extra: params[:departamento_id])
+    x = params[:departamento_id]
+    return 1
   end
 
   # POST /variables
@@ -69,6 +79,6 @@ class VariablesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def variable_params
-      params.require(:variable).permit(:tipo_variable, :codigo_variable, :descricion_variable, :dato_extra, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod)
+      params.require(:variable).permit(:tipo_variable, :codigo_variable, :descricion_variable, :dato_extra, :dato_extra2, :dato_extra3, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod)
     end
 end

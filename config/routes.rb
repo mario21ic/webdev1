@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :variables
   get 'separar/index'
   get 'separar/new'
   get 'reportes/index'
@@ -16,7 +17,6 @@ Rails.application.routes.draw do
   
   resources :caracteristicas_proyectos
   resources :usuarios
-  resources :variables
   resources :movimimiento_venta
   resources :venta
   resources :clientes
@@ -28,5 +28,9 @@ Rails.application.routes.draw do
   resources :departamentos
   resources :proyectos
   resources :reportes
+
+  post 'proyectos/new'
+
+  post 'variables/provincias', as: 'provincias'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

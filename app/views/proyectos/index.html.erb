@@ -1,3 +1,4 @@
+xxx
 <%= content_for :head do %>
   <p id="notice"><%= notice %></p>
   <div class="row bd-example">
@@ -12,52 +13,10 @@
     </div>
   </div>
 <% end %>
-  <div class="row mt-4">
-    <div class="col-md-8">
-      <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Ingrese nombre del proyecto / Dirección" aria-label="Search">
-    </div>
-    <div class="col-md-4">
-      <select class="form-control form-control-lg mr-sm-2">
-        <option>Todos los estados</option>
-        <option value="value1">Activo</option> 
-        <option value="value3">Inactivo</option>
-        <option value="value3">Pre-Venta</option>
-      </select>
-    </div>
-  </div>
-  <div class="row mt-2">
-    <div class="col-md-4">
-      <select class="form-control mr-sm-2">
-        <option>Todos los departamentos</option>
-        <option value="value1">Lima</option> 
-        <option value="value3">Arequipa</option>
-        <option value="value3">Cusco</option>
-      </select>
-    </div>
-    <div class="col-md-4">
-      <select class="form-control mr-sm-2">
-        <option>Todos las provincias</option>
-      </select>
-    </div>
-    <div class="col-md-4">
-      <select class="form-control mr-sm-2">
-        <option>Todos los distritos</option>
-      </select>
-    </div>
-    <%= render '/departamentos/filtros', departamento: @departamento %>
-  </div>
-  <div class="row mt-2">
-    <div class="col-md-8 text-right">
-    </div>
-    <div class="col-md-2 text-right">
-      <button class="form-control btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
-    </div>
-    <div class="col-md-2 text-right">
-      <button class="form-control btn btn-warning my-2 my-sm-0" type="submit">Limpiar</button>
-    </div>
-  </div>
+    <%= render '/proyectos/filtros', proyectos: @proyectos %>
 
 <div class="row mt-4">
+  
   <% @proyectos.each do |proyecto| %>
     <div class="col-md-6">
       <div class="card mb-3">

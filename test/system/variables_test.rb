@@ -16,6 +16,8 @@ class VariablesTest < ApplicationSystemTestCase
 
     fill_in "Codigo variable", with: @variable.codigo_variable
     fill_in "Dato extra", with: @variable.dato_extra
+    fill_in "Dato extra2", with: @variable.dato_extra2
+    fill_in "Dato extra3", with: @variable.dato_extra3
     fill_in "Descricion variable", with: @variable.descricion_variable
     fill_in "Estado", with: @variable.estado
     fill_in "Fec crea", with: @variable.fec_crea
@@ -35,6 +37,8 @@ class VariablesTest < ApplicationSystemTestCase
 
     fill_in "Codigo variable", with: @variable.codigo_variable
     fill_in "Dato extra", with: @variable.dato_extra
+    fill_in "Dato extra2", with: @variable.dato_extra2
+    fill_in "Dato extra3", with: @variable.dato_extra3
     fill_in "Descricion variable", with: @variable.descricion_variable
     fill_in "Estado", with: @variable.estado
     fill_in "Fec crea", with: @variable.fec_crea

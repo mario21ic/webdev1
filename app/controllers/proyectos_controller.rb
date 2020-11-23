@@ -1,27 +1,31 @@
 class ProyectosController < ApplicationController
   before_action :set_proyecto, only: [:show, :edit, :update, :destroy]
 
-  layout "panel"
+  layout "application"
 
   # GET /proyectos
   # GET /proyectos.json
   def index
     @proyectos = Proyecto.all
+    @variables = Variable.all
   end
 
   # GET /proyectos/1
   # GET /proyectos/1.json
   def show
     @departamentos = Departamento.all
+    @variables = Variable.all
   end
 
   # GET /proyectos/new
   def new
     @proyecto = Proyecto.new
+    @variables = Variable.all
   end
 
   # GET /proyectos/1/edit
   def edit
+    @variables = Variable.all
   end
 
   # POST /proyectos
@@ -72,6 +76,6 @@ class ProyectosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def proyecto_params
-      params.require(:proyecto).permit(:cod_proyecto, :nombre, :ubicacion, :descripcion_corta, :descripcion_larga, :precio_m2, :mca_favorito, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod, :departamentos)
+      params.require(:proyecto).permit(:cod_proyecto, :nombre, :ubicacion, :descripcion_corta, :descripcion_larga, :precio_m2, :mca_favorito, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod, :departamento, :provincia, :distrito)
     end
 end

@@ -12,8 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :tipo_variable %>
-    <%= form.text_field :tipo_variable %>
+    <%= form.collection_select :tipo_variable, @variables.where(tipo_variable: 'TipoVariable'), :codigo_variable, :descricion_variable, {:include_blank  => "Seleccionar Tipo"}, :class=>"form-control mr-sm-2", :required=>"required"%>
   </div>
 
   <div class="field">
@@ -32,28 +31,18 @@
   </div>
 
   <div class="field">
+    <%= form.label :dato_extra2 %>
+    <%= form.text_field :dato_extra2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dato_extra3 %>
+    <%= form.text_field :dato_extra3 %>
+  </div>
+
+  <div class="field">
     <%= form.label :estado %>
     <%= form.text_field :estado %>
-  </div>
-
-  <div class="field">
-    <%= form.label :usu_crea %>
-    <%= form.text_field :usu_crea %>
-  </div>
-
-  <div class="field">
-    <%= form.label :fec_crea %>
-    <%= form.datetime_select :fec_crea %>
-  </div>
-
-  <div class="field">
-    <%= form.label :usu_mod %>
-    <%= form.text_field :usu_mod %>
-  </div>
-
-  <div class="field">
-    <%= form.label :fec_mod %>
-    <%= form.datetime_select :fec_mod %>
   </div>
 
   <div class="actions">

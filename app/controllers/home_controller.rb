@@ -3,6 +3,7 @@ class HomeController < ApplicationController
 
   def index
     @proyectos = Proyecto.all
+    @variables = Variable.all
   end
 
   def nosotros
@@ -10,6 +11,7 @@ class HomeController < ApplicationController
 
   def proyectos
     @proyectos = Proyecto.all
+    @variables = Variable.all
   end
 
   def acceder
