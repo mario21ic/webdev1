@@ -5,16 +5,19 @@ class DepartamentosController < ApplicationController
   # GET /departamentos.json
   def index
     @departamentos = Departamento.all
+    @variables = Variable.all
   end
 
   # GET /departamentos/1
   # GET /departamentos/1.json
   def show
+    @variables = Variable.all
   end
 
   # GET /departamentos/new
   def new
     @departamento = Departamento.new
+    @variables = Variable.all
   end
 
   # GET /departamentos/1/edit
