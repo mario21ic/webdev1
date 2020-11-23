@@ -1,51 +1,16 @@
- 	   <br>
- 	   <br>
- 	   <br>
+<%= content_for :head do %>
+  <br/>
+  <div class="row bd-example">
+    <div class="col-md-12 mb-4">
+      <span class="display-2">Separar </span>
+      <span class="display-4"> » Nuevo</span>
+    </div>
+  </div>
+<% end %>
 
-<h1>Separar</h1>
-<form style="margin: 10%">
- 	   <div class= "form-group row">
-       <label  class="col-sm-2 col-form-label">DNI</label>
-         <input   type="text" name="DNI">
-       </div>	
+<%= content_for :titulo do %>
+     <i class="icon-iconfinder azul"></i>
+     Departamento <span class="display-5"> » Separar</span>
+<% end %>
 
-       <div class= "form-group row">
-       <label class="col-sm-2 col-form-label">Nombres</label>
-       	 
-         <input type="text" name="Nombres">
-        	
-      
-       </div>
-         <div class= "form-group row">
-       <label class="col-sm-2 col-form-label">Apellidos</label>
-       	 
-         <input type="text" name="Apellidos">
-        	
-      
-      </div>
-        <div class= "form-group row">
-       <label class="col-sm-2 col-form-label">Correo</label>
-       	 
-         <input type="text" name="Correo">
-        	
-       
-      </div>
-        <div class= "form-group row">
-       <label class="col-sm-2 col-form-label">N° Voucher</label>
-       	 
-         <input type="text" name="N° Voucher">
-        	
-      
-      </div>
-        <div class= "form-group row">
-       <label class="col-sm-2 col-form-label">Monto</label>
-       	 
-         <input type="text" name="Monto">
-        	
-       
-      </div>
-      <br>
-      <br>
-         <button style="margin-left: 280px " class="btn btn-primary" type="submit">Separar</button>
-
- </form>
+<%= render 'form', separar: @separar %>

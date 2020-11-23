@@ -1,0 +1,2 @@
+class Separar < ApplicationRecord
+end

@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   resources :caracteristicas_proyectos
   resources :usuarios
   resources :movimimiento_venta
+  resources :separars
   resources :venta
   resources :clientes
   resources :cita
