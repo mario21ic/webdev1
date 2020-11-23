@@ -1,4 +1,4 @@
-class SepararController < ApplicationController
+class SepararsController < ApplicationController
   before_action :set_separar, only: [:show, :edit, :update, :destroy]
 
   layout "application"
@@ -75,6 +75,6 @@ class SepararController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def separar_params
-      params.require(:separar).permit(:cod_separar, :cod_solictud, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod)
+      params.require(:separar).permit(:nombres, :apellidos, :dni, :correo, :voucher, :monto)
     end
 end
