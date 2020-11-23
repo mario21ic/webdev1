@@ -585,7 +585,7 @@ input,select,::placeholder,textarea{
     .contenedorBoton input[type="submit"]{
       border-radius: 35px;
       margin: 5px;
-      min-width: 250px;
+      min-width: 280px;
       min-height: 65px;
       border:2px solid rgb(0 72 103);
       border-top:0;
@@ -595,4 +595,8 @@ input,select,::placeholder,textarea{
 
     .contenedorBoton form{
     	display: inline-block;
+    }
+
+    .contenedorBoton a.btn{
+    	padding-top: 17px;
     }

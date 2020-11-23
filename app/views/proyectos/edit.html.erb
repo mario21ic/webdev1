@@ -1,11 +1,6 @@
-<%= content_for :head do %>
-  <br/>
-  <div class="row bd-example">
-    <div class="col-md-12 mb-4">
-      <span class="display-2">Proyecto </span>
-      <span class="display-4"> » Editar</span>
-    </div>
-  </div>
+<%= content_for :titulo do %>
+     <i class="icon-iconfinder azul"></i>
+     Proyecto <small> » Editar</small>
 <% end %>
 
 <%= render 'form', proyecto: @proyecto %>

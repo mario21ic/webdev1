@@ -1,0 +1,40 @@
+<div class="row mt-4">
+  
+  <% proyectos.each do |proyecto| %>
+    <div class="col-md-4">
+      <div class="mb-3" style="border:1px solid gray;">
+        <img src="http://www.diarioeldia.cl/sites/default/files/styles/flexslider_full/public/d6/departamentos_paraiso_del_mar_01.jpg?itok=ptT8SjbZ" class="card-img" style="height: 100%;max-height: 200px;width: 100%;">
+        <div class="row no-gutters">
+          
+            <div class="card-body">
+              <div class="row" style="height: 110px; overflow: hidden;">
+                <div class="col-md-8">
+                  <h5 class="card-title"><%= proyecto.nombre %></h5>
+                </div>
+                <div class="col-md-4 text-right">
+                  <span class="badge badge-primary badge-pill">Activo</span>
+                  <span class="card-text text-warning h4">★</span>
+                </div>
+                <div class="col-md-12 text-justify">
+                  <p class="card-text"><%= proyecto.descripcion_corta %></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8">
+                  <p class="card-text text-truncate"><small class="text-muted"><%= proyecto.ubicacion %></small></p>
+                </div>
+                <div class="col-md-4 text-right">
+                  <p class="card-text"><small class="text-muted font-weight-bold">$<%= proyecto.precio_m2%> m²</small></p>
+                </div>
+              </div>
+              <div class="text-right mt-2">
+                  <%= link_to 'Ver más', proyecto, :class => "btn-success btn-sm text-light" %>
+                  <%= link_to 'Editar', edit_proyecto_path(proyecto), :class => "btn-danger btn-sm text-light" %>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

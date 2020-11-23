@@ -76,6 +76,6 @@ class ProyectosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def proyecto_params
-      params.require(:proyecto).permit(:cod_proyecto, :nombre, :ubicacion, :descripcion_corta, :descripcion_larga, :precio_m2, :mca_favorito, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod, :departamento, :provincia, :distrito)
+      params.require(:proyecto).permit(:cod_proyecto, :nombre, :ubicacion, :descripcion_corta, :descripcion_larga, :precio_m2, :mca_favorito, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod, :departamento, :provincia, :distrito, :latitud, :longitud)
     end
 end
