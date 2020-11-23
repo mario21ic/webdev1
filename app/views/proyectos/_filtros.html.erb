@@ -1,0 +1,33 @@
+
+  <div class="row">
+    <div class="col-md-8">
+      <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Ingrese nombre del proyecto / Dirección" aria-label="Search">
+    </div>
+    <div class="col-md-4">
+      <%= collection_select("estados", "id", @variables.where(tipo_variable: 'Estado Proyecto') , :codigo_variable, :descricion_variable, {:prompt => "Todos los estados"}, :id => 'estado', :class=>"form-control form-control-lg mr-sm-2")  %>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-md-4">
+      <%= collection_select("departamentos", "id", @variables.where(tipo_variable: 'UbigeoDepartamentos') , :codigo_variable, :descricion_variable, {:prompt => "Todos los departamentos"}, :id => 'departamento', :class=>"form-control mr-sm-2")  %>
+    </div>
+    <div class="col-md-4">
+      <%= collection_select("provincias", "id", @variables.where(tipo_variable: 'UbigeoProvincias') , :codigo_variable, :descricion_variable, {:prompt => "Todas las provincias"}, :id => 'provincia', :class=>"form-control mr-sm-2")  %>
+    </div>
+    <div class="col-md-4">
+      <%= collection_select("distritos", "id", @variables.where(tipo_variable: 'UbigeoDistritos') , :codigo_variable, :descricion_variable, {:prompt => "Todos los distritos"}, :id => 'distrito', :class=>"form-control mr-sm-2")  %>
+    </div>
+    <%= render '/departamentos/filtros', departamento: @departamento %>
+  </div>
+  <div class="contenedorBoton">
+      <button class="btn btn-success my-sm-0 btn-lg" type="submit"><i class="icon-search-24"></i> Buscar</button>
+
+      <% if @home != 'S'%>
+        <%= button_to(new_proyecto_path, :class => "btn my-sm-0 btn-lg btn-primary text-light") do %>
+          <i class="icon-plus-24"></i> Nuevo Proyecto
+        <%end%>
+      <% end %>
+
+      <button class="btn btn-warning my-sm-0 btn-lg" type="submit" id="limpiar"><i class="icon-circle-slash-24 negro"></i> Limpiar</button>
+  </div>
+  <%= render '/proyectos/ubigeo'%>
