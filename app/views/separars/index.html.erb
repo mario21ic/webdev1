@@ -16,19 +16,20 @@
 
   <div class="row mt-4">
     <div class="col-md-8">
-      <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Ingrese nombre del usuario" aria-label="Search">
+      <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Ingrese nombre del cliente" aria-label="Search">
+    </div>
+    <div class="col-md-2 text-right">
+      <button class="form-control btn btn-lg btn-success my-2 my-sm-0" type="submit">Buscar</button>
+    </div>
+    <div class="col-md-2 text-right">
+      <button class="form-control btn btn-lg btn-warning my-2 my-sm-0" type="submit">Limpiar</button>
     </div>
   </div>
 
   <div class="row mt-2">
     <div class="col-md-8 text-right">
     </div>
-    <div class="col-md-2 text-right">
-      <button class="form-control btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
-    </div>
-    <div class="col-md-2 text-right">
-      <button class="form-control btn btn-warning my-2 my-sm-0" type="submit">Limpiar</button>
-    </div>
+    
   </div>
 
     <% @separars.each do |separar| %>
@@ -76,7 +77,7 @@
       </div>
 
     <% end %>
-
+<br/>
 <%= link_to 'Nueva Separacion', new_separar_path, :class => "btn btn-lg btn-success text-light" %>
 
 <%= render partial: '/layouts/paginacion'%>
