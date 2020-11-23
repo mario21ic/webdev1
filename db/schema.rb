@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_21_161557) do
+ActiveRecord::Schema.define(version: 2020_11_23_192943) do
 
   create_table "archivos", force: :cascade do |t|
     t.integer "cod_archivo"
@@ -160,6 +160,17 @@ ActiveRecord::Schema.define(version: 2020_11_21_161557) do
     t.string "departamento"
     t.string "provincia"
     t.string "distrito"
+  end
+
+  create_table "separars", force: :cascade do |t|
+    t.string "nombres"
+    t.string "apellidos"
+    t.string "dni"
+    t.string "correo"
+    t.string "voucher"
+    t.decimal "monto"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "solicituds", force: :cascade do |t|

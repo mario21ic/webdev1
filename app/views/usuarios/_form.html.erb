@@ -25,6 +25,13 @@
         </div>
       </div>
       <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Celular</label>
+        <%= form.text_field :usu_crea, :class=>"form-control form-control-lg mr-sm-2"%>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
         <label for="validationCustom02" class="col-form-label col-form-label-lg">Usuario</label>
         <%= form.text_field :codigo_usuario, :class=>"form-control form-control-lg mr-sm-2"%>
         <div class="valid-feedback">
@@ -46,6 +53,14 @@
           <option value="value3">Inactivo</option>
           <option value="value3">Falta Activar</option>
         </select>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3 field">
+        <%= form.label :correo_corporativo, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.email_field :tipo_documento, :class=>"form-control form-control-lg mr-sm-2"%>
         <div class="valid-feedback">
           Looks good!
         </div>

@@ -29,7 +29,11 @@
   </div>
 
   <div class="row mt-2">
-    <div class="col-md-8 text-right">
+    <div class="col-md-6 text-right">
+    </div>
+    <div class="col-md-2">
+    <%= link_to '<button class="form-control btn btn-success my-2 my-sm-0" type="submit">Nuevo</button>'.html_safe, new_usuario_path %>
+      
     </div>
     <div class="col-md-2 text-right">
       <button class="form-control btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
@@ -74,7 +78,7 @@
             </div>
             <div class="col-md-3">
               <div class="card-body">
-                <b>Télefono:</b> 987654321
+                <b>Celular:</b> <%= usuario.usu_crea %>
               </div>
             </div>
             <div class="col-md-3">
