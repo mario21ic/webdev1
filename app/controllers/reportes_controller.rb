@@ -1,7 +1,8 @@
 class ReportesController < ApplicationController
-  layout "panel"
+  layout "application"
 
   def index
     @departamentos = Departamento.all
+    @variables = Variable.all
   end
 end

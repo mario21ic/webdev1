@@ -123,6 +123,13 @@ ActiveRecord::Schema.define(version: 2020_11_21_161557) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "posts", force: :cascade do |t|
+    t.string "title"
+    t.text "text"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "proformas", force: :cascade do |t|
     t.integer "cod_proforma"
     t.integer "cod_solictud"

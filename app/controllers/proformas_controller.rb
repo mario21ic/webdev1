@@ -1,26 +1,30 @@
 class ProformasController < ApplicationController
   before_action :set_proforma, only: [:show, :edit, :update, :destroy]
 
-  layout "panel"
+  layout "application"
 
   # GET /proformas
   # GET /proformas.json
   def index
     @proformas = Proforma.all
+    @variables = Variable.all
   end
 
   # GET /proformas/1
   # GET /proformas/1.json
   def show
+    @variables = Variable.all
   end
 
   # GET /proformas/new
   def new
     @proforma = Proforma.new
+    @variables = Variable.all
   end
 
   # GET /proformas/1/edit
   def edit
+    @variables = Variable.all
   end
 
   # POST /proformas

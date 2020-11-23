@@ -1,12 +1,13 @@
 class UsuariosController < ApplicationController
   before_action :set_usuario, only: [:show, :edit, :update, :destroy]
 
-  layout "panel"
+  layout "application"
 
   # GET /usuarios
   # GET /usuarios.json
   def index
     @usuarios = Usuario.all
+    @variables = Variable.all
   end
 
   # GET /usuarios/1
@@ -17,11 +18,13 @@ class UsuariosController < ApplicationController
   # GET /usuarios/new
   def new
     @usuario = Usuario.new
+    @variables = Variable.all
   end
 
   # GET /usuarios/1/edit
   def edit
     @persona = Persona.new
+    @variables = Variable.all
   end
 
   # POST /usuarios

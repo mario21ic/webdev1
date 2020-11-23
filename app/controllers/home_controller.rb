@@ -7,6 +7,7 @@ class HomeController < ApplicationController
   end
 
   def nosotros
+    @variables = Variable.all
   end
 
   def proyectos
@@ -15,8 +16,10 @@ class HomeController < ApplicationController
   end
 
   def acceder
+    @variables = Variable.all
   end
 
   def contactenos
+    @variables = Variable.all
   end
 end

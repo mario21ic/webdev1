@@ -1,26 +1,30 @@
 class VentaController < ApplicationController
   before_action :set_ventum, only: [:show, :edit, :update, :destroy]
 
-  layout "panel"
+  layout "application"
 
   # GET /venta
   # GET /venta.json
   def index
     @venta = Ventum.all
+    @variables = Variable.all
   end
 
   # GET /venta/1
   # GET /venta/1.json
   def show
+    @variables = Variable.all
   end
 
   # GET /venta/new
   def new
     @ventum = Ventum.new
+    @variables = Variable.all
   end
 
   # GET /venta/1/edit
   def edit
+    @variables = Variable.all
   end
 
   # POST /venta

@@ -1,26 +1,30 @@
 class SolicitudsController < ApplicationController
   before_action :set_solicitud, only: [:show, :edit, :update, :destroy]
 
-  layout "panel"
+  layout "application"
 
   # GET /solicituds
   # GET /solicituds.json
   def index
     @solicituds = Solicitud.all
+    @variables = Variable.all
   end
 
   # GET /solicituds/1
   # GET /solicituds/1.json
   def show
+    @variables = Variable.all
   end
 
   # GET /solicituds/new
   def new
     @solicitud = Solicitud.new
+    @variables = Variable.all
   end
 
   # GET /solicituds/1/edit
   def edit
+    @variables = Variable.all
   end
 
   # POST /solicituds
