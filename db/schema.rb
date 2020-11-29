@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_23_192943) do
+ActiveRecord::Schema.define(version: 2020_11_25_015348) do
 
   create_table "archivos", force: :cascade do |t|
     t.integer "cod_archivo"
@@ -193,7 +193,7 @@ ActiveRecord::Schema.define(version: 2020_11_23_192943) do
   end
 
   create_table "usuarios", force: :cascade do |t|
-    t.string "tipo_documento"
+    t.string "codigo"
     t.string "numero_documento"
     t.string "codigo_usuario"
     t.string "contraseña"
@@ -204,8 +204,16 @@ ActiveRecord::Schema.define(version: 2020_11_23_192943) do
     t.datetime "fec_crea"
     t.string "usu_mod"
     t.datetime "fec_mod"
+    t.string "telefono"
+    t.string "correo_personal"
+    t.string "nombre"
+    t.string "apellido"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "apellido_materno"
+    t.string "genero"
+    t.string "tipo_persona"
+    t.string "tipo_doc"
   end
 
   create_table "variables", force: :cascade do |t|

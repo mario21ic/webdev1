@@ -14,33 +14,18 @@
 <% end %>
 
 
-  <div class="row mt-4">
-    <div class="col-md-8">
-      <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Ingrese nombre del usuario" aria-label="Search">
-    </div>
-    <div class="col-md-4">
-      <select class="form-control form-control-lg mr-sm-2">
-        <option>Todos los estados</option>
-        <option value="value1">Activo</option> 
-        <option value="value3">Inactivo</option>
-        <option value="value3">Pendiente de activación</option>
-      </select>
-    </div>
-  </div>
+  
 
   <div class="row mt-2">
-    <div class="col-md-6 text-right">
+    
+    <div class="col-md-3 text-left">
+     <h3>Registro de Usuarios</h3>
     </div>
     <div class="col-md-2">
     <%= link_to '<button class="form-control btn btn-success my-2 my-sm-0" type="submit">Nuevo</button>'.html_safe, new_usuario_path %>
       
     </div>
-    <div class="col-md-2 text-right">
-      <button class="form-control btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
-    </div>
-    <div class="col-md-2 text-right">
-      <button class="form-control btn btn-warning my-2 my-sm-0" type="submit">Limpiar</button>
-    </div>
+    
   </div>
 
     <% @usuarios.each do |usuario| %>
@@ -51,19 +36,19 @@
                 <b>Usuario:</b> <%= usuario.codigo_usuario %> (Heovyh Borja Lopez)
               </div>
               <div class="col-md-1 text-right">
-                <span class="badge badge-primary badge-pill">Activo</span>
+                <span class="badge badge-primary badge-pill"><%= usuario.estado %></span>
               </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3">
               <div class="card-body">
-                <b><%= usuario.tipo_documento %>:</b> <%= usuario.numero_documento %>
+                <b><%= usuario.tipo_doc %>:</b> <%= usuario.numero_documento %>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card-body">
-                <b>Email Personal:</b> <%= usuario.correo_corporativo %>
+                <b>Email Personal:</b> <%= usuario.correo_personal %>
               </div>
             </div>
             <div class="col-md-3">
@@ -78,32 +63,41 @@
             </div>
             <div class="col-md-3">
               <div class="card-body">
-                <b>Celular:</b> <%= usuario.usu_crea %>
+                <b>Telefono:</b> <%= usuario.telefono %>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card-body">
-                <b>Tipo de Persona:</b> Natural
+                <b>Tipo de Persona:</b> <%= usuario.tipo_persona %>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card-body">
-                <b>Genero:</b> Masculino
+                <b>Genero:</b> <%= usuario.genero %>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card-body">
-                <b>Fecha de Nacimiento:</b> 06/06/2006
+                <b>Fecha de Nacimiento:</b> <%= usuario.fec_crea %>
               </div>
             </div>
-            <div class="col-md-12 text-right mb-3">
-                  <%= link_to 'Editar', edit_usuario_path(usuario), :class => "btn-danger btn-sm text-light mr-3" %>
-            </div>
-        </div>
+            
+            
       </div>
+      <div class="actions text-right" >
+            
+            <%= link_to 'Editar', edit_usuario_path(usuario), :class => "btn-danger btn-sm text-light mr-3" %>
+            
+            
+            <%= link_to 'Mostrar', usuario, :class => "btn-danger btn-sm text-light mr-3" %>
+           
+            
+            <%= link_to 'Eliminar', usuario, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn-danger btn-sm text-light mr-3" %>
+            
+           </div>
 
     <% end %>
 
-<%= link_to 'Nuevo Usuario', new_usuario_path, :class => "btn btn-lg btn-success text-light" %>
+
 
 <%= render partial: '/layouts/paginacion'%>

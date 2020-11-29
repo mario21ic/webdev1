@@ -12,6 +12,10 @@ class CreateUsuarios < ActiveRecord::Migration[6.0]
       t.datetime :fec_crea
       t.string :usu_mod
       t.datetime :fec_mod
+      t.string :telefono
+      t.string :correo_personal
+      t.string :nombre
+      t.string :apellido
 
       t.timestamps
     end
