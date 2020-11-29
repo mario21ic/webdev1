@@ -8,10 +8,10 @@ one:
   correo_corporativo: MyString
   perfil: MyString
   estado: MyString
-  usu_crea: MyString
-  fec_crea: 2020-11-23 19:26:50
+  usu: 
+  fec_crea: 2020-11-23 19:07:55
   usu_mod: MyString
-  fec_mod: 2020-11-23 19:26:50
+  fec_mod: 2020-11-23 19:07:55
   telefono: MyString
   correo_personal: MyString
   nombre: MyString
@@ -25,10 +25,10 @@ two:
   correo_corporativo: MyString
   perfil: MyString
   estado: MyString
-  usu_crea: MyString
-  fec_crea: 2020-11-23 19:26:50
+  usu: 
+  fec_crea: 2020-11-23 19:07:55
   usu_mod: MyString
-  fec_mod: 2020-11-23 19:26:50
+  fec_mod: 2020-11-23 19:07:55
   telefono: MyString
   correo_personal: MyString
   nombre: MyString
