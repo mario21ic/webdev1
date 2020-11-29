@@ -1,25 +1,24 @@
 <%= form_with(model: archivo, local: true) do |form| %>
-  <% if archivo.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(archivo.errors.count, "error") %> prohibited this archivo from being saved:</h2>
-
-      <ul>
-        <% archivo.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-
+         <%= form.hidden_field :cod_proyecto%>
+         <%= form.hidden_field :cod_departamento%>
 
 <div class="form-row mt-3">
       <div class="col-md-9 mb-3">
-        <label class="col-form-label col-form-label-lg">Archivo</label>
-        <input type="file" class="custom-file-input" style="display: none;" id="inputGroupFile01" accept=".jpeg,.png,.gif, .video">
-        <label class="form-control form-control-lg text-center align-middle" style="height: 526px;" for="inputGroupFile01">
-          <span style="border: 1px dashed grey; width: 100%; display: inline-block;height: 508px;border-radius: 4px;padding-top: 250px;">
-            Seleccione un archivo
+         <%= form.label :nombre_archivo, "Archivo", :class=>"col-form-label col-form-label-lg" %>
+         <%= form.file_field :nombre_archivo, {:class=>"custom-file-input" , :style=>"display: none;", :accept=>"image/*"}%>
+        <label class="form-control form-control-lg text-center align-middle" style="height: 526px;" for="archivo_nombre_archivo">
+            <span style="border: 1px dashed grey; display: inline-block;border-radius: 4px;">
+              <table style="height: 508px;width: 100%;">
+                <tr>
+                  <td>
+                    <%if @archivo.nombre_archivo %>
+                      <%= image_tag(@archivo.nombre_archivo.url)%>
+                    <%else%>
+                      Seleccione un archivo
+                    <%end%> 
+                  </td>
+                </tr>
+              </table>
           </span>
         </label>
         <div class="valid-feedback">

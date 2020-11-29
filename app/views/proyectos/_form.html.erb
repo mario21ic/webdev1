@@ -50,10 +50,35 @@
           Looks good!
         </div>
       </div>
+      <div class="col-md-4 mb-3 mt-0">
+          <%= form.label :precio_m2,"Precio m² dolares",:class=>"col-form-label col-form-label-lg" %>
+          <%= form.number_field :precio_m2, :class=>"form-control form-control-lg", :required=>"required" %>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+            <%= form.label :mca_favorito, "Favorito", :class=>"col-form-label col-form-label-lg" %>
+
+            <%= form.collection_select :mca_favorito, @variables.where(tipo_variable: 'SiNo'), :codigo_variable, :descricion_variable, {:include_blank  => "[Seleccione]"}, :class=>"form-control form-control-lg mr-sm-2", :required=>"required"%>
+
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <%= form.label :estado, :class=>"col-form-label col-form-label-lg" %>
+
+        <%= form.collection_select :estado, @variables.where(tipo_variable: 'Estado Proyecto'), :codigo_variable, :descricion_variable, {:include_blank  => "[Seleccione]"}, :class=>"form-control form-control-lg mr-sm-2", :required=>"required"%>
+
+        <div class="valid-feedback">
+           Looks good!
+        </div>
+      </div> 
     </div>
     <div class="form-row">
       <div class="col-md-12 mb-3">
-        <%= form.label :ubicacion, :class=>"col-form-label col-form-label-lg" %>
+        <%= form.label :ubicacion, "Dirección", :class=>"col-form-label col-form-label-lg" %>
         <%= form.text_field :ubicacion, :class=>"form-control form-control-lg", :required=>"required" %>
         <div class="valid-feedback">
           Looks good!
@@ -71,10 +96,78 @@
     </div>
   </div>
   <div class="col-md-6">
+    <%= form.hidden_field :latitud, :required=>"required" %>
+    <%= form.hidden_field :longitud, :required=>"required" %>
     <label for="validationCustom02" class="col-form-label col-form-label-lg">Ubicación</label>
-    <div class="form-control" style="height: 414px;padding: 1px;">
-      <iframe width="100%" height="410" frameborder="0" style="border:0" src="https://google.com/maps/embed/v1/place?q=Universidad%20Peruana%20de%20Ciencias%20Aplicadas&key=AIzaSyA-mX5Z7eJL5GKASzo5gSNavXxX748a5Y4" allowfullscreen> </iframe>
+    <div class="form-control" style="min-height: 528px;padding: 1px;background-image: url('https://acegif.com/wp-content/uploads/loading-97.gif');background-repeat: no-repeat;background-position: center;" id="map">
     </div>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsRD1kwYJJ_fSNt3RImOEkji9NFyzDng0"></script>
+    <script type="text/javascript">
+        (function(fn) 
+          {
+              let latitude = 0<%=proyecto.latitud%>;
+              let longitude = 0<%=proyecto.longitud%>;
+
+              if (latitude == 0)
+              {
+                if (navigator.geolocation) 
+                {
+                    navigator.geolocation.getCurrentPosition(
+                    fn, 
+                    function (error) 
+                    {
+                      switch (error.code) 
+                      {
+                        case error.PERMISSION_DENIED:
+                          alert("Oops! No has aceptado compartir tu posición");
+                          break;
+                        case error.POSITION_UNAVAILABLE, PERMISSION_DENIED_TIMEOUT:
+                          alert("Oops! No se puede obtener la posición actual");         
+                          break;
+                        default:
+                          alert("Oops! Algo ha salido mal");
+                      }
+                    });
+                }
+                else
+                    alert('Oops! Tu navegador no soporta geolocalización. Bájate Chrome, que es gratis!');
+              }
+              else
+                fn({coords:{latitude:latitude,longitude:longitude}});
+              
+          })(function fnx(position)
+                    {
+                        setTimeout(()=>
+                        {
+                          const lt = document.getElementById("proyecto_latitud");
+                          const lg = document.getElementById("proyecto_longitud");
+
+                          lt.value = position.coords.latitude;
+                          lg.value = position.coords.longitude;
+
+                          let map = new google.maps.Map(
+                                document.getElementById("map"),
+                                {center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude,position.coords.accuracy),
+                                 zoom: 14,
+                                 mapTypeId: google.maps.MapTypeId.ROADMAP});
+                            
+                          const marker = new google.maps.Marker({
+                                  map: map});
+                             
+                          marker.setPosition({
+                              lat: position.coords.latitude,
+                              lng: position.coords.longitude, 
+                              x: position.coords.accuracy});        
+
+                          google.maps.event.addListener(map,'click', function(event)
+                          {
+                            lt.value = event.latLng.lat();
+                            lg.value = event.latLng.lng();
+                            marker.setPosition(event.latLng);
+                          });
+                        },1000);
+                    });
+    </script>    
     <div class="valid-feedback">
       Looks good!
     </div>
@@ -86,47 +179,7 @@
         Looks good!
       </div>
   </div>
-  <div class="col-md-3 mb-3 mt-0">
-    <label for="validationCustom02" class="col-form-label col-form-label-lg">Moneda</label>
-    <select class="form-control form-control-lg mr-sm-2">
-      <option>[Seleccione]</option>
-      <option value="value1">Soles</option> 
-      <option value="value3">Dolares</option>       
-    </select>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-  </div>
-  <div class="col-md-3 mb-3 mt-0">
-      <%= form.label :precio_m2, :class=>"col-form-label col-form-label-lg" %>
-      <%= form.number_field :precio_m2, :class=>"form-control form-control-lg", :required=>"required" %>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
-  </div>
-  <div class="col-md-3 mb-3 field">
-    <label for="validationCustom02" class="col-form-label col-form-label-lg">Favorito</label>
-    <select class="form-control form-control-lg mr-sm-2">
-      <option>[Seleccione]</option>
-      <option value="value1">Si es favorito</option> 
-      <option value="value3">No es favorito</option>       
-    </select>
-    <div class="valid-feedback">
-      Looks good!
-    </div>
-  </div>
-  <div class="col-md-3 mb-3 field">
-    <%= form.label :estado, :class=>"col-form-label col-form-label-lg" %>
-    <select class="form-control form-control-lg mr-sm-2">
-      <option>[Seleccione]</option>        
-      <option value="value1">Activo</option> 
-      <option value="value3">Inactivo</option>
-      <option value="value3">Pre-Venta</option>      
-    </select>
-    <div class="valid-feedback">
-       Looks good!
-    </div>
-  </div>  
+   
 </div>
 <%= render '/proyectos/ubigeo'%>
 <style>
@@ -208,347 +261,55 @@
       Caracteristicas
     </label>
     <div class="form-row">
-      <div class="col-md-2 card-project-description">
-        <span class="onoffswitch form-control">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c1">
-          <label class="onoffswitch-label" for="c1">
-            <span class="onoffswitch-inner">
-              <figure>
-                <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_01.svg" alt="">
-              </figure>
-              <div>
-                INICIO <br> DE OBRA <br> MEDIADOS 2021
-              </div>
-            </span>
-          </label>
-        </span>
-      </div>
-      <div class="col-md-2 card-project-description">
-        <span class="onoffswitch form-control">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c2">
-          <label class="onoffswitch-label" for="c2">
-            <span class="onoffswitch-inner">
-              <figure>
-                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_02.svg" alt="">
-              </figure>
-              <div>
-                ARQUITECTURA <br> NÓMENA <br> ARQUITECTOS
-              </div>
-            </span>
-          </label>
-        </span>
-      </div>
-      <div class="col-md-2 card-project-description">
-        <span class="onoffswitch form-control">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c3">
-          <label class="onoffswitch-label" for="c3">
-            <span class="onoffswitch-inner">
-              <figure>
-                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_03.svg" alt="">
-              </figure>
-              <div>
-                  DISEÑO INTERIOR <br> COSTA + HERRERA <br> ARQUITECTOS
-              </div>
-            </span>
-          </label>
-        </span>
-      </div>
-      <div class="col-md-2 card-project-description">
-        <span class="onoffswitch form-control">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c4">
-          <label class="onoffswitch-label" for="c4">
-            <span class="onoffswitch-inner">
-              <figure>
-                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_05.svg" alt="">
-              </figure>
-              <div>
-                  ESTACIONAMIENTO <br> PARA <br> BICICLETAS
-              </div>
-            </span>
-          </label>
-        </span>
-      </div>
-      <div class="col-md-2 card-project-description">
-        <span class="onoffswitch form-control">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c5">
-          <label class="onoffswitch-label" for="c5">
-            <span class="onoffswitch-inner">
-              <figure>
-                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_06.svg" alt="">
-              </figure>
-              <div>
-                  FITNESS <br> CENTER <br> EQUIPADO
-              </div>
-            </span>
-          </label>
-        </span>
-      </div>
-      <div class="col-md-2 card-project-description">
-        <span class="onoffswitch form-control">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c6">
-          <label class="onoffswitch-label" for="c6">
-            <span class="onoffswitch-inner">
-              <figure>
-                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_12.svg" alt="">
-              </figure>
-              <div>
-                  WORK <br> SPACE <br> CON WIFI
-              </div>
-            </span>
-          </label>
-        </span>
-      </div>
-      <div class="col-md-2 card-project-description">
-        <span class="onoffswitch form-control">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c7">
-          <label class="onoffswitch-label" for="c7">
-            <span class="onoffswitch-inner">
-              <figure>
-                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_04.svg" alt="">
-              </figure>
-              <div>
-                  A 1 CUADRA <br> DEL MALECÓN <br> CISNEROS
-              </div>
-            </span>
-          </label>
-        </span>
-      </div>
-       <div class="col-md-2 card-project-description">
-        <span class="onoffswitch form-control">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c8">
-          <label class="onoffswitch-label" for="c8">
-            <span class="onoffswitch-inner">
-              <figure>
-                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_07.svg" alt="">
-              </figure>
-              <div>
-                  ÁREAS <br> DESDE 80m² <br> a 212m²
-              </div>
-            </span>
-          </label>
-        </span>
-      </div>
-      <div class="col-md-2 card-project-description">
-        <span class="onoffswitch form-control">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c9">
-          <label class="onoffswitch-label" for="c9">
-            <span class="onoffswitch-inner">
-              <figure>
-                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_10.svg" alt="">
-              </figure>
-              <div>
-                  PISCINA <br> 11m PARA <br> NADO
-              </div>
-            </span>
-          </label>
-        </span>
-      </div>
-      <div class="col-md-2 card-project-description">
-        <span class="onoffswitch form-control">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c10">
-          <label class="onoffswitch-label" for="c10">
-            <span class="onoffswitch-inner">
-              <figure>
-                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_11.svg" alt="">
-              </figure>
-              <div>
-                  2 ZONAS <br> DE BBQ EN <br> TERRAZA
-              </div>
-            </span>
-          </label>
-        </span>
-      </div>
-      <div class="col-md-2 card-project-description">
-        <span class="onoffswitch form-control">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c11">
-          <label class="onoffswitch-label" for="c11">
-            <span class="onoffswitch-inner">
-              <figure>
-                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_09.svg" alt="">
-              </figure>
-              <div>
-                  EDIFICACIÓN <br> ECOEFICIENTE
-              </div>
-            </span>
-          </label>
-        </span>
-      </div>
-      <div class="col-md-2 card-project-description">
-        <span class="onoffswitch form-control">
-          <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="c12">
-          <label class="onoffswitch-label" for="c12">
-            <span class="onoffswitch-inner">
-              <figure>
-                  <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_08.svg" alt="">
-              </figure>
-              <div>
-                  1,2 y 3 <br> DORMITORIOS
-              </div>
-            </span>
-          </label>
-        </span>
-      </div>      
+
+
+                    <% @variables.where(tipo_variable: 'Caracteristicas').each do |variable| %>
+                       <div class="col-md-2 card-project-description">
+                        <span class="onoffswitch form-control">
+                          <input type="checkbox" name="proyecto[caracteristicas][<%= variable.codigo_variable %>]" class="onoffswitch-checkbox" id="<%= variable.codigo_variable %>" 
+                          <%if @caracteristicas_proyecto%><%= @caracteristicas_proyecto.select(:cod_caracteristica).where(cod_caracteristica: variable.codigo_variable, cod_proyecto: proyecto.id, estado: 'A').collect(&:cod_caracteristica)[0]?'checked':''%><% end %>>
+                          <label class="onoffswitch-label" for="<%= variable.codigo_variable %>">
+                            <span class="onoffswitch-inner">
+                              <figure>
+                                <img src="https://www.llosaedificaciones.com/img/project_description_small_lumier_<%= variable.codigo_variable%>.svg">
+                              </figure>
+                              <div>
+                                <%= variable.descricion_variable  %> <br> 
+                                <%= variable.dato_extra  %> <br> 
+                                <%= variable.dato_extra2  %> <br> 
+                                <%= variable.dato_extra3  %>
+                              </div>
+                            </span>
+                          </label>
+                        </span>
+                      </div>
+                    <% end %>
+            
     </div>
   </div>
-</div>     
-<div class="actions text-right">
-  <%= link_to 'Regresar', proyectos_path, :class => "btn-warning btn btn-lg" %>
-  <a class="btn btn-primary btn-lg text-light" href="/departamentos">Ver Departamentos</a>
-  <a class="btn btn-danger btn-lg text-light" href="/archivos">Ver Imagenes</a>
-  <%= form.submit "Guardar", :class => "btn btn-lg btn-success text-light"%>
-</div>
-    
+</div> 
+
+  <div class="contenedorBoton">
+        <%= link_to(proyectos_path, :class => "btn my-sm-0 btn-lg btn-warning text-light") do %>
+          <i class="icon-arrow-left-24"></i> Regresar
+        <%end%>
+        <% if proyecto.id%>
+          <a class="btn my-sm-0 btn btn-primary btn-lg text-light" href="/departamentos/<%= proyecto.id%>/index">
+              <i class="icon-package-dependents-24"></i>
+              Ver Departamentos
+          </a>
+          <a class="btn btn-danger btn-lg text-light" href="/archivos/<%= proyecto.id%>/0/index">
+              <i class="icon-image-24"></i>
+              Ver Imagenes
+          </a>
+        <% end%>
+
+        <%= button_tag(type: 'submit', class: "btn my-sm-0 btn-lg btn-success text-light") do %>
+          <i class="icon-check-24"></i>
+           Guardar
+        <% end %>
+  </div>
     
   <% end %>
 
-
-
-
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsRD1kwYJJ_fSNt3RImOEkji9NFyzDng0"></script>
-
-<style>
-#geomap{
-    width: 100%;
-    height: 400px;
-}
-</style>
-
-<script>
-var geocoder;
-var map;
-var marker;
-
-/*
- * Google Map with marker
- */
-function initialize() {
-    var initialLat = $('.search_latitude').val();
-    var initialLong = $('.search_longitude').val();
-    initialLat = initialLat?initialLat:36.169648;
-    initialLong = initialLong?initialLong:-115.141000;
-
-    var latlng = new google.maps.LatLng(initialLat, initialLong);
-    var options = {
-        zoom: 16,
-        center: latlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-
-    map = new google.maps.Map(document.getElementById("geomap"), options);
-
-    geocoder = new google.maps.Geocoder();
-
-    marker = new google.maps.Marker({
-        map: map,
-        draggable: true,
-        position: latlng
-    });
-
-    google.maps.event.addListener(marker, "dragend", function () {
-        var point = marker.getPosition();
-        map.panTo(point);
-        geocoder.geocode({'latLng': marker.getPosition()}, function (results, status) {
-            if (status == google.maps.GeocoderStatus.OK) {
-                map.setCenter(results[0].geometry.location);
-                marker.setPosition(results[0].geometry.location);
-                $('.search_addr').val(results[0].formatted_address);
-                $('.search_latitude').val(marker.getPosition().lat());
-                $('.search_longitude').val(marker.getPosition().lng());
-            }
-        });
-    });
-
-}
-
-$(document).ready(function () {
-    //load google map
-    initialize();
-    
-    /*
-     * autocomplete location search
-     */
-    var PostCodeid = '#search_location';
-    $(function () {
-        $(PostCodeid).autocomplete({
-            source: function (request, response) {
-                geocoder.geocode({
-                    'address': request.term
-                }, function (results, status) {
-                    response($.map(results, function (item) {
-                        return {
-                            label: item.formatted_address,
-                            value: item.formatted_address,
-                            lat: item.geometry.location.lat(),
-                            lon: item.geometry.location.lng()
-                        };
-                    }));
-                });
-            },
-            select: function (event, ui) {
-                $('.search_addr').val(ui.item.value);
-                $('.search_latitude').val(ui.item.lat);
-                $('.search_longitude').val(ui.item.lon);
-                var latlng = new google.maps.LatLng(ui.item.lat, ui.item.lon);
-                marker.setPosition(latlng);
-                initialize();
-            }
-        });
-    });
-    
-    /*
-     * Point location on google map
-     */
-    $('.get_map').click(function (e) {
-        var address = $(PostCodeid).val();
-        geocoder.geocode({'address': address}, function (results, status) {
-            if (status == google.maps.GeocoderStatus.OK) {
-                map.setCenter(results[0].geometry.location);
-                marker.setPosition(results[0].geometry.location);
-                $('.search_addr').val(results[0].formatted_address);
-                $('.search_latitude').val(marker.getPosition().lat());
-                $('.search_longitude').val(marker.getPosition().lng());
-            } else {
-                alert("Geocode was not successful for the following reason: " + status);
-            }
-        });
-        e.preventDefault();
-    });
-
-    //Add listener to marker for reverse geocoding
-    google.maps.event.addListener(marker, 'drag', function () {
-        geocoder.geocode({'latLng': marker.getPosition()}, function (results, status) {
-            if (status == google.maps.GeocoderStatus.OK) {
-                if (results[0]) {
-                    $('.search_addr').val(results[0].formatted_address);
-                    $('.search_latitude').val(marker.getPosition().lat());
-                    $('.search_longitude').val(marker.getPosition().lng());
-                }
-            }
-        });
-    });
-});
-</script>
-
-
-
-    <!-- search input box -->
-<form>
-<div class="form-group input-group">
-    <input type="text" id="search_location" class="form-control" placeholder="Search location">
-    <div class="input-group-btn">
-        <button class="btn btn-default get_map" type="submit">
-            Locate
-        </button>
-    </div>
-</div>
-</form>
-
-<!-- display google map -->
-<div id="geomap"></div>
-
-<!-- display selected location information -->
-<h4>Location Details</h4>
-<p>Address: <input type="text" class="search_addr" size="45"></p>
-<p>Latitude: <input type="text" class="search_latitude" size="30"></p>
-<p>Longitude: <input type="text" class="search_longitude" size="30"></p>
 

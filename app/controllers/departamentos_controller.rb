@@ -1,23 +1,31 @@
 class DepartamentosController < ApplicationController
-  before_action :set_departamento, only: [:show, :edit, :update, :destroy]
+  before_action :init, only: [:show, :edit, :update, :destroy, :index, :new,:home]
+  before_action :set_departamento, only: [:show, :edit, :update, :destro, :home]
+  before_action :set_proyecto, only: [:new,:index,:new]
+  before_action :set_proyecto2, only: [:show,:edit]
 
   # GET /departamentos
   # GET /departamentos.json
   def index
-    @departamentos = Departamento.all
-    @variables = Variable.all
+    @departamentos = Departamento.where(cod_proyecto: params[:cod_proyecto])
   end
 
   # GET /departamentos/1
   # GET /departamentos/1.json
   def show
-    @variables = Variable.all
+  end
+
+  # GET /departamentos/1
+  # GET /departamentos/1.json
+  def home
+    @home = 'S'
+    show
   end
 
   # GET /departamentos/new
   def new
     @departamento = Departamento.new
-    @variables = Variable.all
+    @departamento.cod_proyecto = params[:cod_proyecto]
   end
 
   # GET /departamentos/1/edit
@@ -73,5 +81,17 @@ class DepartamentosController < ApplicationController
     # Only allow a list of trusted parameters through.
     def departamento_params
       params.require(:departamento).permit(:cod_departamento, :cod_proyecto, :numero, :piso, :area_total, :area_techada, :dormitorios, :baños, :mca_favorito, :descripcion_corta, :descripcion_larga, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod)
+    end
+
+    def set_proyecto
+      @proyecto = Proyecto.find(params[:cod_proyecto])
+    end
+
+    def set_proyecto2
+      @proyecto = Proyecto.find(@departamento.cod_proyecto)
+    end
+
+    def init
+      @variables = Variable.where(estado: 'A')
     end
 end

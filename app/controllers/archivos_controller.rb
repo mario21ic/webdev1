@@ -1,10 +1,11 @@
 class ArchivosController < ApplicationController
   before_action :set_archivo, only: [:show, :edit, :update, :destroy]
+  before_action :init, only: [:index,:new,:show,:edit]
 
   # GET /archivos
   # GET /archivos.json
   def index
-    @archivos = Archivo.all
+    @archivos = Archivo.where(cod_proyecto:params[:cod_proyecto],cod_departamento:params[:cod_departamento])
   end
 
   # GET /archivos/1
@@ -70,5 +71,9 @@ class ArchivosController < ApplicationController
     # Only allow a list of trusted parameters through.
     def archivo_params
       params.require(:archivo).permit(:cod_archivo, :cod_tip_archivo, :cod_proyecto, :cod_departamento, :nombre_archivo, :descripcion_corta, :descripcion_larga, :orden, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod)
+    end
+
+    def init
+      @variables = Variable.where(estado: 'A')
     end
 end

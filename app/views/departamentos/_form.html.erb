@@ -1,24 +1,6 @@
 <%= form_with(model: departamento, local: true) do |form| %>
-  <% if departamento.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(departamento.errors.count, "error") %> prohibited this departamento from being saved:</h2>
-
-      <ul>
-        <% departamento.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-
+        <%= form.hidden_field :cod_proyecto%>
 <div class="form-row mt-3">
-      <div class="col-md-12 mb-3">
-        <label for="validationCustom02" class="col-form-label col-form-label-lg">Proyecto</label>
-        <div>
-          <label for="validationCustom02" class="col-form-label col-form-label-lg h1">{{proyecto.Nombre}}</label>
-        </div>
-      </div>
       <div class="col-md-3 mb-3 field">
         <%= form.label :numero, :class=>"col-form-label col-form-label-lg" %>
         <%= form.number_field :numero, :class=>"form-control form-control-lg" %>
@@ -37,7 +19,6 @@
       <div class="col-md-3 mb-3 field">
         <%= form.label :area_total, :class=>"col-form-label col-form-label-lg" %>
         <%= form.number_field :area_total, :class=>"form-control form-control-lg" %>
-
         <div class="valid-feedback">
           Looks good!
         </div>
@@ -67,24 +48,18 @@
         </div>
       </div>
       <div class="col-md-3 mb-3 field">
-        <label for="validationCustom02" class="col-form-label col-form-label-lg">Favorito</label>
-        <select class="form-control form-control-lg mr-sm-2">
-          <option>[Seleccione]</option>
-          <option value="value1">Si es favorito</option> 
-          <option value="value3">No es favorito</option>       
-        </select>
+        <%= form.label :mca_favorito, "Favorito", :class=>"col-form-label col-form-label-lg" %>
+
+            <%= form.collection_select :mca_favorito, @variables.where(tipo_variable: 'SiNo'), :codigo_variable, :descricion_variable, {:include_blank  => "[Seleccione]"}, :class=>"form-control form-control-lg mr-sm-2", :required=>"required"%>
+
         <div class="valid-feedback">
           Looks good!
         </div>
       </div>
       <div class="col-md-3 mb-3 field">
         <%= form.label :estado, :class=>"col-form-label col-form-label-lg" %>
-        <select class="form-control form-control-lg mr-sm-2">
-          <option>[Seleccione]</option>        
-          <option value="value1">Activo</option> 
-          <option value="value3">Inactivo</option>
-          <option value="value3">Vendido</option>      
-        </select>
+
+        <%= form.collection_select :estado, @variables.where(tipo_variable: 'Estado Departamento'), :codigo_variable, :descricion_variable, {:include_blank  => "[Seleccione]"}, :class=>"form-control form-control-lg mr-sm-2", :required=>"required"%>
         <div class="valid-feedback">
            Looks good!
         </div>
@@ -103,18 +78,23 @@
           Looks good!
         </div>
       </div>
-    
-  
-  
 </div>
 
 
+  <div class="contenedorBoton">
+        <%= link_to(proyecto_path(@proyecto), :class => "btn my-sm-0 btn-lg btn-warning text-light") do %>
+          <i class="icon-arrow-left-24"></i> Regresar
+        <%end%>
+          <a class="btn btn-danger btn-lg text-light" href="/archivos/<%=departamento.cod_proyecto%>/<%=departamento.id%>/index">
+              <i class="icon-image-24"></i>
+              Ver Imagenes
+          </a>
+        <%= button_tag(type: 'submit', class: "btn my-sm-0 btn-lg btn-success text-light") do %>
+          <i class="icon-check-24"></i>
+           Guardar
+        <% end %>
+  </div>
 
-<div class="actions text-right">
-  <%= link_to 'Regresar', departamentos_path, :class => "btn-warning btn btn-lg" %>
-  <a class="btn btn-danger btn-lg text-light" href="/archivos">Ver Imagenes</a>
-  <%= form.submit "Guardar", :class => "btn btn-lg btn-success text-light"%>
-</div>
 
 
 <% end %>

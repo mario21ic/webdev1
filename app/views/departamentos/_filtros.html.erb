@@ -47,3 +47,12 @@
         <option value="value3">$150 000.00-$300 000.00</option>
       </select>
     </div>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#limpiar').on('click', function() {
+          $("input,select").val('');
+          $("[id$='provincia'] option:not([value='']),[id$='distrito'] option:not([value=''])").hide();
+        });
+      });
+    </script>

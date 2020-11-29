@@ -1,0 +1,67 @@
+<div class="row mt-4">
+  
+  <% proyectos.each do |proyecto| %>
+    <div class="col-md-3">
+      <div class="mb-3 tarjeta">
+        <img src="https://abril.pe/wp-content/uploads/2020/03/Fachada_Abedul_Mayo2020.png" style="min-height: 300px;width: 100%;">
+        <div class="row no-gutters">
+            <div class="card-body">
+              <div class="row" style="min-height: 110px; overflow: hidden;">
+                <div class="col-md-12 text-right" style="position: absolute; top:25px; left: -25px">
+                  <%= render '/proyectos/estado_favorito', p: proyecto, estado: 'Proyecto'%>
+                </div>
+                <div class="col-md-12">
+                  <h5 class="card-title color_final">
+                    <big>
+                      <%= proyecto.nombre %>
+                    </big>
+                  </h5>
+                </div>
+                <div class="col-md-12 text-justify card-text">
+                  <small class="card-text"><%= proyecto.descripcion_corta %></small>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 mb-3 text-center text-primary">
+                  <em>
+                      <%= proyecto.ubicacion %> - 
+                      <%= @variables.select(:descricion_variable).where(tipo_variable: 'UbigeoDistritos', codigo_variable: proyecto.distrito).collect(&:descricion_variable)[0] %>
+                  </em>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-right card-text">
+                    <small>
+                      <small>
+                      <% p_min = 0%>
+                      <% @departamentos.where("cod_proyecto = " + proyecto.id.to_s + " and estado != 'I'").each do |dp| %>
+                        <% precio_tmp = proyecto.precio_m2 * dp.area_total %>
+                        <% porcentaje_tmp = (dp.piso - 1)/100 %>
+                        <% precio_tmp = precio_tmp - (precio_tmp*porcentaje_tmp) %>
+                        <%if p_min>precio_tmp || p_min==0%>
+                          <% p_min=precio_tmp %>
+                        <% end %>
+                      <% end %>
+                      DESDE: 
+                      </small>
+                    </small>
+                    <b class="text-info">
+                      <big>
+                        <big>
+                          $ <%= number_to_currency(p_min, {:precision => 0, :unit => "", :delimiter => ","})  %>*
+                        </big> 
+                      </big> 
+                    </b>
+                    &nbsp; | &nbsp;
+                    <a class="btn-success btn-sm text-light" href="/proyectos/<%= proyecto.id.to_s + (@home?+'/home':'')%>">Ver más</a>
+                    <% if @home != 'S'%>
+                       <%= link_to 'Editar', edit_proyecto_path(proyecto), :class => "btn-danger btn-sm text-light" %>
+                    <% end %>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
