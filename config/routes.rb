@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
   resources :variables
   get 'separar/index'
   get 'separar/new'
@@ -29,6 +30,7 @@ Rails.application.routes.draw do
   resources :departamentos
   resources :proyectos
   resources :reportes
+  
 
   post 'proyectos/new'
 
@@ -41,5 +43,11 @@ Rails.application.routes.draw do
   get 'archivos/:cod_proyecto/:cod_departamento/index'=>'archivos#index'
 
   get 'proyectos/:id/home'=>'proyectos#home'
+
+  get 'signup'     => 'usuarios#new'
+  get 'login'      => 'sessions#new'
+  post 'login'     => 'sessions#create'
+  delete 'logout'  => 'sessions#destroy'
+  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

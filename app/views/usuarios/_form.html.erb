@@ -12,7 +12,6 @@
   <% end %>
     <div class="form-row">
 
-
     <div class="col-md-4 mb-3 field">
     <%= form.label :tipo_doc, :class=>"col-form-label col-form-label-lg" %>
     <%= form.select :tipo_doc,  options_for_select([ "DNI", "C.Extranjeria", "Pasaporte","Ruc"]), {}, { class: "form-control form-control-lg mr-sm-2" } %>
@@ -24,13 +23,10 @@
   <div class="col-md-4 mb-3 field">
         <label for="validationCustom02" class="col-form-label col-form-label-lg">Numero Documento</label>
         <%= form.text_field :numero_documento, :class=>"form-control form-control-lg mr-sm-2"%>
-
         <div class="valid-feedback">
           Looks good!
         </div>
       </div>
-
-
       <div class="col-md-4 mb-3 field">
       <label for="validationCustom02" class="col-form-label col-form-label-lg">Nombres</label>
       <%= form.text_field :nombre, :class=>"form-control form-control-lg mr-sm-2"%>
