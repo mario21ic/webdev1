@@ -13,31 +13,9 @@
   </div>
 <% end %>
 
-
-  <div class="row mt-4">
-    <div class="col-md-8">
-      <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="Ingrese datos del cliente" aria-label="Search">
-    </div>
-    <div class="col-md-4">
-      <select class="form-control form-control-lg mr-sm-2">
-        <option>Todos los estados</option>
-        <option value="value1">Sin Atender</option> 
-        <option value="value3">Atendido</option>
-        <option value="value3">Anulado</option>
-      </select>
-    </div>
-  </div>
-
-  <div class="row mt-2">
-    <div class="col-md-8 text-right">
-    </div>
-    <div class="col-md-2 text-right">
-      <button class="form-control btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
-    </div>
-    <div class="col-md-2 text-right">
-      <button class="form-control btn btn-warning my-2 my-sm-0" type="submit">Limpiar</button>
-    </div>
-  </div>
+<br>
+<%= link_to 'Nueva Solicitud', new_solicitud_path, :class => "btn btn-lg btn-success text-light" %>
+<br>
 
     <% @solicituds.each do |solicitud| %>
       <div class="card mt-2">
@@ -85,8 +63,13 @@
 
     <% end %>
 
-
-<%= render partial: '/layouts/paginacion'%>
-
 <br>
 <%= link_to 'Nueva Solicitud', new_solicitud_path, :class => "btn btn-lg btn-success text-light" %>
+
+<br>
+<br>
+<div class="digg_pagination">
+  <%= will_paginate @solicituds %>
+</div>
+<%= render partial: '/layouts/paginacion'%>
+

@@ -6,7 +6,8 @@ class SolicitudsController < ApplicationController
   # GET /solicituds
   # GET /solicituds.json
   def index
-    @solicituds = Solicitud.all
+    @solicituds = Solicitud.paginate(page: params[:page], per_page: 4)
+
     @variables = Variable.all
   end
 
