@@ -22,7 +22,7 @@
 
 <p>
   <strong>Nombre archivo:</strong>
-  <%= @archivo.nombre_archivo %>
+  <%= image_tag(@archivo.nombre_archivo.url) if @archivo.nombre_archivo?%>
 </p>
 
 <p>
@@ -45,25 +45,6 @@
   <%= @archivo.estado %>
 </p>
 
-<p>
-  <strong>Usu crea:</strong>
-  <%= @archivo.usu_crea %>
-</p>
-
-<p>
-  <strong>Fec crea:</strong>
-  <%= @archivo.fec_crea %>
-</p>
-
-<p>
-  <strong>Usu mod:</strong>
-  <%= @archivo.usu_mod %>
-</p>
-
-<p>
-  <strong>Fec mod:</strong>
-  <%= @archivo.fec_mod %>
-</p>
 
 <%= link_to 'Edit', edit_archivo_path(@archivo) %> |
 <%= link_to 'Back', archivos_path %>

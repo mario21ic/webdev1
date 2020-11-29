@@ -1,25 +1,26 @@
 class HomeController < ApplicationController
+  before_action :init
   layout "application"
 
   def index
-    @proyectos = Proyecto.all
-    @variables = Variable.all
+    @proyectos = Proyecto.where("estado!='I' AND mca_favorito = 'S'")
+    @departamentos = Departamento.where("estado!='I'")
   end
 
   def nosotros
-    @variables = Variable.all
   end
 
   def proyectos
-    @proyectos = Proyecto.all
-    @variables = Variable.all
   end
 
   def acceder
-    @variables = Variable.all
   end
 
   def contactenos
-    @variables = Variable.all
   end
+
+  private
+    def init
+      @variables = Variable.where(estado:'A')
+    end
 end

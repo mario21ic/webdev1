@@ -33,5 +33,13 @@ Rails.application.routes.draw do
   post 'proyectos/new'
 
   post 'variables/provincias', as: 'provincias'
+
+  get 'departamentos/:cod_proyecto/index'=>'departamentos#index'
+  get 'departamentos/:cod_proyecto/new'=>'departamentos#new'
+  get 'departamentos/:id/home'=>'departamentos#home'
+
+  get 'archivos/:cod_proyecto/:cod_departamento/index'=>'archivos#index'
+
+  get 'proyectos/:id/home'=>'proyectos#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

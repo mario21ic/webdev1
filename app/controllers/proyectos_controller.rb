@@ -1,31 +1,39 @@
 class ProyectosController < ApplicationController
-  before_action :set_proyecto, only: [:show, :edit, :update, :destroy]
+  before_action :set_proyecto, only: [:show, :edit, :update, :destroy, :home]
+  before_action :init, only: [:show,:index, :home]
 
   layout "application"
 
   # GET /proyectos
   # GET /proyectos.json
   def index
+    @departamentos = Departamento.where(estado: 'A')
     @proyectos = Proyecto.all
-    @variables = Variable.all
   end
 
   # GET /proyectos/1
   # GET /proyectos/1.json
   def show
-    @departamentos = Departamento.all
-    @variables = Variable.all
+    @departamentos = Departamento.where(cod_proyecto: params[:id])
+    @caracteristicas_proyecto = CaracteristicasProyecto.where(cod_proyecto: params[:id],estado: 'A')
+  end
+
+  # GET /proyectos/1/home
+  def home
+    @home = 'S'
+    show
   end
 
   # GET /proyectos/new
   def new
     @proyecto = Proyecto.new
-    @variables = Variable.all
+    @variables = Variable.where(estado: 'A')
   end
 
   # GET /proyectos/1/edit
   def edit
-    @variables = Variable.all
+    @variables = Variable.where(estado: 'A')
+    @caracteristicas_proyecto = CaracteristicasProyecto.where(cod_proyecto: params[:id],estado: 'A')
   end
 
   # POST /proyectos
@@ -35,6 +43,13 @@ class ProyectosController < ApplicationController
 
     respond_to do |format|
       if @proyecto.save
+        
+        if params[:proyecto][:caracteristicas]
+          params[:proyecto][:caracteristicas].each do |key,value|
+            CaracteristicasProyecto.create(cod_proyecto:@proyecto.id, cod_caracteristica: key, estado: 'A', usu_crea: nil, fec_crea: nil)
+          end
+        end
+
         format.html { redirect_to @proyecto, notice: 'Proyecto was successfully created.' }
         format.json { render :show, status: :created, location: @proyecto }
       else
@@ -49,6 +64,36 @@ class ProyectosController < ApplicationController
   def update
     respond_to do |format|
       if @proyecto.update(proyecto_params)
+
+        cc = []
+        if params[:proyecto][:caracteristicas]
+          params[:proyecto][:caracteristicas].each do |key,value|
+                cc.push(key)
+          end
+        end
+
+        CaracteristicasProyecto.where(cod_proyecto: @proyecto.id).each do |caracteristica|
+            x = CaracteristicasProyecto.find(caracteristica.id)
+            estado = nil
+            ccp = cc.select {|item|caracteristica.cod_caracteristica == item}
+            
+            if ccp.count > 0
+              cc = cc.select {|item|caracteristica.cod_caracteristica != item}
+              if caracteristica.estado == 'I'
+                estado = 'A'
+              end
+            else
+              estado = 'I'
+            end
+            if estado
+                x.update(cod_proyecto:@proyecto.id, cod_caracteristica: caracteristica.cod_caracteristica, estado: estado, usu_crea: nil, fec_crea: nil)
+            end
+        end
+
+        cc.each do |value|
+          CaracteristicasProyecto.create(cod_proyecto:@proyecto.id, cod_caracteristica: value, estado: 'A', usu_crea: nil, fec_crea: nil)
+        end
+
         format.html { redirect_to @proyecto, notice: 'Proyecto was successfully updated.' }
         format.json { render :show, status: :ok, location: @proyecto }
       else
@@ -76,6 +121,11 @@ class ProyectosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def proyecto_params
-      params.require(:proyecto).permit(:cod_proyecto, :nombre, :ubicacion, :descripcion_corta, :descripcion_larga, :precio_m2, :mca_favorito, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod, :departamento, :provincia, :distrito)
+      params.require(:proyecto).permit(:cod_proyecto, :nombre, :ubicacion, :descripcion_corta, :descripcion_larga, :precio_m2, :mca_favorito, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod, :departamento, :provincia, :distrito, :latitud, :longitud, :caracteristicas)
+    end
+
+    # Only allow a list of trusted parameters through.
+    def init
+      @variables = Variable.where(estado: 'A')
     end
 end

@@ -42,7 +42,7 @@
 
   <div class="field">
     <%= form.label :estado %>
-    <%= form.text_field :estado %>
+    <%= form.collection_select :estado, @variables.where(tipo_variable: 'Estado'), :codigo_variable, :descricion_variable, {:include_blank  => "Seleccionar Estado"}, :class=>"form-control mr-sm-2", :required=>"required"%>
   </div>
 
   <div class="actions">

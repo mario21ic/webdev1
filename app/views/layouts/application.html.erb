@@ -61,8 +61,13 @@
 
         <%= yield :pre_head%>
         <div class="container-fluid" id="inicio">
-                <div class="row"> 
+                <div class="row">
+                  <div class="col-md-10">
                     <h1 class="display-4 titulo"><%= yield :titulo%></h1>
+                  </div>
+                  <div class="col-md-2">
+                    <%= yield :right%>
+                  </div>
                 </div>
             <%= yield %>
         </div>

@@ -15,11 +15,6 @@
         $("[id$='distrito'] option").show();
         $("[id$='distrito'] option:not([value^='"+this.value+"']):not([value=''])").hide();
       });
-      
-      $('#limpiar').on('click', function() {
-        $("input,select").val('');
-        $("[id$='provincia'] option:not([value='']),[id$='distrito'] option:not([value=''])").hide();
-      });
 
     });
   </script>

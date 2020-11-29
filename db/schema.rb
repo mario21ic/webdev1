@@ -160,6 +160,8 @@ ActiveRecord::Schema.define(version: 2020_11_25_015348) do
     t.string "departamento"
     t.string "provincia"
     t.string "distrito"
+    t.string "latitud"
+    t.string "longitud"
   end
 
   create_table "separars", force: :cascade do |t|

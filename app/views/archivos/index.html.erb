@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<%= content_for :titulo do %>
+     Fotos
+<% end %>
 <%= content_for :head do %>
   <br/>
   <div class="row bd-example">
@@ -17,7 +19,6 @@
   <div class="col-md-2 text-right">
       <%= link_to 'Nuevo Archivo', new_archivo_path, :class => "form-control btn btn-outline-primary text-primary" %>
   </div>
-
   <% @archivos.each do |archivo| %>
     <div class="col-md-4">
       <div class="card mb-3">
