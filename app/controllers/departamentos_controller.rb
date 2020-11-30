@@ -83,7 +83,7 @@ class DepartamentosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def departamento_params
-      params.require(:departamento).permit(:cod_departamento, :cod_proyecto, :numero, :piso, :area_total, :area_techada, :dormitorios, :baños, :mca_favorito, :descripcion_corta, :descripcion_larga, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod)
+      params.require(:departamento).permit(:cod_departamento, :cod_proyecto, :numero, :piso, :area_total, :area_techada, :dormitorios, :baños, :mca_favorito, :descripcion_corta, :descripcion_larga, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod, :separado)
     end
 
     def set_proyecto
