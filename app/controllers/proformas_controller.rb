@@ -6,7 +6,7 @@ class ProformasController < ApplicationController
   # GET /proformas
   # GET /proformas.json
   def index
-    @proformas = Proforma.all
+    @proformas = Proforma.paginate(page: params[:page], per_page: 4)
     @variables = Variable.all
   end
 
@@ -17,8 +17,10 @@ class ProformasController < ApplicationController
   end
 
   # GET /proformas/new
+  # GET /proformas/new/:solicitud_id
   def new
     @proforma = Proforma.new
+    @proforma.solicitud_id = params[:solicitud_id]
     @variables = Variable.all
   end
 

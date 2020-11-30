@@ -12,10 +12,10 @@ class SolicitudsController < ApplicationController
         if s.departamento_id?
             puts "dpto id: #{s.departamento_id}"
             s.departamento = Departamento.find(s.departamento_id)
-        #puts "dpto numero: #{s.departamento.numero}"
-        #puts "dpto cod_proyecto: #{s.departamento.cod_proyecto}"
-        #s.proyecto = Proyecto.find(s.departamento.cod_proyecto)
-        #puts "proyecto id: #{s.proyecto.id}"
+            #puts "dpto cod_proyecto: #{s.departamento.cod_proyecto}"
+            #puts "dpto numero: #{s.departamento.numero}"
+            #s.proyecto = Proyecto.find(s.departamento.cod_proyecto)
+            #puts "proyecto id: #{s.proyecto.id}"
         end
     end
 
