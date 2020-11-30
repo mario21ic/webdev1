@@ -1,5 +1,7 @@
             <spam class="tooltipx text-white">
+            
               <i class="icon-unverified-16 tooltipx"></i>
+              
               <span class="tooltiptext" style="left:-365%;width: 250px;">
                 <span class="text-center">
 
@@ -14,14 +16,19 @@
                   </ul>
                   
                 </span>
+            
               </span>
+              
               </spam>&nbsp;
+              
               <% if logged_in?%>
-
+              
               <li class="nav-link">
+            
               <span class="text-info">Bienvenido:<%=current_usuario.nombre%></span>
               </li>
               <li class="nav-link">
+              
               <%= link_to logout_path, method: :delete do%>
                 <span class="text-info">Salir</span>
                 <%end%>
@@ -32,11 +39,11 @@
                 <span class="text-info">Ingresar</span>
                 </a>
                 </li>
+               
                 <%end%>
-            
-
-            
+              
             <small class="text-white">
+            
                 <small>
                     Desarrollo
                 </small>
@@ -44,8 +51,11 @@
             <b class="text-white">
                 Web
             </b>
+            
             <small class="text-white">
+           
                 <small>
+               
                     &nbsp;I N M O B I L I A R I A &nbsp; - &nbsp;
                     <b>
                       <span class="grupo-pd">G</span>
@@ -57,6 +67,14 @@
                         <b class="text-danger">
                             1
                         </b>
+                        
                     </b>
+                   
                 </small>
+                
             </small> 
+            
+            <% if logged_in?%>
+            <span class="text-info float-right"><%= current_usuario.perfil  %></span>
+             <%end%>   
+            
