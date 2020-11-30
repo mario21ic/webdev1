@@ -8,9 +8,7 @@ class VentaController < ApplicationController
   # GET /venta.json
   def index
     if !logged_in?
-
       redirect_to :root
-
     end
     @venta = Ventum.all
     @variables = Variable.all
@@ -25,9 +23,9 @@ class VentaController < ApplicationController
   # GET /venta/new
   # GET /venta/new/:departamento_id
   def new
-    #if !logged_in?
-    #  redirect_to :root
-    #end
+    if !logged_in?
+      redirect_to :root
+    end
     @ventum = Ventum.new
     @ventum.departamento_id = params[:departamento_id]
     @variables = Variable.all
