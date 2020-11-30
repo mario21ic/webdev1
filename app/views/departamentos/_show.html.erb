@@ -178,12 +178,15 @@
     <a class="btn my-sm-0 btn-lg btn-info text-light" href="/solicituds/new/<%= @departamento.id %>">
       <i class="icon-checklist-24"></i> Cita
     </a>
-      <a class="btn my-sm-0 btn-lg btn-success text-light" href="/separar/new/<%= @departamento.id %>">
-        <i class="icon-zap-24"></i> Separar
-      </a>
-        <%= link_to(edit_departamento_path(@departamento), :class => "btn my-sm-0 btn-lg btn-danger text-light") do %>
-          <i class="icon-pencil-24"></i> Editar
-        <%end%>
+      <% if @home != 'S' %>
+        <a class="btn my-sm-0 btn-lg btn-success text-light" href="/separar/new/<%= @departamento.id %>">
+          <i class="icon-zap-24"></i> Separar
+        </a>
+        
+          <%= link_to(edit_departamento_path(@departamento), :class => "btn my-sm-0 btn-lg btn-danger text-light") do %>
+            <i class="icon-pencil-24"></i> Editar
+          <%end%>
+      <%end%>
 </div>
 
 
