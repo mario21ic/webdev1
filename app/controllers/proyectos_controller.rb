@@ -34,6 +34,7 @@ class ProyectosController < ApplicationController
 
   # GET /proyectos/1/edit
   def edit
+    @archivos = Archivo.where(estado: 'A')
     @variables = Variable.where(estado: 'A')
     @caracteristicas_proyecto = CaracteristicasProyecto.where(cod_proyecto: params[:id],estado: 'A')
   end

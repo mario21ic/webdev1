@@ -7,7 +7,9 @@ class ArchivosController < ApplicationController
   def index
     @archivos = Archivo.where(cod_proyecto:params[:cod_proyecto],cod_departamento:params[:cod_departamento])
     @proyecto = Proyecto.find(params[:cod_proyecto])
-    @departamento = Departamento.find(params[:cod_departamento])
+    if params[:cod_departamento] != "0"
+      @departamento = Departamento.find(params[:cod_departamento])
+    end
   end
 
   # GET /archivos/1
