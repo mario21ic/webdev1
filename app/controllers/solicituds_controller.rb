@@ -7,6 +7,11 @@ class SolicitudsController < ApplicationController
   # GET /solicituds.json
   def index
     @solicituds = Solicitud.paginate(page: params[:page], per_page: 4)
+    @departamentos = Departamento.all
+    for s in @solicituds do
+        #s.departamento = Departamento.find(s.departamento_id)
+        puts "dpto id: #{s.departamento_id}"
+    end
 
     @variables = Variable.all
   end
@@ -76,6 +81,6 @@ class SolicitudsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def solicitud_params
-      params.require(:solicitud).permit(:cod_solictud, :cod_departamento, :tipo_documento, :numero_documento, :nombres, :apellidos, :correo, :telefono, :mensaje, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod)
+      params.require(:solicitud).permit(:cod_solictud, :cod_departamento, :departamento_id, :tipo_documento, :numero_documento, :nombres, :apellidos, :correo, :telefono, :mensaje, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod)
     end
 end
