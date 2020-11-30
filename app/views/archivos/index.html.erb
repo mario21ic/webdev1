@@ -6,8 +6,11 @@
         <%= link_to(proyecto_path(@proyecto), :class => "btn my-sm-0 btn-lg btn-warning text-light") do %>
           <i class="icon-arrow-left-24"></i> Regresar
         <%end%>
-        
-          <a class="btn btn-primary btn-lg text-light" href="/archivos/<%= @proyecto.id%>/<%= @departamento.id%>/new">
+        <%id_dep = 0%>
+        <%if @departamento %>
+          <%id_dep = @departamento.id%>
+        <%end %>
+          <a class="btn btn-primary btn-lg text-light" href="/archivos/<%= @proyecto.id%>/<%= id_dep%>/new">
               <i class="icon-image-24"></i>
               Nuevo Archivo
           </a>

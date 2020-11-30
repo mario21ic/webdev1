@@ -14,6 +14,8 @@ class DepartamentosController < ApplicationController
   # GET /departamentos/1
   # GET /departamentos/1.json
   def show
+      @archivos = Archivo.where(estado: 'A')
+    
   end
 
   # GET /departamentos/1

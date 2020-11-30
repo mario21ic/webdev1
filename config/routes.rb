@@ -23,8 +23,11 @@ Rails.application.routes.draw do
   resources :venta
   resources :clientes
   resources :cita
+  get '/cita/new/:solicitud_id' => 'cita#new'
   resources :proformas
+  get '/proformas/new/:solicitud_id' => 'proformas#new'
   resources :solicituds
+  get '/solicituds/new/:departamento_id' => 'solicituds#new'
   resources :personas
   resources :archivos
   resources :departamentos
@@ -50,5 +53,7 @@ Rails.application.routes.draw do
   post 'login'     => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
   
+  get 'ultimos_proyectos/buscar'=>'home#proyectos'
+  get '_proyectos/buscar'=>'proyectos#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

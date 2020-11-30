@@ -10,36 +10,37 @@
   </div>
 <% end %>
 
-  <div class="row no-gutters">
-    <div class="col-md-12 tarjeta" style="overflow:hidden;">
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <%c = 0%>
+          <%arxh = @archivos.where(cod_proyecto: @departamento.cod_proyecto, cod_departamento: @departamento.id)%>
+          <%arxh.each  do |archivo| %>
+              <li data-target="#carouselExampleCaptions" data-slide-to="<%=c%>" class="<%=c==0?'active':''%>"></li>
+              <%c = c+1%>
+          <%end%>
         </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active w-450" style="height: 550px!important; overflow: hidden;">
-            <img src="https://img10.naventcdn.com/avisos/111/00/08/03/06/86/1200x1200/160060081.jpg" class="card-img d-block w-100 align-middle" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <div class="carousel-inner tarjeta">
+          <%if arxh.count%>
+            <%c = 0%>
+            <%arxh.each  do |archivo| %>
+              <div class="carousel-item <%=c==0?'active':''%> w-450" style="height: 550px!important; overflow: hidden;">
+                <table style="height:550px!important;width:100%;text-align:center;">
+                  <tr><td style="padding:0;text-align:center;">
+                    <img src="/uploads/archivo/nombre_archivo/<%=archivo.id.to_s+"/"+archivo.nombre_archivo.to_s.split('/').last%>" style="max-height:550px;max-width:100%;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5><%=archivo.descripcion_corta%></h5>
+                  <p><%=archivo.descripcion_larga%></p>
+                </div>
+                  </td></tr>
+                </table>
+              </div>
+              <%c = c+1%>
+            <%end%>
+          <%else%>
+            <div class="carousel-item active w-450" style="height: 600px!important; overflow: hidden;">
+              <img src="/assets/panel/LOGOHOME-be442d2e24dbf568d7c3b886f7162956d640b23c7efc7433a168a257767f9133.png" class="card-img d-block w-100 align-middle">
             </div>
-          </div>
-          <div class="carousel-item w-450" style="height: 550px!important; overflow: hidden;">
-            <img src="https://revistaconstruir.com/wp-content/uploads/2015/11/GT-Mariscal-uno-uno.jpg" class="card-img d-block w-100 align-middle" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div class="carousel-item w-450" style="height: 550px!important; overflow: hidden;">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSLTYzTM310_JnDkpOJbAi3f9U-6-ix0uRo_w&usqp=CAU" class="card-img d-block w-100 align-middle" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div>
+          <%end%>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -50,8 +51,8 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </div>
-
+      
+  <div class="row no-gutters">
     <div class="col-md-12">
       <div class="row">
         <div class="col-md-6">
@@ -174,17 +175,18 @@
     <%= link_to(proyecto_path(@proyecto), :class => "btn my-sm-0 btn-lg btn-warning text-light") do %>
       <i class="icon-arrow-left-24"></i> Regresar
     <%end%>
-    <a class="btn my-sm-0 btn-lg btn-info text-light" href="/solicituds/new">
+    <a class="btn my-sm-0 btn-lg btn-info text-light" href="/solicituds/new/<%= @departamento.id %>">
       <i class="icon-checklist-24"></i> Cita
     </a>
-    <% if @home != 'S'%>
-      <a class="btn my-sm-0 btn-lg btn-success text-light" href="/separar/new">
-        <i class="icon-zap-24"></i> Separar
-      </a>
-        <%= link_to(edit_departamento_path(@departamento), :class => "btn my-sm-0 btn-lg btn-danger text-light") do %>
-          <i class="icon-pencil-24"></i> Editar
-        <%end%>
-    <%end%>
+      <% if @home != 'S' %>
+        <a class="btn my-sm-0 btn-lg btn-success text-light" href="/separar/new/<%= @departamento.id %>">
+          <i class="icon-zap-24"></i> Separar
+        </a>
+        
+          <%= link_to(edit_departamento_path(@departamento), :class => "btn my-sm-0 btn-lg btn-danger text-light") do %>
+            <i class="icon-pencil-24"></i> Editar
+          <%end%>
+      <%end%>
 </div>
 
 

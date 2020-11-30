@@ -1,44 +1,42 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Cod cita:</strong>
-  <%= @citum.cod_cita %>
+  <strong>Cita id:</strong>
+  <%= @citum.id %>
 </p>
 
 <p>
-  <strong>Cod solicitud:</strong>
-  <%= @citum.cod_solicitud %>
+  <strong>Solicitud id:</strong>
+  <%= @citum.solicitud_id %>
 </p>
 
 <p>
-  <strong>Fecha:</strong>
+  <strong>Fecha y Hora:</strong>
   <%= @citum.fecha %>
 </p>
 
 <p>
+  <strong>Cliente:</strong>
+        <%= Solicitud.select(:nombres).where("id = " + @citum.solicitud_id.to_s).collect(&:nombres)[0] %>
+        <%= Solicitud.select(:apellidos).where("id = " + @citum.solicitud_id.to_s).collect(&:apellidos)[0] %>
+</p>
+
+<p>
+  <strong>Creado:</strong>
+  <%= @citum.created_at %>
+</p>
+
+<p>
+  <strong>Modificado:</strong>
+  <%= @citum.updated_at %>
+</p>
+
+<!--
+<p>
   <strong>Estado:</strong>
   <%= @citum.estado %>
 </p>
+-->
 
-<p>
-  <strong>Usu crea:</strong>
-  <%= @citum.usu_crea %>
-</p>
-
-<p>
-  <strong>Fec crea:</strong>
-  <%= @citum.fec_crea %>
-</p>
-
-<p>
-  <strong>Usu mod:</strong>
-  <%= @citum.usu_mod %>
-</p>
-
-<p>
-  <strong>Fec mod:</strong>
-  <%= @citum.fec_mod %>
-</p>
-
-<%= link_to 'Edit', edit_citum_path(@citum) %> |
-<%= link_to 'Back', cita_path %>
+<%= link_to 'Editar', edit_citum_path(@citum), :class => "btn btn-warning" %> |
+<%= link_to 'Volver', cita_path, :class => "btn btn-info" %>

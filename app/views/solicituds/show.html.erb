@@ -1,22 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Codigo de solictud:</strong>
-  <%= @solicitud.cod_solictud %>
+  <strong>Departamento:</strong>
+  <%= Departamento.select(:numero).where("id = " + @solicitud.departamento_id.to_s).collect(&:numero)[0] %>
 </p>
 
 <p>
-  <strong>Codigo de departamento:</strong>
-  <%= @solicitud.cod_departamento %>
-</p>
-
-<p>
-  <strong>Tipo documento:</strong>
-  <%= @solicitud.tipo_documento %>
-</p>
-
-<p>
-  <strong>Numero documento:</strong>
+  <strong>DNI:</strong>
   <%= @solicitud.numero_documento %>
 </p>
 
@@ -45,6 +35,7 @@
   <%= @solicitud.mensaje %>
 </p>
 
+<!--
 <p>
   <strong>Estado:</strong>
   <%= @solicitud.estado %>
@@ -52,26 +43,6 @@
 
 <%= link_to 'Editar', edit_solicitud_path(@solicitud), :class => "btn btn-lg btn-success text-light" %>
 <%= link_to 'Volver', solicituds_path, :class => "btn-warning btn btn-lg"%>
-
-<!--<p>
-  <strong>Usu crea:</strong>
-  <%= @solicitud.usu_crea %>
-</p>
-
-<p>
-  <strong>Fec crea:</strong>
-  <%= @solicitud.fec_crea %>
-</p>
-
-<p>
-  <strong>Usu mod:</strong>
-  <%= @solicitud.usu_mod %>
-</p>
-
-<p>
-  <strong>Fec mod:</strong>
-  <%= @solicitud.fec_mod %>
-</p>
 -->
 
 

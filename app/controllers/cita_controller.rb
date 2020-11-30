@@ -4,7 +4,7 @@ class CitaController < ApplicationController
   # GET /cita
   # GET /cita.json
   def index
-    @cita = Citum.all
+    @citas = Citum.paginate(page: params[:page], per_page: 4)
   end
 
   # GET /cita/1
@@ -13,8 +13,10 @@ class CitaController < ApplicationController
   end
 
   # GET /cita/new
+  # GET /cita/new/:solicitud_id
   def new
     @citum = Citum.new
+    @citum.solicitud_id = params[:solicitud_id]
   end
 
   # GET /cita/1/edit
@@ -69,6 +71,6 @@ class CitaController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def citum_params
-      params.require(:citum).permit(:cod_cita, :cod_solicitud, :fecha, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod)
+      params.require(:citum).permit(:cod_cita, :cod_solicitud, :solicitud_id, :fecha, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod)
     end
 end
