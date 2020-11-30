@@ -48,7 +48,7 @@
       Looks good!
     </div>
     </div>
-    <div class="col-md-4 mb-3 field">
+    <!--<div class="col-md-4 mb-3 field">
     <%= form.label :Tipo_persona, :class=>"col-form-label col-form-label-lg" %>
     <%= form.select :tipo_persona,  options_for_select([ "Juridico", "Natural"]), {}, { class: "form-control form-control-lg mr-sm-2" } %>
     
@@ -62,32 +62,11 @@
     <div class="valid-feedback">
       Looks good!
     </div>
-    </div>
+    </div>-->
      
       <div class="col-md-4 mb-3 field">
       <%= form.label :perfil, :class=>"col-form-label col-form-label-lg" %>
-      <%= form.select :perfil,  options_for_select([ "Administrador", "Vendedor", "Jefe"]), {}, { class: "form-control form-control-lg mr-sm-2" } %>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-4 mb-3 field">
-        <label for="validationCustom02" class="col-form-label col-form-label-lg">Contraseña</label>
-        <%= form.text_field :contraseña, :class=>"form-control form-control-lg mr-sm-2"%>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-4 mb-3 field">
-        <label for="validationCustom02" class="col-form-label col-form-label-lg">Telefono</label>
-        <%= form.text_field :telefono, :class=>"form-control form-control-lg mr-sm-2"%>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-4 mb-3 field">
-        <label for="validationCustom02" class="col-form-label col-form-label-lg">Usuario</label>
-        <%= form.text_field :codigo_usuario, :class=>"form-control form-control-lg mr-sm-2"%>
+      <%= form.select :perfil,  options_for_select([ "Administrador", "Vendedor", "Jefe"]), { :include_blank => "Seleccione perfil" } , { class: "form-control form-control-lg mr-sm-2" } %>
         <div class="valid-feedback">
           Looks good!
         </div>
@@ -100,12 +79,33 @@
         </div>
       </div>
       <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Contraseña</label>
+        <%= form.password_field :contraseña, :class=>"form-control form-control-lg mr-sm-2"%>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <!--<div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Telefono</label>
+        <%= form.text_field :telefono, :class=>"form-control form-control-lg mr-sm-2"%>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 field">
+        <label for="validationCustom02" class="col-form-label col-form-label-lg">Usuario</label>
+        <%= form.text_field :codigo_usuario, :class=>"form-control form-control-lg mr-sm-2"%>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>-->
+      <!--<div class="col-md-4 mb-3 field">
       <%= form.label :estado, :class=>"col-form-label col-form-label-lg" %>
       <%= form.select :estado,  options_for_select([ "Activo", "Inactivo", "Falta Activar",]),{}, { class: "form-control form-control-lg mr-sm-2" }  %>
         <div class="valid-feedback">
           Looks good!
         </div>
-      </div>
+      </div>--
 
   
 
@@ -122,7 +122,7 @@
         <div class="valid-feedback">
           Looks good!
         </div>
-      </div>
+      </div>-->
     </div>
   
 <div class="actions text-right">
