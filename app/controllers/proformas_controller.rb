@@ -8,11 +8,16 @@ class ProformasController < ApplicationController
   # GET /proformas.json
   def index
     if !logged_in?
-
       redirect_to :root
-
     end
     @proformas = Proforma.paginate(page: params[:page], per_page: 4)
+    for p in @proformas do
+        if p.solicitud_id?
+            p.solicitud = Solicitud.find(p.solicitud_id)
+            puts "proforma solicitud id: #{p.solicitud.id}"
+            puts "proforma solicitud nombres: #{p.solicitud.nombres}"
+        end
+    end
     @variables = Variable.all
   end
 

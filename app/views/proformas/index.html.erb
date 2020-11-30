@@ -1,39 +1,82 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Proformas</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Cod proforma</th>
-      <th>Cod solictud</th>
-      <th>Estado</th>
-      <th>Usu crea</th>
-      <th>Fec crea</th>
-      <th>Usu mod</th>
-      <th>Fec mod</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @proformas.each do |proforma| %>
-      <tr>
-        <td><%= proforma.cod_proforma %></td>
-        <td><%= proforma.cod_solictud %></td>
-        <td><%= proforma.estado %></td>
-        <td><%= proforma.usu_crea %></td>
-        <td><%= proforma.fec_crea %></td>
-        <td><%= proforma.usu_mod %></td>
-        <td><%= proforma.fec_mod %></td>
-        <td><%= link_to 'Show', proforma %></td>
-        <td><%= link_to 'Edit', edit_proforma_path(proforma) %></td>
-        <td><%= link_to 'Destroy', proforma, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<%= content_for :head do %>
+  <br/>
+  <div class="row bd-example">
+    <div class="col-md-9 mb-2">
+      <h1 class="display-1">Proformas</h1>
+    </div>
+    <div class="col-md-3 text-right mb-2">
+      <br/>
+      <br/>
+      <% # link_to 'Nueva Proforma', new_proforma_path, :class => "btn btn-success my-2 my-sm-0" %>
+    </div>
+  </div>
+<% end %>
 
 <br>
+<!--
+<% # link_to 'Nueva Proforma', new_proforma_path, :class => "btn btn-success my-2 my-sm-0" %>
+<br>
+-->
 
-<%= link_to 'Nueva Proforma', new_proforma_path, :class => "btn btn-success my-2 my-sm-0" %>
+    <% @proformas.each do |proforma| %>
+      <div class="card mt-2">
+        <div class="col-md-12">
+            <div class="card-header row  bg-secondary text-light">
+              <div class="col-md-11">
+                 <%= Departamento.select(:numero).where("id = " + proforma.solicitud.departamento_id.to_s).collect(&:numero)[0] %> </b>
+              </div>
+              <div class="col-md-1 text-right">
+                <span class="badge badge-primary badge-pill"><%= proforma.created_at %></span>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+              <div class="card-body pb-0">
+                <b>Cliente:</b> <%= proforma.apellidos %>,<%= proforma.nombres %>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body pb-0">
+                <b>Telefono:</b> <%= proforma.telefono %>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body pb-0">
+                <b>Email Cliente:</b> <%= proforma.correo %>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body pb-0 text-justify">
+                <b>Costo base:</b> <%= proforma.costo_base %>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body pb-0 text-justify">
+                <b>Descuento:</b> <%= proforma.descuento %>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body pb-0 text-justify">
+                <b>Costo final:</b> <%= proforma.costo_final %>
+              </div>
+            </div>
+            <div class="col-md-12 text-right mb-3">
+                <%= link_to 'Show', proforma %>
+                <%= link_to 'Edit', edit_proforma_path(proforma) %>
+                <%= link_to 'Destroy', proforma, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </div>
+        </div>
+      </div>
+
+    <% end %>
+
+<br>
+<br>
+<div class="digg_pagination">
+  <%= will_paginate @proformas %>
+</div>
+<%= render partial: '/layouts/paginacion'%>
+
+
