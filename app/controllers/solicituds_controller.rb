@@ -9,12 +9,14 @@ class SolicitudsController < ApplicationController
     @solicituds = Solicitud.paginate(page: params[:page], per_page: 4)
     @departamentos = Departamento.all
     for s in @solicituds do
-        s.departamento = Departamento.find(s.departamento_id)
-        #puts "dpto id: #{s.departamento_id}"
-        #puts "dpto numero: #{s.departamento.numero}"
-        #puts "dpto cod_proyecto: #{s.departamento.cod_proyecto}"
-        #s.proyecto = Proyecto.find(s.departamento.cod_proyecto)
-        #puts "proyecto id: #{s.proyecto.id}"
+        if s.departamento_id?
+            puts "dpto id: #{s.departamento_id}"
+            s.departamento = Departamento.find(s.departamento_id)
+            #puts "dpto cod_proyecto: #{s.departamento.cod_proyecto}"
+            #puts "dpto numero: #{s.departamento.numero}"
+            #s.proyecto = Proyecto.find(s.departamento.cod_proyecto)
+            #puts "proyecto id: #{s.proyecto.id}"
+        end
     end
 
     @variables = Variable.all

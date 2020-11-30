@@ -62,6 +62,7 @@
                   <%= link_to 'Citar', new_citum_path(solicitud.id), :class => "btn-success btn-sm text-light mr-3" %>
                 -->
                   <a class="btn-success btn-sm text-light mr-3" href="/cita/new/<%= solicitud.id %>">Citar</a>
+                  <a class="btn-success btn-sm text-light mr-3" href="/proformas/new/<%= solicitud.id %>">Proforma</a>
                   <%= link_to 'Editar', edit_solicitud_path(solicitud), :class => "btn-warning btn-sm text-light mr-3" %>
             </div>
         </div>
