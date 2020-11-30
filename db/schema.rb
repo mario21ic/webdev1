@@ -206,10 +206,6 @@ ActiveRecord::Schema.define(version: 2020_11_25_015348) do
     t.datetime "fec_crea"
     t.string "usu_mod"
     t.datetime "fec_mod"
-    t.string "telefono"
-    t.string "correo_personal"
-    t.string "nombre"
-    t.string "apellido"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "apellido_materno"

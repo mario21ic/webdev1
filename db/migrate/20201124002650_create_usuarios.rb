@@ -1,6 +1,6 @@
 class CreateUsuarios < ActiveRecord::Migration[6.0]
   def change
-    create_table :usuarios do |t|
+    create_table :usuarios, if_not_exists: true do |t|
       t.string :tipo_documento
       t.string :numero_documento
       t.string :codigo_usuario

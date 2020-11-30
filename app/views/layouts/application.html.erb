@@ -47,15 +47,90 @@
      
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mt-2 mt-lg-0 bd-navbar-nav flex-row">
-                    <% @variables.where(tipo_variable: 'Menú').each do |variable| %>
                        <li class="nav-item">  
-                          <a class="nav-link" href="/<%= variable.codigo_variable %>">
-                              <i class="icon-<%= variable.dato_extra %>"></i>
-                              <%= variable.descricion_variable %>
+                          <a class="nav-link" href="/">
+                              <i class="icon-home-16"></i>
+                              Home
                           </a>
                       </li>
-                      <br/>
-                    <% end %>
+                      <br>
+                       <li class="nav-item">  
+                          <a class="nav-link" href="/nosotros">
+                              <i class="icon-eye-16"></i>
+                              Nosotros
+                          </a>
+                      </li>
+                      <br>
+                       <li class="nav-item">  
+                          <a class="nav-link" href="/contactenos">
+                              <i class="icon-comment-discussion-16"></i>
+                              Contáctenos
+                          </a>
+                      </li>
+                      <br>
+                       <li class="nav-item">  
+                          <a class="nav-link" href="/ultimos_proyectos">
+                              <i class="icon-organization-16"></i>
+                              Últimos Proyectos
+                          </a>
+                      </li>
+                      <br>
+                       <li class="nav-item">  
+                          <a class="nav-link" href="/acceder">
+                              <i class="icon-fold-up-16"></i>
+                              Acceder
+                          </a>
+                      </li>
+                      <br>
+                       <li class="nav-item">  
+                          <a class="nav-link" href="/proyectos">
+                              <i class="icon-grabber-16"></i>
+                              Proyectos
+                          </a>
+                      </li>
+                      <br>
+                       <li class="nav-item">  
+                          <a class="nav-link" href="/proformas">
+                              <i class="icon-file-16"></i>
+                              Proformas
+                          </a>
+                      </li>
+                      <br>
+                       <li class="nav-item">  
+                          <a class="nav-link" href="/venta">
+                              <i class="icon-file-badge-16"></i>
+                              Ventas
+                          </a>
+                      </li>
+                      <br>
+                       <li class="nav-item">  
+                          <a class="nav-link" href="/solicituds">
+                              <i class="icon-list-ordered-16"></i>
+                              Solicitudes
+                          </a>
+                      </li>
+                      <br>
+                       <li class="nav-item">  
+                          <a class="nav-link" href="/reportes">
+                              <i class="icon-desktop-download-16"></i>
+                              Reportes
+                          </a>
+                      </li>
+                      <br>
+                       <li class="nav-item">  
+                          <a class="nav-link" href="/usuarios">
+                              <i class="icon-people-16"></i>
+                              Usuarios
+                          </a>
+                      </li>
+                      <br>
+                       <li class="nav-item">  
+                          <a class="nav-link" href="/variables">
+                              <i class="icon-gear-16"></i>
+                              Configuracion
+                          </a>
+                      </li>
+                      <br>
             </ul>
           </div>
         </nav>
