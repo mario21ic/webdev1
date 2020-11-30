@@ -12,6 +12,9 @@ class HomeController < ApplicationController
   end
 
   def proyectos
+    @proyectos = Proyecto.where("estado!='I'")
+    @departamentos = Departamento.where("estado!='I'")
+    @archivos = Archivo.where("estado!='I'")
   end
 
   def acceder
