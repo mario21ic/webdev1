@@ -127,6 +127,17 @@
                       </li>
                       <br>
                        
+                      <li class="nav-item">  
+                      <a class="nav-link" href="/solicituds">
+                          <i class="icon-list-ordered-16"></i>
+                          Solicitudes
+                      </a>
+                  </li>
+                  <br>
+
+                      
+                      
+                      <% if logged_in? and current_usuario.perfil=="Administrador"%>  
                       <br>
                        <li class="nav-item">  
                           <a class="nav-link" href="/proyectos">
@@ -135,10 +146,6 @@
                           </a>
                       </li>
                       <br>
-
-                      
-                      
-                      <% if logged_in? and current_usuario.perfil=="Administrador"%>  
                       <li class="nav-item">  
                           <a class="nav-link" href="/proformas">
                               <i class="icon-file-16"></i>
@@ -153,13 +160,7 @@
                           </a>
                       </li>
                       <br>
-                       <li class="nav-item">  
-                          <a class="nav-link" href="/solicituds">
-                              <i class="icon-list-ordered-16"></i>
-                              Solicitudes
-                          </a>
-                      </li>
-                      <br>
+                      
                        <li class="nav-item">  
                           <a class="nav-link" href="/cita">
                               <i class="icon-list-ordered-16"></i>
@@ -190,7 +191,15 @@
                       </li>
                       <%end%>
 
-                      <%if logged_in? and current_usuario.perfil=="Vendedor" %>
+                      <%if logged_in? and current_usuario.perfil=="Asesor" %>
+                      <br>
+                       <li class="nav-item">  
+                          <a class="nav-link" href="/proyectos">
+                              <i class="icon-grabber-16"></i>
+                              Proyectos
+                          </a>
+                      </li>
+                      <br>
 
                       <li class="nav-item">  
                           <a class="nav-link" href="/proformas">
@@ -222,7 +231,7 @@
                       <br>
                        
                       <%end%>
-                      <%if logged_in? and current_usuario.perfil=="Jefe" %>
+                      <%if logged_in? and current_usuario.perfil=="Gerente" %>
 
                       <li class="nav-item">  
                           <a class="nav-link" href="/proformas">
