@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_29_203336) do
+ActiveRecord::Schema.define(version: 2020_11_25_015348) do
 
   create_table "archivos", force: :cascade do |t|
     t.integer "cod_archivo"
