@@ -7,6 +7,7 @@ class DepartamentosController < ApplicationController
   # GET /departamentos
   # GET /departamentos.json
   def index
+      @archivos = Archivo.where(estado: 'A')
     @departamentos = Departamento.where(cod_proyecto: params[:cod_proyecto])
   end
 

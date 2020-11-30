@@ -8,12 +8,14 @@ class ProyectosController < ApplicationController
   # GET /proyectos.json
   def index
     @departamentos = Departamento.where(estado: 'A')
+    @archivos = Archivo.where(estado: 'A')
     @proyectos = Proyecto.all
   end
 
   # GET /proyectos/1
   # GET /proyectos/1.json
   def show
+    @archivos = Archivo.where(estado: 'A')
     @departamentos = Departamento.where(cod_proyecto: params[:id])
     @caracteristicas_proyecto = CaracteristicasProyecto.where(cod_proyecto: params[:id],estado: 'A')
   end

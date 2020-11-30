@@ -5,6 +5,7 @@ class HomeController < ApplicationController
   def index
     @proyectos = Proyecto.where("estado!='I' AND mca_favorito = 'S'")
     @departamentos = Departamento.where("estado!='I'")
+    @archivos = Archivo.where("estado!='I'")
   end
 
   def nosotros

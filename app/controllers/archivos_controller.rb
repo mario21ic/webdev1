@@ -6,6 +6,8 @@ class ArchivosController < ApplicationController
   # GET /archivos.json
   def index
     @archivos = Archivo.where(cod_proyecto:params[:cod_proyecto],cod_departamento:params[:cod_departamento])
+    @proyecto = Proyecto.find(params[:cod_proyecto])
+    @departamento = Departamento.find(params[:cod_departamento])
   end
 
   # GET /archivos/1
@@ -16,10 +18,14 @@ class ArchivosController < ApplicationController
   # GET /archivos/new
   def new
     @archivo = Archivo.new
+    @archivo.cod_proyecto = params[:cod_proyecto]
+    @proyecto = Proyecto.find(params[:cod_proyecto])
+    @archivo.cod_departamento = params[:cod_departamento]
   end
 
   # GET /archivos/1/edit
   def edit
+    @proyecto = Proyecto.find(@archivo.cod_proyecto)
   end
 
   # POST /archivos
@@ -29,7 +35,7 @@ class ArchivosController < ApplicationController
 
     respond_to do |format|
       if @archivo.save
-        format.html { redirect_to @archivo, notice: 'Archivo was successfully created.' }
+        format.html { redirect_to archivos_url(cod_proyecto:@archivo.cod_proyecto,cod_departamento:@archivo.cod_departamento), notice: 'Archivo was successfully created.' }
         format.json { render :show, status: :created, location: @archivo }
       else
         format.html { render :new }
@@ -43,7 +49,7 @@ class ArchivosController < ApplicationController
   def update
     respond_to do |format|
       if @archivo.update(archivo_params)
-        format.html { redirect_to @archivo, notice: 'Archivo was successfully updated.' }
+        format.html { redirect_to archivos_url(cod_proyecto:@archivo.cod_proyecto,cod_departamento:@archivo.cod_departamento), notice: 'Archivo was successfully updated.' }
         format.json { render :show, status: :ok, location: @archivo }
       else
         format.html { render :edit }
