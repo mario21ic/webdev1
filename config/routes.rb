@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   resources :cita
   resources :proformas
   resources :solicituds
+  get '/solicituds/new/:departamento_id' => 'solicituds#new'
   resources :personas
   resources :archivos
   resources :departamentos

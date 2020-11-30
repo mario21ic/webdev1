@@ -12,10 +12,10 @@
   <% end %>
 
 <div class="form-row">
+  <%= form.hidden_field :departamento_id, :class=>"form-control form-control-lg mr-sm-2"%>
 
-
-<div class="col-md-4 mb-3 field">
-    <label class="col-form-label col-form-label-lg">Número de Documento</label>
+  <div class="col-md-4 mb-3 field">
+    <label class="col-form-label col-form-label-lg">DNI</label>
     <%= form.text_field :numero_documento, :class=>"form-control form-control-lg mr-sm-2"%>
   </div>
 
@@ -46,11 +46,14 @@
 
   </div>  
   <div class="actions text-right">
+    <!--
   <%= link_to 'Regresar', solicituds_path, :class => "btn-warning btn btn-lg" %>
-  <%= form.submit "Crear Solicitud", :class => "btn btn-lg btn-success text-light"%>
+    -->
+  <%= form.submit "Enviar solicitud", :class => "btn btn-lg btn-success text-light"%>
   </div>
 </div>
-  <!--<div class="field">
+  <!--
+  <div class="field">
     <%= form.label :usu_crea %>
     <%= form.text_field :usu_crea %>
   </div>
@@ -65,9 +68,10 @@
     <%= form.text_field :usu_mod %>
   </div>
 
-  <!--<div class="field">
+  <div class="field">
     <%= form.label :fec_mod %>
     <%= form.datetime_select :fec_mod %>
-  </div>-->
+  </div>
+  -->
 
 <% end %>
