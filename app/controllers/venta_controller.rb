@@ -10,7 +10,14 @@ class VentaController < ApplicationController
     if !logged_in?
       redirect_to :root
     end
-    @venta = Ventum.all
+    @ventas = Ventum.paginate(page: params[:page], per_page: 4)
+    for v in @ventas do
+        if v.departamento_id?
+            v.departamento = Departamento.find(v.departamento_id)
+            puts "v dpto id: #{v.departamento.id}"
+            puts "v dpto cod_proyecto: #{v.departamento.cod_proyecto}"
+        end
+    end
     @variables = Variable.all
   end
 

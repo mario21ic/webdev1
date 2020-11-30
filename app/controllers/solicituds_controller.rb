@@ -34,9 +34,7 @@ class SolicitudsController < ApplicationController
   # GET /solicituds/new/:departamento_id
   def new
     #if !logged_in?
-
     #  redirect_to :root
-
     #end
     @solicitud = Solicitud.new
     @solicitud.departamento_id = params[:departamento_id]
