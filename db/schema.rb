@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_29_203336) do
+ActiveRecord::Schema.define(version: 2020_11_30_061203) do
 
   create_table "archivos", force: :cascade do |t|
     t.integer "cod_archivo"
@@ -53,6 +53,8 @@ ActiveRecord::Schema.define(version: 2020_11_29_203336) do
     t.datetime "fec_mod"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "solicitud_id"
+    t.index ["solicitud_id"], name: "index_cita_on_solicitud_id"
   end
 
   create_table "clientes", force: :cascade do |t|
@@ -250,5 +252,6 @@ ActiveRecord::Schema.define(version: 2020_11_29_203336) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "cita", "solicituds"
   add_foreign_key "solicituds", "departamentos"
 end

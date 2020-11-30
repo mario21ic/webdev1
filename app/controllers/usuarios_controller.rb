@@ -6,6 +6,7 @@ class UsuariosController < ApplicationController
   # GET /usuarios
   # GET /usuarios.json
   def index
+    @Usuarios = Usuario.paginate(page: params[:page], per_page: 1)
     @usuarios = Usuario.all
     @variables = Variable.all
   end

@@ -8,7 +8,7 @@
     <div class="col-md-3 text-right mb-2">
       <br/>
       <br/>
-      <%= link_to 'Nuevo Usuario', new_usuario_path, :class => "form-control btn btn-lg btn-outline-primary text-primary" %>
+      <%= link_to 'Nuevo Usuario', new_usuario_path, :class => "form-control btn btn-lg btn-outline-primary text-primary " %>
     </div>
   </div>
 <% end %>
@@ -33,7 +33,7 @@
         <div class="col-md-12">
             <div class="card-header row  bg-secondary text-light">
               <div class="col-md-11">
-                <b>Usuario:</b> <%= usuario.codigo_usuario %>
+                <b>Usuario:</b> <%= usuario.correo_corporativo %>
               </div>
               <div class="col-md-1 text-right">
                 <span class="badge badge-primary badge-pill"><%= usuario.estado %></span>
@@ -48,7 +48,7 @@
             </div>
             <div class="col-md-3">
               <div class="card-body">
-                <b>Email Personal:</b> <%= usuario.correo_personal %>
+                <!--<b>Email Personal:</b> <%= usuario.correo_personal %>-->
               </div>
             </div>
             <div class="col-md-3">
@@ -63,22 +63,22 @@
             </div>
             <div class="col-md-3">
               <div class="card-body">
-                <b>Telefono:</b> <%= usuario.telefono %>
+                <b>Nombre:</b> <%= usuario.nombre %>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card-body">
-                <b>Tipo de Persona:</b> <%= usuario.tipo_persona %>
+                <!--<b>Tipo de Persona:</b> <%= usuario.tipo_persona %>-->
               </div>
             </div>
             <div class="col-md-3">
               <div class="card-body">
-                <b>Genero:</b> <%= usuario.genero %>
+                <b>Apellido:</b> <%= usuario.apellido %>
               </div>
             </div>
             <div class="col-md-3">
               <div class="card-body">
-                <b>Fecha de Nacimiento:</b> <%= usuario.fec_crea %>
+                <!--<b>Fecha de Nacimiento:</b> <%= usuario.fec_crea %>-->
               </div>
             </div>
             
@@ -96,8 +96,10 @@
             
            </div>
 
+
     <% end %>
 
-
-
+      <div class="digg_pagination">
+        <%= will_paginate @Usuarios %>
+      </div>
 <%= render partial: '/layouts/paginacion'%>

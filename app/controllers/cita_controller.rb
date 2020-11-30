@@ -13,8 +13,10 @@ class CitaController < ApplicationController
   end
 
   # GET /cita/new
+  # GET /cita/new/:solicitud_id
   def new
     @citum = Citum.new
+    @citum.solicitud_id = params[:solicitud_id]
   end
 
   # GET /cita/1/edit
