@@ -143,6 +143,14 @@ ActiveRecord::Schema.define(version: 2020_11_30_075825) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "solicitud_id"
+    t.string "nombres"
+    t.string "apellidos"
+    t.string "dni"
+    t.string "correo"
+    t.string "telefono"
+    t.decimal "costo_base"
+    t.decimal "descuento"
+    t.decimal "costo_final"
     t.index ["solicitud_id"], name: "index_proformas_on_solicitud_id"
   end
 
