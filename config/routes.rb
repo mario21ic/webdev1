@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   resources :separars
   get '/separars/new/:departamento_id' => 'separars#new'
   resources :venta
+  get '/venta/new/:departamento_id' => 'venta#new'
   resources :clientes
   resources :cita
   get '/cita/new/:solicitud_id' => 'cita#new'

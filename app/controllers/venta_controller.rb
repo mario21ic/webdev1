@@ -23,13 +23,13 @@ class VentaController < ApplicationController
   end
 
   # GET /venta/new
+  # GET /venta/new/:departamento_id
   def new
-    if !logged_in?
-
-      redirect_to :root
-      
-    end
+    #if !logged_in?
+    #  redirect_to :root
+    #end
     @ventum = Ventum.new
+    @ventum.departamento_id = params[:departamento_id]
     @variables = Variable.all
   end
 
@@ -45,6 +45,10 @@ class VentaController < ApplicationController
 
     respond_to do |format|
       if @ventum.save
+        puts "dpto ID: #{@ventum.departamento_id}"
+        departamento = Departamento.find(@ventum.departamento_id)
+        departamento.vendido = TRUE
+        departamento.save
         format.html { redirect_to @ventum, notice: 'Ventum was successfully created.' }
         format.json { render :show, status: :created, location: @ventum }
       else
@@ -86,6 +90,6 @@ class VentaController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def ventum_params
-      params.require(:ventum).permit(:cod_venta, :tipo_documento, :numero_documento, :cod_departamento, :cod_solicitud, :tipo_compra, :total, :saldo, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod)
+      params.require(:ventum).permit(:cod_venta, :tipo_documento, :numero_documento, :cod_departamento, :cod_solicitud, :tipo_compra, :total, :saldo, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod, :nombres, :apellidos, :correo, :telefono, :operacion_bancaria, :monto, :financiado, :departamento_id)
     end
 end
