@@ -31,7 +31,40 @@ class ProformasController < ApplicationController
 
     end
     @proforma = Proforma.new
-    @proforma.solicitud_id = params[:solicitud_id]
+    if (params.has_key?(:solicitud_id))
+        @solicitud = Solicitud.find(params[:solicitud_id])
+        @proforma.solicitud_id = @solicitud.id
+        @proforma.nombres = @solicitud.nombres
+        @proforma.apellidos = @solicitud.apellidos
+        @proforma.dni = @solicitud.numero_documento
+        #puts "proforma dni: #{@proforma.dni}"
+        @proforma.correo = @solicitud.correo
+        @proforma.telefono = @solicitud.telefono
+
+        puts "dpto ID => #{@solicitud.departamento_id}"
+        @departamento = Departamento.find(@solicitud.departamento_id)
+        <<-DOC
+        case @departamento.piso
+            when 1
+              @proforma.descuento = 0
+            when 2
+              @proforma.descuento = 1
+            when 3
+              @proforma.descuento = 2
+            when 4
+              @proforma.descuento = 3
+            else
+              @proforma.descuento = 0
+        end 
+        DOC
+        #@proforma.descuento = 50
+        @proforma.descuento = @departamento.piso - 1
+        #puts "cod proyecto: #{@departamento.cod_proyecto}"
+        @proyecto = Proyecto.find(@departamento.cod_proyecto)
+        #puts "precio m2: #{@proyecto.precio_m2}"
+        @proforma.costo_base = @departamento.area_total * @proyecto.precio_m2
+        @proforma.costo_final = @proforma.costo_base - ((@proforma.costo_base * @proforma.descuento)/100)
+    end
     @variables = Variable.all
   end
 
@@ -88,6 +121,6 @@ class ProformasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def proforma_params
-      params.require(:proforma).permit(:cod_proforma, :cod_solictud, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod)
+      params.require(:proforma).permit(:cod_proforma, :cod_solictud, :estado, :usu_crea, :fec_crea, :usu_mod, :fec_mod, :solicitud_id, :nombres, :apellidos, :dni, :correo, :telefono, :costo_base, :descuento, :costo_final)
     end
 end
