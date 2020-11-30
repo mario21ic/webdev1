@@ -17,8 +17,10 @@ class SepararsController < ApplicationController
   end
 
   # GET /separars/new
+  # GET /separars/new/:departamento_id
   def new
     @separar = Separar.new
+    @separar.departamento_id = params[:departamento_id]
     @variables = Variable.all
   end
 
@@ -34,6 +36,10 @@ class SepararsController < ApplicationController
 
     respond_to do |format|
       if @separar.save
+        departamento = Departamento.find(@separar.departamento_id)
+        departamento.separado = TRUE
+        departamento.save
+        puts "Separado:  #{departamento.id} #{departamento.separado}"
         format.html { redirect_to @separar, notice: 'Separar was successfully created.' }
         format.json { render :show, status: :created, location: @separar }
       else
@@ -75,6 +81,6 @@ class SepararsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def separar_params
-      params.require(:separar).permit(:nombres, :apellidos, :dni, :correo, :voucher, :monto)
+      params.require(:separar).permit(:nombres, :apellidos, :dni, :correo, :voucher, :monto, :departamento_id)
     end
 end

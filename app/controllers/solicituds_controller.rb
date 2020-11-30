@@ -37,11 +37,11 @@ class SolicitudsController < ApplicationController
   # GET /solicituds/new
   # GET /solicituds/new/:departamento_id
   def new
-    if !logged_in?
+    #if !logged_in?
 
-      redirect_to :root
+    #  redirect_to :root
 
-    end
+    #end
     @solicitud = Solicitud.new
     @solicitud.departamento_id = params[:departamento_id]
     @variables = Variable.all

@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   resources :usuarios
   resources :movimimiento_venta
   resources :separars
+  get '/separars/new/:departamento_id' => 'separars#new'
   resources :venta
   resources :clientes
   resources :cita
