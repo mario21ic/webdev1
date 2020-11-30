@@ -1,4 +1,5 @@
 class VentaController < ApplicationController
+  include SessionsHelper
   before_action :set_ventum, only: [:show, :edit, :update, :destroy]
 
   layout "application"
@@ -6,6 +7,11 @@ class VentaController < ApplicationController
   # GET /venta
   # GET /venta.json
   def index
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @venta = Ventum.all
     @variables = Variable.all
   end
@@ -18,6 +24,11 @@ class VentaController < ApplicationController
 
   # GET /venta/new
   def new
+    if !logged_in?
+
+      redirect_to :root
+      
+    end
     @ventum = Ventum.new
     @variables = Variable.all
   end

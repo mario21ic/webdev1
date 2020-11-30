@@ -1,4 +1,5 @@
 class SolicitudsController < ApplicationController
+  include SessionsHelper
   before_action :set_solicitud, only: [:show, :edit, :update, :destroy]
 
   layout "application"
@@ -6,6 +7,11 @@ class SolicitudsController < ApplicationController
   # GET /solicituds
   # GET /solicituds.json
   def index
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @solicituds = Solicitud.paginate(page: params[:page], per_page: 4)
     @departamentos = Departamento.all
     for s in @solicituds do
@@ -31,6 +37,11 @@ class SolicitudsController < ApplicationController
   # GET /solicituds/new
   # GET /solicituds/new/:departamento_id
   def new
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @solicitud = Solicitud.new
     @solicitud.departamento_id = params[:departamento_id]
     @variables = Variable.all

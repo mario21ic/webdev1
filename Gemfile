@@ -1,11 +1,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-<<<<<<< HEAD
+
 ruby '~> 2.7.2'
-=======
-ruby '~> 2.7.1'
->>>>>>> refs/remotes/origin/main
+
 
 gem 'will_paginate'
 gem 'will_paginate-bootstrap4'

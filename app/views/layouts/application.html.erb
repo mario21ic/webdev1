@@ -174,14 +174,7 @@
                           </a>
                       </li>
                       <br>
-                      <br>
-                       <li class="nav-item">  
-                          <a class="nav-link" href="/reportes">
-                              <i class="icon-desktop-download-16"></i>
-                              Reportes
-                          </a>
-                      </li>
-                      <br>
+        
                       <li class="nav-item">  
                           <a class="nav-link" href="/usuarios">
                               <i class="icon-people-16"></i>
@@ -277,6 +270,12 @@
                     <%= yield :right%>
                   </div>
                 </div>
+                
+                <% flash.each do |message_type, message| %>
+                    <div class="alert alert-<%= message_type %>">
+                    <%=message%>
+                    </div>
+                    <%end%>
             <%= yield %>
         </div>
         <br/>

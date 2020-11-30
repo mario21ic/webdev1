@@ -2,10 +2,15 @@ class UsuariosController < ApplicationController
   before_action :set_usuario, only: [:show, :edit, :update, :destroy]
 
   layout "application"
-
+  include SessionsHelper
   # GET /usuarios
   # GET /usuarios.json
   def index
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @Usuarios = Usuario.paginate(page: params[:page], per_page: 1)
     @usuarios = Usuario.all
     @variables = Variable.all
@@ -14,17 +19,33 @@ class UsuariosController < ApplicationController
   # GET /usuarios/1
   # GET /usuarios/1.json
   def show
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @variables = Variable.all
   end
 
   # GET /usuarios/new
   def new
+    
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @usuario = Usuario.new
     @variables = Variable.all
   end
 
   # GET /usuarios/1/edit
   def edit
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @persona = Persona.new
     @variables = Variable.all
   end

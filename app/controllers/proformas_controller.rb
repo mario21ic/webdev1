@@ -1,4 +1,5 @@
 class ProformasController < ApplicationController
+  include SessionsHelper
   before_action :set_proforma, only: [:show, :edit, :update, :destroy]
 
   layout "application"
@@ -6,6 +7,11 @@ class ProformasController < ApplicationController
   # GET /proformas
   # GET /proformas.json
   def index
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @proformas = Proforma.paginate(page: params[:page], per_page: 4)
     @variables = Variable.all
   end
@@ -19,6 +25,11 @@ class ProformasController < ApplicationController
   # GET /proformas/new
   # GET /proformas/new/:solicitud_id
   def new
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @proforma = Proforma.new
     @proforma.solicitud_id = params[:solicitud_id]
     @variables = Variable.all

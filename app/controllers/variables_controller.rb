@@ -1,26 +1,48 @@
 class VariablesController < ApplicationController
+  include SessionsHelper
+
   before_action :set_variable, only: [:show, :edit, :update, :destroy]
 
   # GET /variables
   # GET /variables.json
   def index
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @variables = Variable.all
   end
 
   # GET /variables/1
   # GET /variables/1.json
   def show
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @variables = Variable.all
   end
 
   # GET /variables/new
   def new
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @variables = Variable.all
     @variable = Variable.new
   end
 
   # GET /variables/1/edit
   def edit
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @variables = Variable.all
   end
 

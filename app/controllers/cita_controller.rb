@@ -1,9 +1,15 @@
 class CitaController < ApplicationController
+  include SessionsHelper
   before_action :set_citum, only: [:show, :edit, :update, :destroy]
 
   # GET /cita
   # GET /cita.json
   def index
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @citas = Citum.paginate(page: params[:page], per_page: 4)
   end
 
@@ -15,6 +21,11 @@ class CitaController < ApplicationController
   # GET /cita/new
   # GET /cita/new/:solicitud_id
   def new
+    if !logged_in?
+
+      redirect_to :root
+
+    end
     @citum = Citum.new
     @citum.solicitud_id = params[:solicitud_id]
   end
