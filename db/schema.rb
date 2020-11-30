@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_25_015348) do
+ActiveRecord::Schema.define(version: 2020_11_29_203336) do
 
   create_table "archivos", force: :cascade do |t|
     t.integer "cod_archivo"
@@ -192,6 +192,8 @@ ActiveRecord::Schema.define(version: 2020_11_25_015348) do
     t.datetime "fec_mod"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "departamento_id"
+    t.index ["departamento_id"], name: "index_solicituds_on_departamento_id"
   end
 
   create_table "usuarios", force: :cascade do |t|
@@ -248,4 +250,5 @@ ActiveRecord::Schema.define(version: 2020_11_25_015348) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "solicituds", "departamentos"
 end

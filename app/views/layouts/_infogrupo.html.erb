@@ -2,18 +2,40 @@
               <i class="icon-unverified-16 tooltipx"></i>
               <span class="tooltiptext" style="left:-365%;width: 250px;">
                 <span class="text-center">
-                  <ul class="text-left" style="padding-inline-start: 15px;">
+
+                <ul class="text-left" style="padding-inline-start: 15px;">
                     <h5> Integrantes </h5>
                     <li>Borja Lopez, Lisbert Heovyh <br/><b>U201825559</b></li>
                     <li>Inga Cahuana, Mario Junior <br/><b>U201421533</b></li>
                     <li>Carrera López, Andree Gorgino <br/><b>U202019535</b></li>
                     <li>Meza Acosta, Arnold Omar <br/><b>U201916901</b></li>
-                    <li>Campos Arenas, Rurik Jesus <br/><b>U201911982</b></li>
-                    <li>Gamio Perez, Raul Eduardo <br/><b>U20181d554</b></li>
+                  <li>Campos Arenas, Rurik Jesus <br/><b>U201911982</b></li>
+                  <li>Gamio Perez, Raul Eduardo <br/><b>U20181d554</b></li>
                   </ul>
+                  
                 </span>
               </span>
-            </spam>&nbsp;
+              </spam>&nbsp;
+              <% if logged_in?%>
+
+              <li class="nav-link">
+              <span class="text-info">Bienvenido:<%=current_usuario.nombre%></span>
+              </li>
+              <li class="nav-link">
+              <%= link_to logout_path, method: :delete do%>
+                <span class="text-info">Salir</span>
+                <%end%>
+                </li>
+              <%else%>
+              <li class="nav-link">
+                <a href="<%=login_path %>">
+                <span class="text-info">Ingresar</span>
+                </a>
+                </li>
+                <%end%>
+            
+
+            
             <small class="text-white">
                 <small>
                     Desarrollo

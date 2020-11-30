@@ -12,32 +12,10 @@
   <% end %>
 
 <div class="form-row">
- <div class="col-md-4 mb-3 field">
-    <label class="col-form-label col-form-label-lg">Código de solicitud</label>
-    <%= form.number_field :cod_solictud, :class=>"form-control form-control-lg mr-sm-2"%>
-  </div>
+  <%= form.hidden_field :departamento_id, :class=>"form-control form-control-lg mr-sm-2"%>
 
-<div class="col-md-4 mb-3 field">
-    <label class="col-form-label col-form-label-lg">Código de Departamento</label>
-    <%= form.number_field :cod_departamento, :class=>"form-control form-control-lg mr-sm-2"%>
-  </div>
-
-<div class="col-md-4 mb-3 field">
-    <label class="col-form-label col-form-label-lg">Tipo de Documento</label>
-    <select name="solicitud[tipo_documento]" id="solicitud_tipo_documento" class="form-control form-control-lg mr-sm-2">
-          <option>[Seleccione]</option>
-          <option value="DNI">DNI</option> 
-          <option value="C.Extranjeria">C. Extranjeria</option>
-          <option value="Pasaporte">Pasaporte</option>
-          <option value="RUC">RUC</option>
-        </select>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
-
-<div class="col-md-4 mb-3 field">
-    <label class="col-form-label col-form-label-lg">Número de Documento</label>
+  <div class="col-md-4 mb-3 field">
+    <label class="col-form-label col-form-label-lg">DNI</label>
     <%= form.text_field :numero_documento, :class=>"form-control form-control-lg mr-sm-2"%>
   </div>
 
@@ -63,29 +41,19 @@
 
 <div class="col-md-4 mb-3 field">
     <label class="col-form-label col-form-label-lg">Mensaje</label>
-    <%= form.text_field :mensaje, :class=>"form-control form-control-lg mr-sm-2"%>
+    <%= form.text_area :mensaje, :class=>"form-control form-control-lg mr-sm-2"%>
   </div>
 
-<div class="col-md-4 mb-3 field">
-    <label class="col-form-label col-form-label-lg">Estado</label>
-
-        <select name="solicitud[estado]" id="solicitud_estado" class="form-control form-control-lg mr-sm-2">
-          <option>[Seleccione]</option>
-          <option value="Activo">Activo</option> 
-          <option value="Inactivo">Inactivo</option>
-          <option value="Falta Activar">Falta Activar</option>
-        </select>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-      </div>
   </div>  
   <div class="actions text-right">
+    <!--
   <%= link_to 'Regresar', solicituds_path, :class => "btn-warning btn btn-lg" %>
-  <%= form.submit "Crear Solicitud", :class => "btn btn-lg btn-success text-light"%>
+    -->
+  <%= form.submit "Enviar solicitud", :class => "btn btn-lg btn-success text-light"%>
   </div>
 </div>
-  <!--<div class="field">
+  <!--
+  <div class="field">
     <%= form.label :usu_crea %>
     <%= form.text_field :usu_crea %>
   </div>
@@ -100,9 +68,10 @@
     <%= form.text_field :usu_mod %>
   </div>
 
-  <!--<div class="field">
+  <div class="field">
     <%= form.label :fec_mod %>
     <%= form.datetime_select :fec_mod %>
-  </div>-->
+  </div>
+  -->
 
 <% end %>
