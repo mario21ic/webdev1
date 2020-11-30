@@ -3,7 +3,20 @@
   <% proyectos.each do |proyecto| %>
     <div class="col-md-3">
       <div class="mb-3 tarjeta">
-        <img src="https://abril.pe/wp-content/uploads/2020/03/Fachada_Abedul_Mayo2020.png" style="min-height: 300px;width: 100%;">
+        <table style="height: 300px;width: 100%;border:0;padding: 0;">
+          <tr>
+            <td style="text-align: center;padding: 0;">
+              <%f = @variables.select(:id).where(tipo_variable: 'SiNo', codigo_variable: 'S').collect(&:id)[0] %>
+              <%img = @archivos.select(:nombre_archivo).where(cod_proyecto: proyecto.id, cod_departamento: 0, cod_tip_archivo: f).collect(&:nombre_archivo)[0] %>
+              <%img_id = @archivos.select(:id).where(cod_proyecto: proyecto.id, cod_departamento: 0, cod_tip_archivo: f).collect(&:id)[0].to_s %>
+              <%if img%>
+                <img src="/uploads/archivo/nombre_archivo/<%=img_id+"/"+img.to_s.split('/').last%>" style="min-height: 300px;width: 100%;">
+              <%else%>
+                <img src="/assets/panel/LOGOHOME-be442d2e24dbf568d7c3b886f7162956d640b23c7efc7433a168a257767f9133.png" style="width: 20%;">
+              <%end%>
+            </td>
+          </tr>
+        </table>
         <div class="row no-gutters">
             <div class="card-body">
               <div class="row" style="min-height: 110px; overflow: hidden;">

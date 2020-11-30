@@ -1,12 +1,13 @@
 class DepartamentosController < ApplicationController
   before_action :init, only: [:show, :edit, :update, :destroy, :index, :new,:home]
   before_action :set_departamento, only: [:show, :edit, :update, :destro, :home]
-  before_action :set_proyecto, only: [:new,:index,:new]
-  before_action :set_proyecto2, only: [:show,:edit]
+  before_action :set_proyecto, only: [:new,:index]
+  before_action :set_proyecto2, only: [:show,:edit,:home]
 
   # GET /departamentos
   # GET /departamentos.json
   def index
+      @archivos = Archivo.where(estado: 'A')
     @departamentos = Departamento.where(cod_proyecto: params[:cod_proyecto])
   end
 

@@ -41,6 +41,7 @@ Rails.application.routes.draw do
   get 'departamentos/:id/home'=>'departamentos#home'
 
   get 'archivos/:cod_proyecto/:cod_departamento/index'=>'archivos#index'
+  get 'archivos/:cod_proyecto/:cod_departamento/new'=>'archivos#new'
 
   get 'proyectos/:id/home'=>'proyectos#home'
 
