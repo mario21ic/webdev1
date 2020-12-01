@@ -54,7 +54,7 @@ class SepararsController < ApplicationController
   def update
     respond_to do |format|
       if @separar.update(separar_params)
-        format.html { redirect_to @separar, notice: 'Separar was successfully updated.' }
+        format.html { redirect_to @separar, notice: 'Se acaba de separar el departamento.' }
         format.json { render :show, status: :ok, location: @separar }
       else
         format.html { render :edit }

@@ -99,7 +99,7 @@ class ProformasController < ApplicationController
   def update
     respond_to do |format|
       if @proforma.update(proforma_params)
-        format.html { redirect_to @proforma, notice: 'Proforma was successfully updated.' }
+        format.html { redirect_to @proforma, notice: 'Proforma generada correctamente.' }
         format.json { render :show, status: :ok, location: @proforma }
       else
         format.html { render :edit }

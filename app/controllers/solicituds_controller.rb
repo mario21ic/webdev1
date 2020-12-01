@@ -67,7 +67,7 @@ class SolicitudsController < ApplicationController
   def update
     respond_to do |format|
       if @solicitud.update(solicitud_params)
-        format.html { redirect_to @solicitud, notice: 'Solicitud was successfully updated.' }
+        format.html { redirect_to @solicitud, notice: 'Su solicitud fue grabada de manera exitosa.' }
         format.json { render :show, status: :ok, location: @solicitud }
       else
         format.html { render :edit }

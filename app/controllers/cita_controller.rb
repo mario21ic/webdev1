@@ -55,7 +55,7 @@ class CitaController < ApplicationController
   def update
     respond_to do |format|
       if @citum.update(citum_params)
-        format.html { redirect_to @citum, notice: 'Citum was successfully updated.' }
+        format.html { redirect_to @citum, notice: 'La cita se registro correctamente.' }
         format.json { render :show, status: :ok, location: @citum }
       else
         format.html { render :edit }

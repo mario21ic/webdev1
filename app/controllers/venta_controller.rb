@@ -68,7 +68,7 @@ class VentaController < ApplicationController
   def update
     respond_to do |format|
       if @ventum.update(ventum_params)
-        format.html { redirect_to @ventum, notice: 'Ventum was successfully updated.' }
+        format.html { redirect_to @ventum, notice: 'La venta se realizo exitosamente.' }
         format.json { render :show, status: :ok, location: @ventum }
       else
         format.html { render :edit }
