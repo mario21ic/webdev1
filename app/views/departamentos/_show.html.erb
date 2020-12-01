@@ -179,8 +179,12 @@
       <i class="icon-checklist-24"></i> Cita
     </a>
       <% if @home != 'S' %>
-        <a class="btn my-sm-0 btn-lg btn-success text-light" href="/separar/new/<%= @departamento.id %>">
+        <a class="btn my-sm-0 btn-lg btn-success text-light" href="/separars/new/<%= @departamento.id %>">
           <i class="icon-zap-24"></i> Separar
+        </a>
+
+        <a class="btn my-sm-0 btn-lg btn-success text-light" href="/venta/new/<%= @departamento.id %>">
+          <i class="icon-zap-24"></i> Vender
         </a>
         
           <%= link_to(edit_departamento_path(@departamento), :class => "btn my-sm-0 btn-lg btn-danger text-light") do %>
